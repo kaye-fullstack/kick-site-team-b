@@ -6,73 +6,28 @@
 .btn-pastel-yellow {
   background-color: $pastel-yellow;
 
-  font-family: $font-spectral-light;
+  font-family: 'Times New Roman', Times, serif;
 
   border: 0;
   border-color: none;
 
   outline: 0;
-  cursor: pointer;
+}
 
-  &:hover {
+.btn-pastel-yellow:hover {
   background-color: transparent;
-  }
-
-  &:focus {
-    outline: 5px auto;
-  }
 }
 
 .btn-black-outline {
   background-color: transparent;
 
-  font-family: $font-spectral-light;
+  font-family: 'Times New Roman', Times, serif;
 
   border: 1px solid $black;
 
   outline: 0;
-  cursor: pointer;
+}
 
-  &:hover {
+.btn-black-outline:hover {
   background-color: $pastel-grey;
-  }
 }
-
-.btn-violet {
-  background-color: $violet;
-
-  font-family: $font-spectral-light;
-
-  border: 0;
-  border-color: none;
-
-  outline: 0;
-  cursor: pointer;
- 
-  &:hover {
-  color: $black;
-  background-color: transparent;
-  }
-}
-
-.btn-navy {
-  position: relative;
-  top: -32px;
-  right: -211px;
- 
-  width: 35px;
-  height: 32px;
-
-  background-color: $navy-blue;
-  background-size: 18px;
-  border-left: none;
-  outline: none;
-
-  cursor: pointer;
-}
-
-.btn-navy:hover {
-  background-color: transparent;
-}
-
-

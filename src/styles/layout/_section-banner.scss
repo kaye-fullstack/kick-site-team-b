@@ -1,7 +1,8 @@
 .section-banner {
-  height: 61.7vh;
-
-  background-position: center -194px;
+  height: 55.3vh;
+  
+  background-position: left;
+  background-position-y: -27vh;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -51,30 +52,25 @@
   }
 }
 
-@include respond-to(sm) {
-  .section-banner {
-    background-position: left;
+.banner-title-holder {
+  padding-top: 92px;
+  padding-left: 88px;
+  .banner-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: $black;
 
-    .banner-title-holder {
-      padding-left: 0;
-    }
-
-    .banner-description-holder {
-      padding-left: 0;
-    }
+    line-height: .75;
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
-  .section-banner {
-    background-position: left;
+.banner-description-holder {
+  padding-top: 3px;
+  padding-left: 88px;
+  padding-bottom: 56px;
+  .banner-description {
+    font-family: 'Times New Roman', Times, serif;
+    color: $black;
 
-    .banner-title-holder {
-      padding-left: 0;
-    }
-
-    .banner-description-holder {
-      padding-left: 0;
-    }
+    line-height: .55;
   }
 }
