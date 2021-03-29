@@ -4,6 +4,18 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+//Grotesque font family
+$font-basis-grotesque-pro-light:'BasisGrotesquePro-Light';
+$font-basis-grotesque-pro-regular: 'BasisGrotesquePro-Regular';
+$font-basis-grotesque-pro-bold: 'BasisGrotesquePro-Bold';
+
+//Spectral font family
+$font-spectral-light: 'Spectral-Light';
+$font-spectral-regular: 'Spectral-Regular';
+$font-spectral-meduim: 'Spectral-Meduim';
+$font-spectral-semibold: 'Spectral-SemiBold';
+$font-spectral-bold: 'Spectral-Bold';
+
 /// Regular font family
 $font-opensans: 'Open Sans';
 
@@ -67,3 +79,18 @@ $light-violet:  #3F3F82;
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '../assets/' !default;
+
+//Colors
+$purple: #404082;
+$pastel-yellow: #fff7e5;
+$violet: #1f2449;
+$pastel-pink: #ffb8ad;
+$lavender: #f4f2f9;
+$pastel-blue: #8096ab;
+$yellow: #ffde00;
+$red-orange: #f25930;
+$pastel-grey: #f9f9f9;
+$tortoise: #30544f;
+$black: #000;
+$white: #fff;
+

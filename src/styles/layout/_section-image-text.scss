@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+}
+.column {
+  width: 50%;
+}
+
+.image-holder {
+  margin-top: 2px;
+  margin-left: 89px;
+  
+  .alternate-image {
+    margin-left: 0;
+  }
+}

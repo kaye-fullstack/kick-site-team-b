@@ -1,0 +1,30 @@
+.section-banner {
+  height: 55.3vh;
+  
+  background-position: left;
+  background-position-y: -27vh;
+  background-size: cover;
+}
+
+.banner-title-holder {
+  padding-top: 92px;
+  padding-left: 88px;
+  .banner-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: $black;
+
+    line-height: .75;
+  }
+}
+
+.banner-description-holder {
+  padding-top: 3px;
+  padding-left: 88px;
+  padding-bottom: 56px;
+  .banner-description {
+    font-family: 'Times New Roman', Times, serif;
+    color: $black;
+
+    line-height: .55;
+  }
+}
