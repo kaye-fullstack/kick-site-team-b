@@ -5,183 +5,213 @@
 // -----------------------------------------------------------------------------
 
 .home {
-  transition: all .2s ease-in-out;
-  .section-banner {
-    background-image: url('../../assets/images/home-banner.jpg');
+  transition: all .2s ease-in-out; 
 
-    
-    .banner-title {
-      font-size: 38px;
+  .section-how-it-works {
+    padding: 71px 0 72px;
+
+    .heading {
+      margin: -2px 20px 0 37px;
+
+      font-family: $font-spectral-meduim;
+      font-size: 30px;
+      color: $violet;
+      text-align: center;
+      letter-spacing: 0.1px;
     }
 
-    .banner-description {
-      font-size: 16.3px;
-    }
-
-    .btn-holder {
-      padding-left: 90px;
-      
-      .btn-pastel-yellow {
-        padding: 10px 22px;
-
-        font-size: 15px;
-      }
-    }
-  }
-
-  .section-press {
-    height: 31vh;
-
-    background-color: $violet;
-
-    .press-holder {
+    .work-list {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center; 
-      padding-top: 87px;
+      justify-content: space-between;
+      padding: 0;
+      margin: 91px 193px;
+      width: 724px;
 
-      .press-logos {
-        padding-left: 36px;
-        padding-right: 34px;
+      list-style: none;
+    }
+
+    .work-items:first-child {
+      position: relative;
+      left: 7px;
+
+      width: 20%;
+
+      font-family: $font-spectral-regular;
+      font-size: 17px;
+      color: $violet;
+      text-align: center;
+
+      &:before {
+        content: attr(data-attr);
+        position: absolute;
+        top: -37px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 17px;
+        height: 17px;
+
+        font-family: $font-basis-grotesque-pro-regular;
+        font-size: 14px;
+        color: $white;
+        line-height: 22px;
+        text-align: center;
+
+        background-color: $pastel-blue;
+        border-radius: 100%; 
       }
-    }
-  }
-
-  .section-help-products {
-    padding-bottom: 76px;
-    margin-top: 61px;
-    .help-title {
-      margin-bottom: 5px;
-
-      font-family: $font-spectral-light;
-      font-size: 28px;
-      text-align: center;
-    }
-
-    .help-description {
-      font-family: $font-spectral-light;
-      font-size: 15px;
-      text-align: center;
-    }
-
-    .help-image-holder {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 44px;
       
-      .help-images {
-        padding-right: 34px;
-        padding-left: 34px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        left: 87px;
+        right: 0;
+
+        margin: 0 auto;
+        width: 160px;
+        height: 16px;
+
+        border-bottom: 2px solid $pastel-blue;
       }
     }
 
-    .help-text-holder {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 14px;
+    .work-items:nth-child(2){
+      position: relative;
+      
+      width: 21%;
 
-      .help-subtitle {
-        padding-left: 75px;
-        padding-right: 74px;
+      font-family: $font-spectral-regular;
+      font-size: 17px;
+      color: $violet;
+      text-align: center;
 
-        font-family: $font-spectral-light;
-        font-size: 19.8px;
+      &:before {
+        content: attr(data-attr);
+        position: absolute;
+        top: -37px;
+        left: -2px;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 17px;
+        height: 17px;
+
+        font-family: $font-basis-grotesque-pro-light;
+        font-size: 14px;
+        color: $white;
+        line-height: 22px;
+        text-align: center;
+
+        background-color: $pastel-blue;
+        border-radius: 100%;
+      }
+      
+      &:after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        left: 92px;
+        right: 0;
+
+        margin: 0 auto;
+        width: 160px;
+        height: 16px;
+        
+        border-bottom: 2px solid $pastel-blue;
       }
     }
 
-    .help-button-holder {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: -2px;
+    .work-items:nth-child(3) {
+      position: relative;
+      right: 15px;
 
-      .btn-pastel-yellow:first-child {
-        padding: 11px 55px;
-        margin-right: 1px;
+      width: 22%;
 
-        font-size: 16px;
+      font-family: $font-spectral-regular;
+      font-size: 17px;
+      color: $violet;
+      text-align: center;
+
+      &:before {
+        content: attr(data-attr);
+        position: absolute;
+        top: -37px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 17px;
+        height: 17px;
+
+        font-family: $font-basis-grotesque-pro-light;
+        font-size: 14px;
+        color: $white;
+        line-height: 22px;
+        text-align: center;
+
+        background-color: $pastel-blue;
+        border-radius: 100%;
       }
+      
+      &:after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        left: 95px;
+        right: 0;
 
-      .btn-pastel-yellow:last-child {
-        padding: 11px 26px;
-        margin-left: 123px;
-
-        font-size: 16px;
-      }
-    }
-  }
-
-  .section-expert-care {
-    background-color: $lavender;
-
-    .expert-text-holder {
-      padding-top: 126px;
-      padding-left: 179px;
-
-      .expert-heading {
-        margin-bottom: 23px;
-
-        font-family: $font-spectral-light;
-        font-size: 12.5px;
-      }
-
-      .expert-title {
-        font-family: $font-spectral-light;
-        font-size: 27.5px;
-      }
-    }
-
-    .expert-list-holder {
-      margin-top: 16px;
-
-      list-style-type: none;
-      .expert-list {
-        position: relative;
-        padding-right: 21px;
-        padding-left: 166px;
-        margin-bottom: 16px;
-        max-width: 100%;
-
-        font-family: $font-spectral-light;
-        font-size: 17.8px;
-        color: $violet;
-
-        line-height: 1.41;
-
-        .numbers {
-          position: absolute;
-          top: 1;
-          left: 136px;
-          display: inline-block;
-          margin-right: 12px;
-          width: 21px;
-          height: 21px;
-
-          font-family: $font-basis-grotesque-pro-regular;
-          font-weight: bold;
-          font-size: 12px;
-          color: $white;
-          text-align: center;
-
-          background-color: $pastel-blue;
-          border-radius: 100%;
-          
-          line-height: 16px;
-        }
+        margin: 0 auto;
+        width: 160px;
+        height: 16px;
+        
+        border-bottom: 2px solid $pastel-blue;
       }
     }
 
-    .expert-care-holder {
-      margin-top: 28px;
-      margin-left: 178px;
+    .work-items:last-child {
+      position: relative;
 
-      .btn-black-outline {
-        padding: 7px 27px;
+      width: 15%;
 
-        font-size: 12px;
+      font-family: $font-spectral-regular;
+      font-size: 17px;
+      color: $violet;
+      text-align: center;
+
+      &:before {
+        content: attr(data-attr);
+        position: absolute;
+        top: -37px;
+        left: -15px;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 17px;
+        height: 17px;
+
+        font-family: $font-basis-grotesque-pro-light;
+        font-size: 14px;
+        color: $white;
+        line-height: 22px;
+        text-align: center;
+
+        background-color: $pastel-blue;
+        border-radius: 100%;
       }
     }
   }

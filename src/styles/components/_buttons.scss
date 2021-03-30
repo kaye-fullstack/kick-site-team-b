@@ -5,29 +5,17 @@
 // -----------------------------------------------------------------------------
 .btn-pastel-yellow {
   background-color: $pastel-yellow;
-
-  font-family: $font-spectral-light;
-
+  font-family: $font-spectral-regular;
+  
   border: 0;
   border-color: none;
-
   outline: 0;
 }
 
 .btn-pastel-yellow:hover {
-  background-color: transparent;
+  background-color: $pastel-yellow;
 }
 
-.btn-black-outline {
-  background-color: transparent;
-
-  font-family: $font-spectral-light;
-
-  border: 1px solid $black;
-
-  outline: 0;
-}
-
-.btn-black-outline:hover {
-  background-color: $pastel-grey;
+.btn-pastel-yellow:focus {
+  outline: 5px auto -webkit-focus-ring-color;
 }
