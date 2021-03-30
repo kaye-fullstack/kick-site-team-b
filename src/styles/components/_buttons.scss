@@ -12,6 +12,7 @@
   border-color: none;
 
   outline: 0;
+  cursor: pointer;
 }
 
 .btn-pastel-yellow:hover {
@@ -26,8 +27,26 @@
   border: 1px solid $black;
 
   outline: 0;
+  cursor: pointer;
 }
 
 .btn-black-outline:hover {
   background-color: $pastel-grey;
+}
+
+.btn-violet {
+  background-color: $violet;
+
+  font-family: $font-spectral-light;
+
+  border: 0;
+  border-color: none;
+
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn-violet:hover {
+  color: $black;
+  background-color: transparent;
 }
