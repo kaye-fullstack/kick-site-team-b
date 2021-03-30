@@ -4,6 +4,8 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
 //Grotesque font family
 @include font-face($font-basis-grotesque-pro-light, $base-url + 'fonts/', 'BasisGrotesquePro-Light', 'BasisGrotesquePro-Light');
 @include font-face($font-basis-grotesque-pro-regular, $base-url + 'fonts/', 'BasisGrotesquePro-Regular', 'BasisGrotesquePro-Regular');
@@ -15,4 +17,3 @@
 @include font-face($font-spectral-regular, $base-url + 'fonts/', 'Spectral-Regular', 'Spectral-Regular');
 @include font-face($font-spectral-semibold, $base-url + 'fonts/', 'Spectral-SemiBold', 'Spectral-SemiBold');
 @include font-face($font-spectral-bold, $base-url + 'fonts/', 'Spectral-Bold', 'Spectral-Bold');
-

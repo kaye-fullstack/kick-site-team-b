@@ -3,3 +3,31 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn-pastel-yellow {
+  background-color: $pastel-yellow;
+
+  font-family: $font-spectral-light;
+
+  border: 0;
+  border-color: none;
+
+  outline: 0;
+}
+
+.btn-pastel-yellow:hover {
+  background-color: transparent;
+}
+
+.btn-black-outline {
+  background-color: transparent;
+
+  font-family: $font-spectral-light;
+
+  border: 1px solid $black;
+
+  outline: 0;
+}
+
+.btn-black-outline:hover {
+  background-color: $pastel-grey;
+}

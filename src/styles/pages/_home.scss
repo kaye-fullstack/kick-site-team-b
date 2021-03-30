@@ -5,9 +5,187 @@
 // -----------------------------------------------------------------------------
 
 .home {
+  transition: all .2s ease-in-out;
   .section-banner {
-    .container {
-      background-color: aquamarine;
+    background-image: url('../../assets/images/home-banner.jpg');
+
+    
+    .banner-title {
+      font-size: 38px;
+    }
+
+    .banner-description {
+      font-size: 16.3px;
+    }
+
+    .btn-holder {
+      padding-left: 90px;
+      
+      .btn-pastel-yellow {
+        padding: 10px 22px;
+
+        font-size: 15px;
+      }
+    }
+  }
+
+  .section-press {
+    height: 31vh;
+
+    background-color: $violet;
+
+    .press-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; 
+      padding-top: 87px;
+
+      .press-logos {
+        padding-left: 36px;
+        padding-right: 34px;
+      }
+    }
+  }
+
+  .section-help-products {
+    padding-bottom: 76px;
+    margin-top: 61px;
+    .help-title {
+      margin-bottom: 5px;
+
+      font-family: $font-spectral-light;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .help-description {
+      font-family: $font-spectral-light;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .help-image-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 44px;
+      
+      .help-images {
+        padding-right: 34px;
+        padding-left: 34px;
+      }
+    }
+
+    .help-text-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 14px;
+
+      .help-subtitle {
+        padding-left: 75px;
+        padding-right: 74px;
+
+        font-family: $font-spectral-light;
+        font-size: 19.8px;
+      }
+    }
+
+    .help-button-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -2px;
+
+      .btn-pastel-yellow:first-child {
+        padding: 11px 55px;
+        margin-right: 1px;
+
+        font-size: 16px;
+      }
+
+      .btn-pastel-yellow:last-child {
+        padding: 11px 26px;
+        margin-left: 123px;
+
+        font-size: 16px;
+      }
+    }
+  }
+
+  .section-expert-care {
+    background-color: $lavender;
+
+    .expert-text-holder {
+      padding-top: 126px;
+      padding-left: 179px;
+
+      .expert-heading {
+        margin-bottom: 23px;
+
+        font-family: $font-spectral-light;
+        font-size: 12.5px;
+      }
+
+      .expert-title {
+        font-family: $font-spectral-light;
+        font-size: 27.5px;
+      }
+    }
+
+    .expert-list-holder {
+      margin-top: 16px;
+
+      list-style-type: none;
+      .expert-list {
+        position: relative;
+        padding-right: 21px;
+        padding-left: 166px;
+        margin-bottom: 16px;
+        max-width: 100%;
+
+        font-family: $font-spectral-light;
+        font-size: 17.8px;
+        color: $violet;
+
+        line-height: 1.41;
+
+        .numbers {
+          position: absolute;
+          top: 1;
+          left: 136px;
+          display: inline-block;
+          margin-right: 12px;
+          width: 21px;
+          height: 21px;
+
+          font-family: $font-basis-grotesque-pro-regular;
+          font-weight: bold;
+          font-size: 12px;
+          color: $white;
+          text-align: center;
+
+          background-color: $pastel-blue;
+          border-radius: 100%;
+          
+          line-height: 16px;
+        }
+      }
+    }
+
+    .expert-care-holder {
+      margin-top: 28px;
+      margin-left: 178px;
+
+      .btn-black-outline {
+        padding: 7px 27px;
+
+        font-size: 12px;
+      }
     }
   }
 }
+
+
+
