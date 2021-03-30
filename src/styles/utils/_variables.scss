@@ -57,6 +57,13 @@ $mid-grey: #999 !default;
 /// @type Color
 $dark-grey: #444 !default;
 
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
+
 ///@type Color
 $purple: #404082;
 $pastel-yellow: #FFF7E5;
@@ -71,6 +78,7 @@ $tortoise: #30544F;
 $black: #000;
 $white: #fff;
 $light-violet:  #3f3f82;
+<<<<<<< HEAD
 
 /// Relative or absolute URL where all assets are served from
 /// @type String
@@ -93,3 +101,6 @@ $black: #000;
 $white: #fff;
 $navy-blue:#1e2347; 
 $light-violet:  #3F3F82;
+=======
+$navy-blue:#1e2347;
+>>>>>>> f04565d (fixed all scetion-how-it-works and section-doctor issues)
