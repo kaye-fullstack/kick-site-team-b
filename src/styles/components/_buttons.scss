@@ -7,9 +7,10 @@
   font-family: $font-spectral-regular;
  
   background-color: $pastel-yellow;
+  font-family: $font-spectral-regular;
+  
   border: 0;
   border-color: none;
-
   outline: 0;
 }
 
@@ -18,5 +19,5 @@
 }
 
 .btn-pastel-yellow:focus {
-  outline: 5px auto;
+  outline: 5px auto -webkit-focus-ring-color;
 }
