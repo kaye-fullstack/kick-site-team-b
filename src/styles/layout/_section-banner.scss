@@ -1,30 +1,31 @@
 .section-banner {
   height: 55.3vh;
-  
-  background-position: left;
-  background-position-y: -27vh;
+
+  background-position: center -254px;
   background-size: cover;
 }
 
 .banner-title-holder {
-  padding-top: 92px;
-  padding-left: 88px;
-  .banner-title {
-    font-family: 'Times New Roman', Times, serif;
-    color: $black;
+  padding-top: 85px;
+  padding-left: 89px;
 
-    line-height: .75;
+  letter-spacing: -1.7px;
+  .banner-title {
+    font-family: $font-spectral-light;
+    color: $violet;
+
+    line-height: 1.2;
   }
 }
 
 .banner-description-holder {
-  padding-top: 3px;
   padding-left: 88px;
-  padding-bottom: 56px;
-  .banner-description {
-    font-family: 'Times New Roman', Times, serif;
-    color: $black;
+  padding-bottom: 49px;
 
-    line-height: .55;
+  .banner-description {
+    font-family: $font-spectral-light;
+    color: $violet;
+
+    line-height: 1.5;
   }
 }
