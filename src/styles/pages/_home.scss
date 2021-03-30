@@ -15,9 +15,9 @@
 
       font-family: $font-spectral-meduim;
       font-size: 30px;
+      letter-spacing: 0.1px;
       color: $violet;
       text-align: center;
-      letter-spacing: 0.1px;
     }
 
     .work-list {
@@ -31,187 +31,189 @@
       list-style: none;
     }
 
-    .work-items:first-child {
-      position: relative;
-      left: 7px;
-
-      width: 20%;
-
-      font-family: $font-spectral-regular;
-      font-size: 17px;
-      color: $violet;
-      text-align: center;
-
-      &:before {
-        content: attr(data-attr);
-        position: absolute;
-        top: -37px;
-        left: 0;
-        right: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 17px;
-        height: 17px;
-
-        font-family: $font-basis-grotesque-pro-regular;
-        font-size: 14px;
-        color: $white;
-        line-height: 22px;
+    .work-items {
+      &:first-child {
+        position: relative;
+        left: 7px;
+  
+        width: 20%;
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
         text-align: center;
-
-        background-color: $pastel-blue;
-        border-radius: 100%; 
-      }
-      
-      &:after {
-        content: "";
-        position: absolute;
-        top: -44px;
-        left: 87px;
-        right: 0;
-
-        margin: 0 auto;
-        width: 160px;
-        height: 16px;
-
-        border-bottom: 2px solid $pastel-blue;
-      }
-    }
-
-    .work-items:nth-child(2){
-      position: relative;
-      
-      width: 21%;
-
-      font-family: $font-spectral-regular;
-      font-size: 17px;
-      color: $violet;
-      text-align: center;
-
-      &:before {
-        content: attr(data-attr);
-        position: absolute;
-        top: -37px;
-        left: -2px;
-        right: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 17px;
-        height: 17px;
-
-        font-family: $font-basis-grotesque-pro-light;
-        font-size: 14px;
-        color: $white;
-        line-height: 22px;
-        text-align: center;
-
-        background-color: $pastel-blue;
-        border-radius: 100%;
-      }
-      
-      &:after {
-        content: "";
-        position: absolute;
-        top: -44px;
-        left: 92px;
-        right: 0;
-
-        margin: 0 auto;
-        width: 160px;
-        height: 16px;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: 0;
+          right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-regular;
+          font-size: 14px;
+          line-height: 22px;
+          color: $white;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%; 
+        }
         
-        border-bottom: 2px solid $pastel-blue;
-      }
-    }
-
-    .work-items:nth-child(3) {
-      position: relative;
-      right: 15px;
-
-      width: 22%;
-
-      font-family: $font-spectral-regular;
-      font-size: 17px;
-      color: $violet;
-      text-align: center;
-
-      &:before {
-        content: attr(data-attr);
-        position: absolute;
-        top: -37px;
-        left: 0;
-        right: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 17px;
-        height: 17px;
-
-        font-family: $font-basis-grotesque-pro-light;
-        font-size: 14px;
-        color: $white;
-        line-height: 22px;
-        text-align: center;
-
-        background-color: $pastel-blue;
-        border-radius: 100%;
+        &:after {
+          content: "";
+          position: absolute;
+          top: -44px;
+          left: 87px;
+          right: 0;
+  
+          margin: 0 auto;
+          width: 160px;
+          height: 16px;
+  
+          border-bottom: 2px solid $pastel-blue;
+        }
       }
       
-      &:after {
-        content: "";
-        position: absolute;
-        top: -44px;
-        left: 95px;
-        right: 0;
-
-        margin: 0 auto;
-        width: 160px;
-        height: 16px;
+      &:nth-child(2){
+        position: relative;
         
-        border-bottom: 2px solid $pastel-blue;
-      }
-    }
-
-    .work-items:last-child {
-      position: relative;
-
-      width: 15%;
-
-      font-family: $font-spectral-regular;
-      font-size: 17px;
-      color: $violet;
-      text-align: center;
-
-      &:before {
-        content: attr(data-attr);
-        position: absolute;
-        top: -37px;
-        left: -15px;
-        right: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 17px;
-        height: 17px;
-
-        font-family: $font-basis-grotesque-pro-light;
-        font-size: 14px;
-        color: $white;
-        line-height: 22px;
+        width: 21%;
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
         text-align: center;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: -2px;
+          right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-light;
+          font-size: 14px;
+          line-height: 22px;
+          color: $white;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%;
+        }
+        
+        &:after {
+          content: "";
+          position: absolute;
+          top: -44px;
+          left: 92px;
+          right: 0;
+  
+          margin: 0 auto;
+          width: 160px;
+          height: 16px;
+          
+          border-bottom: 2px solid $pastel-blue;
+        }
+      }
 
-        background-color: $pastel-blue;
-        border-radius: 100%;
+      &:nth-child(3) {
+        position: relative;
+        right: 15px;
+  
+        width: 22%;
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
+        text-align: center;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: 0;
+          right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-light;
+          font-size: 14px;
+          color: $white;
+          line-height: 22px;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%;
+        }
+        
+        &:after {
+          content: "";
+          position: absolute;
+          top: -44px;
+          left: 95px;
+          right: 0;
+  
+          margin: 0 auto;
+          width: 160px;
+          height: 16px;
+          
+          border-bottom: 2px solid $pastel-blue;
+        }
+      }
+
+      &:last-child {
+        position: relative;
+  
+        width: 15%;
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
+        text-align: center;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: -15px;
+          right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-light;
+          font-size: 14px;
+          line-height: 22px;
+          color: $white;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%;
+        }
       }
     }
   }

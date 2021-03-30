@@ -32,18 +32,18 @@
 
     font-family: $font-spectral-meduim;
     font-size: 49px;
+    line-height: 60px;
     color: $white;
     text-align: left;
-    line-height: 60px;
 
-    &::before {
+    &:before {
       content: "“";
       position: absolute;
       top: -2px;
       left: -20px;
     }
 
-    &::after {
+    &:after {
       content: "”";
       position: absolute;
     }
@@ -57,8 +57,8 @@
 
     font-family: $font-spectral-regular;
     font-size: 14px;
-    color: $white;
     line-height: 22px;
+    color: $white;
   }
 
   .btn-holder {
@@ -82,7 +82,7 @@
     left: -19px;
     z-index: 1;
 
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       left: 30px;

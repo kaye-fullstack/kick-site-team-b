@@ -4,13 +4,18 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 .btn-pastel-yellow {
+<<<<<<< HEAD
   font-family: $font-spectral-regular;
  
   background-color: $pastel-yellow;
+=======
+>>>>>>> 5948500 (fixed all scetion-how-it-works and section-doctor issues)
   font-family: $font-spectral-regular;
-  
+ 
+  background-color: $pastel-yellow;
   border: 0;
   border-color: none;
+
   outline: 0;
 }
 
@@ -19,5 +24,5 @@
 }
 
 .btn-pastel-yellow:focus {
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 5px auto;
 }
