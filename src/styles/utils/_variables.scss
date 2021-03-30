@@ -57,6 +57,42 @@ $mid-grey: #999 !default;
 /// @type Color
 $dark-grey: #444 !default;
 
+<<<<<<< HEAD
+=======
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
+
+///@type Color
+$purple: #404082;
+$pastel-yellow: #FFF7E5;
+$violet: #1F2449;
+$pastel-pink: #FFB8AD;
+$lavender: #F4F2F9;
+$pastel-blue: #8096AB;
+$yellow: #FFDE00;
+$red-orange: #F25930;
+$pastel-grey: #F9F9F9;
+$tortoise: #30544F;
+$black: #000;
+$white: #fff;
+<<<<<<< HEAD
+$light-violet:  #3f3f82;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+$black:#000;
+<<<<<<< HEAD
+>>>>>>> d8e0d82 (header-done)
+=======
+$light-violet:  #3F3F82;
+>>>>>>> 79de350 (fixed header tab spacing issue)
+
+>>>>>>> f32095f (fixed header tab spacing issue)
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
