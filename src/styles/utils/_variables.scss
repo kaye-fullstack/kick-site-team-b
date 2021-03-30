@@ -24,13 +24,12 @@ $font-basis-grotesque-pro-light:'BasisGrotesquePro-Light';
 $font-basis-grotesque-pro-regular: 'BasisGrotesquePro-Regular';
 $font-basis-grotesque-pro-bold: 'BasisGrotesquePro-Bold';
 
-//Spectral font family
+//Sepectral font family
 $font-spectral-light: 'Spectral-Light';
 $font-spectral-regular: 'Spectral-Regular';
 $font-spectral-meduim: 'Spectral-Meduim';
 $font-spectral-semibold: 'Spectral-SemiBold';
 $font-spectral-bold: 'Spectral-Bold';
-
 /// @type List
 $text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
@@ -58,8 +57,14 @@ $mid-grey: #999 !default;
 /// @type Color
 $dark-grey: #444 !default;
 
-/// @type Color
-$navy-blue:#1e2347;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
+
+///@type Color
 $purple: #404082;
 $pastel-yellow: #FFF7E5;
 $violet: #1F2449;
@@ -70,28 +75,7 @@ $yellow: #FFDE00;
 $red-orange: #F25930;
 $pastel-grey: #F9F9F9;
 $tortoise: #30544F;
-$white: #fff;
-$black:#000;
-$light-violet:  #3F3F82;
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '../assets/' !default;
-
-//Colors
-$purple: #404082;
-$pastel-yellow: #fff7e5;
-$violet: #1f2449;
-$pastel-pink: #ffb8ad;
-$lavender: #f4f2f9;
-$pastel-blue: #8096ab;
-$yellow: #ffde00;
-$red-orange: #f25930;
-$pastel-grey: #f9f9f9;
-$tortoise: #30544f;
 $black: #000;
 $white: #fff;
-$navy-blue:#1e2347; 
-$light-violet:  #3F3F82;
+$light-violet:  #3f3f82;
+$navy-blue:#1e2347;
