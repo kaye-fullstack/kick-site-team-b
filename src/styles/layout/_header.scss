@@ -3,3 +3,126 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.section-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  background: transparent;
+
+  &.scrolled {
+    background-color: $white;
+  }
+
+  .navbar-nav {
+    margin-top: 17px;
+    margin-right: 111px;
+  }
+
+  .nav-link {
+    font-family: $font-basis-grotesque-pro-bold;
+    font-size: 16px;
+    color:$navy-blue;
+  }
+
+  .header-logo {
+    margin-top: 15px;
+    margin-left: 90px;
+  }
+
+  .navbar-toggler {
+    margin-left: 85%;
+    margin-top: 5%;
+  }
+
+  .icon-bar {
+    margin-left: 90%;
+    width: 23px;
+    height: 2px;
+  }
+}
+
+//767 to 576
+@include respond-to(sm) {
+  .section-header {
+
+    .header-logo {
+      margin-top: 13px;
+      margin-left: 5px;
+      width: 80px;
+    }
+
+    .navbar-toggler {
+      margin-left: 90%;
+      margin-top: -6%;
+
+      .icon-bar {
+        margin-top: 5px;
+      }
+    }
+
+    .navbar-nav {
+      padding: 5px;
+    }
+
+    .collapse.show {
+      width: 100%;
+    }
+  }
+}
+
+//425 to 320
+@include respond-to(xs) {
+  .section-header {
+
+    .header-logo {
+      margin-top: 13px;
+      margin-left: 5px;
+      width: 80px;
+    }
+
+    .navbar-toggler {
+      margin-left: 85%;
+      margin-top: -12%;
+
+      .icon-bar {
+        margin-top: 5px;
+      }
+    }
+
+    .navbar-nav {
+      padding: 20px;
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: 15px;
+    }
+
+
+    .collapse.show {
+      position: fixed;
+      top: 75px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 100% !important;
+      display: block;
+      background-color:$white;
+    }
+
+    .collapsing {
+      position: fixed;
+      top: 75px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      height: 100% !important;
+      display: block;
+      background-color: $white;
+    }
+  }
+}
