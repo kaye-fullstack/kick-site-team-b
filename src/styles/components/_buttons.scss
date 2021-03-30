@@ -6,7 +6,7 @@
 .btn-pastel-yellow {
   background-color: $pastel-yellow;
 
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $font-spectral-light;
 
   border: 0;
   border-color: none;
@@ -21,7 +21,7 @@
 .btn-black-outline {
   background-color: transparent;
 
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $font-spectral-light;
 
   border: 1px solid $black;
 
