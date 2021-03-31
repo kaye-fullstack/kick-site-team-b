@@ -13,10 +13,10 @@
 
   outline: 0;
   cursor: pointer;
-}
 
-.btn-pastel-yellow:hover {
+  &:hover {
   background-color: transparent;
+  }
 }
 
 .btn-black-outline {
@@ -28,10 +28,10 @@
 
   outline: 0;
   cursor: pointer;
-}
 
-.btn-black-outline:hover {
+  &:hover {
   background-color: $pastel-grey;
+  }
 }
 
 .btn-violet {
@@ -44,9 +44,9 @@
 
   outline: 0;
   cursor: pointer;
-}
-
-.btn-violet:hover {
+ 
+  &:hover {
   color: $black;
   background-color: transparent;
+  }
 }
