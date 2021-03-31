@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@include respond-to(xs) {
   .section-quotation-slider {
     .swiper-container {
       left: 0;

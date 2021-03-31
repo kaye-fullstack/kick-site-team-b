@@ -65,7 +65,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@include respond-to(xs) {
   .section-banner {
     background-position: left;
 
