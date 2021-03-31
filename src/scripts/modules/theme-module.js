@@ -7,13 +7,18 @@ AppName.Modules.ThemeModule = (function () {
   ////////////////////
   const _privateMethod = () => {
     // private stuff
-
+   
     const swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+      autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
+       pagination: {
+         el: '.swiper-pagination',
+       },
+     });
   };
+
 
   /////////////////////
   // Public Methods //

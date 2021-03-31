@@ -1,0 +1,91 @@
+.section-reviews {
+  padding-top: 60px;
+
+  .reviews-text-holder {
+    padding-top: 8px;
+    padding-bottom: 75px;
+
+    &:nth-child(odd) {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 48.40%;
+        width: 60px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+  
+      &::before {
+        background-image: url('../../assets/images/quotation-pink-reversed.png');
+      }
+      .reviews-quotes {
+        margin-top: 52px;
+        margin-bottom: 8px;
+
+        font-family: $font-spectral-regular;
+        font-size: 28.6px;
+        color: $pastel-pink;
+        text-align: center;
+      }
+
+      .reviews-names {
+        font-family: $font-spectral-regular;
+        font-size: 15.6px;
+        color: $pastel-pink;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(even) {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 48.40%;
+        width: 60px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      &::before {
+        background-image: url('../../assets/images/quotation-violet-semi-circle.png');
+      }
+
+      .reviews-quotes {
+        margin-top: 52px;
+        margin-bottom: 8px;
+
+        font-family: $font-spectral-regular;
+        font-size: 28.6px;
+        color: $violet;
+        text-align: center;
+      }
+
+      .reviews-names {
+        font-family: $font-spectral-regular;
+        font-size: 15.6px;
+        color: $violet;
+        text-align: center;     
+       }
+    }
+  }
+} 
+
+@include respond-to(xs) {
+  .section-reviews {
+    .reviews-text-holder {
+      &:nth-child(odd) {
+        &:before {
+          left: 43%;
+        }
+      }
+
+      &:nth-child(even) {
+        &:before {
+          left: 43%;
+        }
+      }
+    }
+  }
+}

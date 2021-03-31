@@ -8,7 +8,7 @@
   transition: all .2s ease-in-out;
 
   .section-banner {
-    background-image: url('../../assets/images/home-banner.jpg');
+    background-image: url('../assets/images/home-banner.jpg');
 
     .banner-title {
       font-size: 38px;
@@ -352,7 +352,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@include respond-to(xs) {
   .home {
     .section-banner {
       .btn-holder {
