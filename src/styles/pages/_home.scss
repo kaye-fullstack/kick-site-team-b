@@ -99,19 +99,21 @@
         justify-content: center;
         align-items: center;
         margin-top: -2px;
-
-        .btn-pastel-yellow:first-child {
-          padding: 11px 55px;
-          margin-right: 1px;
-
+        
+        .btn-pastel-yellow {
           font-size: 16px;
-        }
 
-        .btn-pastel-yellow:last-child {
-          padding: 11px 26px;
-          margin-left: 0;
-
-          font-size: 16px;
+          &:first-child {
+            padding: 11px 55px;
+            margin-right: 1px;
+          }
+  
+          &:last-child {
+            padding: 11px 26px;
+            margin-left: 0;
+  
+            font-size: 16px;
+          }
         }
       }
     }
@@ -215,7 +217,7 @@
 @include respond-to(lg) {
   .home {
     .section-help-products {
-      .row{
+      .row {
         margin-left: 147px;
       }
     }
@@ -255,7 +257,7 @@
     }
     
     .section-help-products {
-      .row{
+      .row {
         margin-left: 22px;
       }
     }
@@ -351,67 +353,7 @@
   }
 }
 
-@media (max-width: 575px) {
-  .home {
-    .section-banner {
-      .btn-holder {
-        padding-left: 20px;
-      }
-    }
-
-    .section-press {
-      height: 25vh;
-
-      .press-holder {
-        padding-top: 54px;
-
-        .press-logos {
-          padding-right: 15px;
-          padding-left: 15px;
-        }
-      }
-    }
-
-    .section-help-products {
-      .row {
-        margin-left: -23px;
-        width: 580px;
-      }
-    }
-
-    .section-expert-care {
-      .expert-text-holder {
-        padding-top: 59px;
-        padding-left: 0;
-      }
-
-      .expert-list-holder {
-        .expert-list {
-          padding-left: 0;
-
-          .numbers {
-            left: -38px;
-          }
-        }
-      }
-
-      .expert-care-holder {
-        margin-left: 0;
-      }
-
-      .expert-image-holder {
-        margin-top: 37px;
-        margin-left: 0;
-
-        .expert-image {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 575px) {
   .home {
     .section-banner {
       .btn-holder {
@@ -436,8 +378,7 @@
 
     .section-help-products {
       .row {
-        margin-left: 0;
-        width: 288px;
+        display: contents;
       }
     }
 
@@ -472,7 +413,3 @@
     }
   }
 }
-
-
-
-
