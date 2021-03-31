@@ -232,8 +232,6 @@
       background-color: $lavender;
     }
   }
-<<<<<<< HEAD
-=======
 
   .section-how-it-works {
     padding: 71px 0;
@@ -263,91 +261,191 @@
     }
 
     .work-items {
-      position: relative;
-      
-      font-family: $font-spectral-regular;
-      font-size: 17px;
-      color: $violet;
-      text-align: center;
-      
-      &:before {
-        content: attr(data-attr);
-        position: absolute;
-        top: -37px;
-        left: 0;
-        right: 0;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 17px;
-        height: 17px;
-    
-        font-family: $font-basis-grotesque-pro-regular;
-        font-size: 14px;
-        line-height: 22px;
-        color: $white;
-        text-align: center;
-    
-        background-color: $pastel-blue;
-        border-radius: 100%; 
-      }
-      
-      &:not(:last-child):after {
-        content: "";
-        position: absolute;
-        top: -44px;
-        
-        margin: 0 auto;
-        width: 160px;
-        height: 16px;
-    
-        border-bottom: 2px solid $pastel-blue;
-     }
-     
-    &:first-child {
+      &:first-child {
+        position: relative;
         left: 7px;
-    
+  
         width: 20%;
-    
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
+        text-align: center;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: 0;
+          right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-regular;
+          font-size: 14px;
+          line-height: 22px;
+          color: $white;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%; 
+        }
+        
         &:after {
+          content: "";
+          position: absolute;
+          top: -44px;
           left: 87px;
           right: 0;
+  
+          margin: 0 auto;
+          width: 160px;
+          height: 16px;
+  
+          border-bottom: 2px solid $pastel-blue;
         }
       }
       
-     &:nth-child(2) {
-       width: 21%;
-
+      &:nth-child(2){
+        position: relative;
+        
+        width: 21%;
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
+        text-align: center;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: -2px;
+          right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-light;
+          font-size: 14px;
+          line-height: 22px;
+          color: $white;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%;
+        }
+        
         &:after {
+          content: "";
+          position: absolute;
+          top: -44px;
           left: 92px;
           right: 0;
+  
+          margin: 0 auto;
+          width: 160px;
+          height: 16px;
+          
+          border-bottom: 2px solid $pastel-blue;
         }
       }
 
       &:nth-child(3) {
+        position: relative;
         right: 15px;
-
+  
         width: 22%;
- 
-        &:after {
-          left: 92px;
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
+        text-align: center;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: 0;
           right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-light;
+          font-size: 14px;
+          color: $white;
+          line-height: 22px;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%;
+        }
+        
+        &:after {
+          content: "";
+          position: absolute;
+          top: -44px;
+          left: 95px;
+          right: 0;
+  
+          margin: 0 auto;
+          width: 160px;
+          height: 16px;
+          
+          border-bottom: 2px solid $pastel-blue;
         }
       }
 
       &:last-child {
+        position: relative;
+  
         width: 15%;
-
-        &:after {
-          left: 92px;
+  
+        font-family: $font-spectral-regular;
+        font-size: 17px;
+        color: $violet;
+        text-align: center;
+  
+        &:before {
+          content: attr(data-attr);
+          position: absolute;
+          top: -37px;
+          left: 0;
           right: 0;
+  
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 17px;
+          height: 17px;
+  
+          font-family: $font-basis-grotesque-pro-light;
+          font-size: 14px;
+          line-height: 22px;
+          color: $white;
+          text-align: center;
+  
+          background-color: $pastel-blue;
+          border-radius: 100%;
         }
       }
     }
   }
-<<<<<<< HEAD
 
   .section-ratings {
     --star-size: 60px;
@@ -413,12 +511,9 @@
       color: $violet;
       text-align: center;
     }
->>>>>>> c5eea89 (fixed sections issues)
   }
-=======
->>>>>>> cfabaa0 (replace section ratings to reusable)
+  }
 }
-
 @include respond-to(lg) {
   .home {
     .section-help-products {
@@ -504,6 +599,16 @@
 
       .work-list {
         margin: 93px 0 0 0;
+        width: 100%;
+      }
+    }
+
+    .section-ratings {
+      .heading {
+        font-size: 35px;
+      }
+
+      .rating-row {
         width: 100%;
       }
     }
@@ -609,6 +714,9 @@
         }
 
         &:last-child {
+          right: 0;
+          left:  0;
+
           width: 100%;
 
           font-size: 20px;
@@ -627,6 +735,25 @@
             transform: rotate(90deg);
           }
         }
+      }
+    }
+
+    .section-ratings {
+      padding: 35px 0;
+
+      .heading {
+        font-size: 23px;
+      }
+
+      .rating-row {
+        display: block;
+        width: 100%;
+      }
+
+      .rating-column {
+        margin: 0 auto 26px;
+
+        width: 243px;
       }
     }
   }
@@ -757,4 +884,3 @@
     }
   }
 }
-
