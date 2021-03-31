@@ -207,7 +207,8 @@
       line-height: 35px;
 
       &:before {
-        left: 20px;
+        position: relative;
+        left: unset;
       }
     }
 
@@ -243,8 +244,7 @@
 
       text-align: center;
     }
-
-    
+ 
     .btn-holder {
       .btn-pastel-yellow {
         padding: 14px 80px;
@@ -280,7 +280,8 @@
       line-height: 35px;
 
       &:before {
-        left: 20px;
+        position: relative;
+        left: unset;
       }
     }
 
@@ -321,7 +322,6 @@
 
       text-align: center;
     }
-
     
     .btn-holder {
       .btn-pastel-yellow {
