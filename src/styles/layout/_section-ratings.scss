@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@include respond-to(xs) {
   .home {
     .section-ratings {
       padding: 35px 0;

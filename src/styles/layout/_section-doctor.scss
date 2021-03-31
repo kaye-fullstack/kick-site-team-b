@@ -256,7 +256,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@include respond-to(xs) {
   .section-doctor {
     padding: 35px 15px 35px;
 
