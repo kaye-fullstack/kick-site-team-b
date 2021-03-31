@@ -4,30 +4,30 @@
   background-position: center -194px;
   background-size: cover;
   background-repeat: no-repeat;
-}
 
-.banner-title-holder {
-  padding-top: 147px;
-  padding-left: 89px;
+  .banner-title-holder {
+    padding-top: 147px;
+    padding-left: 89px;
 
-  letter-spacing: -1.7px;
-  .banner-title {
-    font-family: $font-spectral-light;
-    color: $violet;
+    letter-spacing: -1.7px;
+    .banner-title {
+      font-family: $font-spectral-light;
+      color: $violet;
 
-    line-height: 1.2;
+      line-height: 1.2;
+    }
   }
-}
 
-.banner-description-holder {
-  padding-left: 88px;
-  padding-bottom: 49px;
+  .banner-description-holder {
+    padding-left: 88px;
+    padding-bottom: 49px;
 
-  .banner-description {
-    font-family: $font-spectral-light;
-    color: $violet;
+    .banner-description {
+      font-family: $font-spectral-light;
+      color: $violet;
 
-    line-height: 1.5;
+      line-height: 1.5;
+    }
   }
 }
 
@@ -40,55 +40,41 @@
 @include respond-to(md) {
   .section-banner {
     background-position: center;
-  }
 
-  .banner-title-holder {
-    padding-left: 20px;
-  }
+    .banner-title-holder {
+      padding-left: 20px;
+    }
 
-  .banner-description-holder {
-    padding-left: 20px;
+    .banner-description-holder {
+      padding-left: 20px;
+    }
   }
 }
 
 @include respond-to(sm) {
   .section-banner {
     background-position: left;
-  }
 
-  .banner-title-holder {
-    padding-left: 0;
-  }
+    .banner-title-holder {
+      padding-left: 0;
+    }
 
-  .banner-description-holder {
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 575px) {
-  .section-banner {
-    background-position: left;
-  }
-
-  .banner-title-holder {
-    padding-left: 0;
-  }
-
-  .banner-description-holder {
-    padding-left: 0;
+    .banner-description-holder {
+      padding-left: 0;
+    }
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 575px) {
   .section-banner {
     background-position: left;
-  }
 
-  .banner-title-holder {
-    padding-left: 0;
-  }
+    .banner-title-holder {
+      padding-left: 0;
+    }
 
-  .banner-description-holder {
-    padding-left: 0;
+    .banner-description-holder {
+      padding-left: 0;
+    }
   }
 }
