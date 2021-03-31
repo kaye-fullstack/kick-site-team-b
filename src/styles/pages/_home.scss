@@ -448,6 +448,7 @@
       }
     }
   }
+<<<<<<< HEAD
 
   .section-ratings {
     --star-size: 60px;
@@ -515,6 +516,8 @@
     }
 >>>>>>> c5eea89 (fixed sections issues)
   }
+=======
+>>>>>>> cfabaa0 (replace section ratings to reusable)
 }
 
 @include respond-to(lg) {
@@ -602,16 +605,6 @@
 
       .work-list {
         margin: 93px 0 0 0;
-        width: 100%;
-      }
-    }
-
-    .section-ratings {
-      .heading {
-        font-size: 35px;
-      }
-
-      .rating-row {
         width: 100%;
       }
     }
@@ -740,25 +733,6 @@
         }
       }
     }
-
-    .section-ratings {
-      padding: 35px 0;
-
-      .heading {
-        font-size: 23px;
-      }
-
-      .rating-row {
-        display: block;
-        width: 100%;
-      }
-
-      .rating-column {
-        margin: 0 auto 26px;
-
-        width: 243px;
-      }
-    }
   }
 }
 
@@ -883,19 +857,6 @@
             transform: rotate(90deg);
           }
         }
-      }
-    }
-
-    .section-ratings {
-      padding: 35px 0;
-
-      .heading {
-        font-size: 23px;
-      }
-
-      .rating-row {
-        display: block;
-        width: 100%;
       }
     }
   }
