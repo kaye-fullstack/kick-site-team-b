@@ -1,7 +1,7 @@
 .section-reviews {
   padding-top: 60px;
 
-  .text-holder {
+  .reviews-text-holder {
     padding-top: 8px;
     padding-bottom: 75px;
 
@@ -17,9 +17,9 @@
       }
   
       &::before {
-        background-image: url('../assets/images/quotation-pink-reversed.png');
+        background-image: url('../../assets/images/quotation-pink-reversed.png');
       }
-      .quotes {
+      .reviews-quotes {
         margin-top: 52px;
         margin-bottom: 8px;
 
@@ -29,7 +29,7 @@
         text-align: center;
       }
 
-      .names {
+      .reviews-names {
         font-family: $font-spectral-regular;
         font-size: 15.6px;
         color: $pastel-pink;
@@ -49,10 +49,10 @@
       }
 
       &::before {
-        background-image: url('../assets/images/quotation-violet-semi-circle.png');
+        background-image: url('../../assets/images/quotation-violet-semi-circle.png');
       }
 
-      .quotes {
+      .reviews-quotes {
         margin-top: 52px;
         margin-bottom: 8px;
 
@@ -62,7 +62,7 @@
         text-align: center;
       }
 
-      .names {
+      .reviews-names {
         font-family: $font-spectral-regular;
         font-size: 15.6px;
         color: $violet;
