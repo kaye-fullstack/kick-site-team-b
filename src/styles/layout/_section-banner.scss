@@ -1,31 +1,80 @@
 .section-banner {
-  height: 55.3vh;
+  height: 61.7vh;
 
-  background-position: center -254px;
+  background-position: center -194px;
   background-size: cover;
-}
+  background-repeat: no-repeat;
 
-.banner-title-holder {
-  padding-top: 85px;
-  padding-left: 89px;
+  .banner-title-holder {
+    padding-top: 147px;
+    padding-left: 89px;
 
-  letter-spacing: -1.7px;
-  .banner-title {
-    font-family: $font-spectral-light;
-    color: $violet;
+    letter-spacing: -1.7px;
+    .banner-title {
+      font-family: $font-spectral-light;
+      color: $violet;
 
-    line-height: 1.2;
+      line-height: 1.2;
+    }
+  }
+
+  .banner-description-holder {
+    padding-left: 88px;
+    padding-bottom: 49px;
+
+    .banner-description {
+      font-family: $font-spectral-light;
+      color: $violet;
+
+      line-height: 1.5;
+    }
   }
 }
 
-.banner-description-holder {
-  padding-left: 88px;
-  padding-bottom: 49px;
+@include respond-to(lg) {
+  .section-banner {
+    background-position: center;
+  }
+}
 
-  .banner-description {
-    font-family: $font-spectral-light;
-    color: $violet;
+@include respond-to(md) {
+  .section-banner {
+    background-position: center;
 
-    line-height: 1.5;
+    .banner-title-holder {
+      padding-left: 20px;
+    }
+
+    .banner-description-holder {
+      padding-left: 20px;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .section-banner {
+    background-position: left;
+
+    .banner-title-holder {
+      padding-left: 0;
+    }
+
+    .banner-description-holder {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .section-banner {
+    background-position: left;
+
+    .banner-title-holder {
+      padding-left: 0;
+    }
+
+    .banner-description-holder {
+      padding-left: 0;
+    }
   }
 }

@@ -4,19 +4,49 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 .btn-pastel-yellow {
-    font-family: $font-spectral-bold;
-    color: $violet;
-   
-    background-color: $pastel-yellow;
-    border: 0;
-    border-color: none;
-    outline: 0;
+  background-color: $pastel-yellow;
+
+  font-family: $font-spectral-light;
+
+  border: 0;
+  border-color: none;
+
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+  background-color: transparent;
   }
-  
-  .btn-pastel-yellow:hover {
-    background-color: $pastel-yellow;
+}
+
+.btn-black-outline {
+  background-color: transparent;
+
+  font-family: $font-spectral-light;
+
+  border: 1px solid $black;
+
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+  background-color: $pastel-grey;
   }
-  
-  .btn-pastel-yellow:focus {
-    outline: 5px auto;
+}
+
+.btn-violet {
+  background-color: $violet;
+
+  font-family: $font-spectral-light;
+
+  border: 0;
+  border-color: none;
+
+  outline: 0;
+  cursor: pointer;
+ 
+  &:hover {
+  color: $black;
+  background-color: transparent;
   }
+}
