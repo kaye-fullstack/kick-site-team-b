@@ -3,9 +3,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-<<<<<<< HEAD
 .btn-pastel-yellow {
-<<<<<<< HEAD
   background-color: $pastel-yellow;
 
   font-family: $font-spectral-light;
@@ -33,16 +31,6 @@
 
   &:hover {
   background-color: $pastel-grey;
-=======
-<<<<<<< HEAD
-    font-family: $font-spectral-bold;
-    color: $violet;
-   
-    background-color: $pastel-yellow;
-    border: 0;
-    border-color: none;
-    outline: 0;
->>>>>>> 9a0ec43 (footer-done)
   }
 }
 
@@ -61,81 +49,4 @@
   color: $black;
   background-color: transparent;
   }
-<<<<<<< HEAD
 }
-=======
-  
-  .btn-pastel-yellow:focus {
-    outline: 5px auto;
-  }
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  font-family: $font-spectral-regular;
- 
-  background-color: $pastel-yellow;
-=======
->>>>>>> 5948500 (fixed all scetion-how-it-works and section-doctor issues)
-  font-family: $font-spectral-regular;
-=======
-  font-family: $font-spectral-bold;
-  color: $violet;
->>>>>>> d14d1cb (section-ratings-done)
- 
-  background-color: $pastel-yellow;
-  border: 0;
-  border-color: none;
-  outline: 0;
-}
-
-.btn-pastel-yellow:hover {
-  background-color: $pastel-yellow;
-}
-
-.btn-pastel-yellow:focus {
-  outline: 5px auto;
-}
-=======
-.btn-navy {
-  position: relative;
-  top: -32px;
-  right: -211px;
- 
-  width: 35px;
-  height: 32px;
-
-  background-color: $navy-blue;
-  background-size: 18px;
-  border-left: none;
-  outline: none;
-
-  cursor: pointer;
-}
-
-.btn-navy:hover {
-  background-color: transparent;
-}
-
-@include respond-to(lg) {
-  .btn-navy {
-    top: 9px;
-    right: 30px;
-  }
-}
-
-@include respond-to(sm) {
-  .btn-navy {
-    top: 9px;
-    right: 30px;
-  }
-}
-
-@media screen and (max-width:575px) and (min-width:320px) {
-  .btn-navy {
-    top: 9px;
-    right: 30px;
-  }
-}
->>>>>>> e1fb252 (footer-done)
->>>>>>> 6b33f7b (footer-done)
->>>>>>> 9a0ec43 (footer-done)
