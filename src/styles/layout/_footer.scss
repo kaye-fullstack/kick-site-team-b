@@ -81,6 +81,10 @@
         text-decoration: underline;
       }
 
+      .footer-links li a:hover {
+        color: $navy-blue;
+      }
+
       .heading {  
         margin-bottom: 5px;
 
@@ -98,6 +102,10 @@
         font-size: 12px;
         color: $navy-blue;
         line-height: 16px;
+      }
+
+      .field-input {
+        font-family: $font-spectral-meduim;
       }
     } 
   }
@@ -189,6 +197,17 @@
     .footer-link {
       margin-left: 0;
     }
+
+    .newsletter-holder {
+      .newsletter-confirmation {
+      margin-top: 3px;
+      }
+    }
+
+    .btn-navy {
+      top: 9px;
+      right: 30px;
+    }
   }
 }
 
@@ -274,6 +293,15 @@
 
     .newsletter-holder {
       margin-left: 0;
+      
+      .newsletter-confirmation {
+        margin-top: 7px;
+        }
+    }
+
+    .btn-navy {
+      top: 9px;
+      right: 30px;
     }
   }
 }
@@ -330,6 +358,15 @@
 
     .newsletter-holder {
       margin-left: 0;
+
+      .newsletter-confirmation {
+        margin-top: 7px;
+        }
+    }
+
+    .btn-navy {
+      top: 8px;
+      right: 30px;
     }
   }
 }

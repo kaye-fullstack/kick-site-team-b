@@ -28,6 +28,59 @@
     color:$navy-blue;
   }
 
+  .nav-link {
+    position: relative;
+
+    &:focus {
+      color: $red-orange;
+    }
+
+    &:focus:before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: -2px;
+
+      width: 11px;
+      height: 11px;
+
+      background-color: transparent;
+      background-image: url('../assets/images/hover-image.svg');
+      background-repeat: no-repeat;
+    }
+  }
+
+  .nav-item:focus:before {
+    position: absolute;
+    top: 6px;
+    right: -2px;
+
+    width: 11px;
+    height: 11px;
+
+    background-color: transparent;
+  }
+
+  .nav-item {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 1px;
+
+      width: 6px;
+      height: 6px;
+
+      border-radius: 100%;
+    }
+
+    &:hover:before {
+      background-color: #1E2347;
+    }
+  }
+
   .header-logo {
     margin-top: 15px;
     margin-left: 90px;

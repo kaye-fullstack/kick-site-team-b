@@ -22,34 +22,5 @@
   }  
 }
 
-@include respond-to(lg) {
-  .section-footer {
-    .newsletter-holder {
-      .newsletter-confirmation {
-      margin-top: 3px;
-      }
-    }
-  }
-}
-
-@include respond-to(sm) {
-  .section-footer {
-    .newsletter-holder {
-      .newsletter-confirmation {
-      margin-top: 7px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width:575px) and (min-width:320px) {
-  .section-footer {
-    .newsletter-holder {
-      .newsletter-confirmation {
-      margin-top: 7px;
-      }
-    }
-  }
-}
 
 
