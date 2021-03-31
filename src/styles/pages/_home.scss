@@ -194,8 +194,29 @@
       margin-top: 2px;
       margin-left: 74px;
 
-      .expert-image {
-        margin-left: 0;
+    .rating-column {
+      margin-top: 12px;
+       
+      text-align: center;
+    }    
+    
+    .rating-star {
+      --percent: calc(var(--rating) / 5 * 100%);
+      display: block;
+
+      font-size: var(--star-size);
+      font-family: Times; 
+      line-height: 1;
+      
+      &:before {
+        content: "★★★★★";
+        font-size: 26px;
+        letter-spacing: 0;
+
+        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
       }
     }
   }
@@ -210,6 +231,7 @@
     &:last-child {
       background-color: $lavender;
     }
+  }
   }
 }
 
@@ -347,7 +369,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@include respond-to(xs) {
   .home {
     .section-banner {
       .btn-holder {
@@ -407,3 +429,4 @@
     }
   }
 }
+

@@ -50,3 +50,25 @@
   background-color: transparent;
   }
 }
+
+.btn-navy {
+  position: relative;
+  top: -32px;
+  right: -211px;
+ 
+  width: 35px;
+  height: 32px;
+
+  background-color: $navy-blue;
+  background-size: 18px;
+  border-left: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.btn-navy:hover {
+  background-color: transparent;
+}
+
+
