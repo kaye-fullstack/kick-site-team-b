@@ -128,7 +128,7 @@
 }
 
 //575 to 320
-@media screen and (max-width:575px) and (min-width:320px) {
+@include respond-to(xs) {
   .section-header {
 
     .header-logo {
