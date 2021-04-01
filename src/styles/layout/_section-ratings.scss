@@ -83,6 +83,7 @@
 
     .rating-column {
       margin: 0 auto 26px;
+
       width: 243px;
     }
   }
@@ -91,7 +92,6 @@
 @include respond-to(xs) {
   .section-ratings {
     padding: 35px 0;
-    
     .heading {
       font-size: 23px;
     }
