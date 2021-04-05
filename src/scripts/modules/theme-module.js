@@ -15,7 +15,6 @@ AppName.Modules.ThemeModule = (function () {
          el: '.swiper-pagination',
        },
      });
-
      function lockScroll() {
       if ($('body').hasClass('lock-scroll')) {
           $('body').removeClass('lock-scroll');
@@ -31,7 +30,6 @@ AppName.Modules.ThemeModule = (function () {
       }); 
     });
   };
-
   
   /////////////////////
   // Public Methods //
@@ -51,14 +49,9 @@ $(window).on({ scroll: scrolled });
     init: init,
   };
 })();
-
 const _activeListItem = () => {
   $('.navigation .list-group-item').click(function() {
     $(this).addClass("active-js")
     $(this).siblings().removeClass("active-js")
   });
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> c6e277e (all sections/pages-done)
