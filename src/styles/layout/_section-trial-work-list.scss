@@ -6,9 +6,7 @@
   background-color: $lavender;
     
   .title {
-    padding-top: 5px;
-
-    font-family: $font-spectral-medium;
+    font-family: $font-spectral-meduim;
     font-size: 30px;
     letter-spacing: -1;
     color: $violet;
@@ -47,76 +45,16 @@
   .heading {
     margin-bottom: 2px;
 
-    font-family: $font-spectral-medium;
+    font-family: $font-spectral-meduim;
     font-size: 17px; 
     color: $violet;
     text-indent: 2%;
   }
 
   .description {
-    font-family: $font-spectral-medium;
-    font-size: 14px; 
+    font-family: $font-spectral-meduim;
+    font-size: 16px; 
     color: $violet;
     letter-spacing: 0.3px;
-  }
-}
-
-@include respond-to(lg) {
-  .section-trial-work-list {
-    .trial-work-content {
-      margin: 0 166px;
-    }
-  }
-}
-
-@include respond-to(md) {
-  .section-trial-work-list {
-    padding: 75px 0 100px;
-
-    .trial-work-content {
-      margin: 0 44px;
-    }
-  }
-}
-
-@include respond-to(sm) {
-  .section-trial-work-list {
-    padding: 60px 0;
-    
-    .trial-work-content {
-      padding: 0 10px;
-      margin: 0;
-    }
-
-    .trial-work-details {
-      align-items: unset;
-    }
-
-    .number-list {
-      margin-top: 14px;
-    }
-  }
-}
-
-@include respond-to(xs) {
-  .section-trial-work-list {
-    padding: 60px 0;
-
-    .trial-work-content {
-      padding: 0 10px;
-      margin: 0;
-    }
-
-    .trial-work-description {
-      margin: 45px 0 -15px 20px;
-    }
-
-    .trial-work-details {
-      align-items: unset;
-    }
-
-    .number-list {
-      margin-top: 14px;
-    }
   }
 }
