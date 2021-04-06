@@ -1,0 +1,89 @@
+.section-sleep-habits {
+  padding: 52px 0 62px;
+  width: 100%;
+  height: auto;
+
+  background-color: $lavender;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 67px;
+  }
+
+  .content-holder {
+    &:first-child {
+      width: 50%;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      width: 50%;
+
+      padding: 46px 150px 0 54px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: -21px;
+        left: 55px;
+  
+        width: 73px;
+        height: 35px;
+  
+        background-color: $pastel-blue;
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 90px;
+      }
+    }
+  }
+
+  .image-holder {
+    position: relative;
+    left: 82px;
+    z-index: 0;
+
+    margin: auto;
+    width: 57%;
+    height: 57%;
+   
+    &:before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: -19px;
+      z-index: -1;
+
+      width: 94%;
+      height: 100%;
+
+      background-color: $pastel-blue;
+    }
+  }
+
+  .heading {
+    margin-bottom: 30px;
+
+    font-family: $font-spectral-meduim;
+    font-size: 20px;
+    color: $pastel-blue;
+  }
+
+  .subheading {
+    margin-bottom: 58px;
+
+    font-family: $font-spectral-meduim;
+    font-size: 15px;
+    color: $pastel-blue;
+  }
+
+  .learn-more {
+    font-family: $font-spectral-meduim;
+    font-size: 15px;
+    color: $violet;
+    text-decoration: underline;
+  }
+}

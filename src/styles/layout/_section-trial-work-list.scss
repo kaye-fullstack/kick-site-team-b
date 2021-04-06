@@ -1,0 +1,59 @@
+.section-trial-work-list {
+  padding: 77px 0 130px;
+  width: 100%;
+  height: auto;
+
+  background-color: $lavender;
+    
+  .title {
+    font-family: $font-spectral-meduim;
+    font-size: 30px;
+    letter-spacing: 0.1px;
+    color: $violet;
+    text-align: center;
+    word-spacing: 1px;
+  }
+
+  .trial-work-content {
+    margin: 0 261px;
+  }
+
+  .trial-work-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .number {
+    margin-top: 46px;
+    margin-left: -11px;
+    width: 30px;
+    height: 30px;
+
+    font-family: $font-basis-grotesque-pro-regular;
+    color: $violet;
+    text-align: center;
+
+    border: 2px solid $violet;
+    border-radius: 50%;
+  }
+
+  .trial-work-description {
+    margin: 60px 0 -18px 33px;
+  }
+
+  .heading {
+    margin: 0;
+
+    font-family: $font-spectral-meduim;
+    font-size: 17px; 
+    color: $violet;
+    text-indent: 2%;
+  }
+
+  .description {
+    font-family: $font-spectral-meduim;
+    font-size: 16px; 
+    color: $violet;
+  }
+}

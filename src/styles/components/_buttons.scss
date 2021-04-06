@@ -68,6 +68,22 @@
   }
 }
 
+.btn-violet-outline {
+  background-color: transparent;
+
+  font-family: $font-spectral-regular;
+  color: $violet;
+
+  border: 1px solid $violet;
+
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+  background-color: $pastel-grey;
+  }
+}
+
 .btn-violet {
   color: $white;
   background-color: $violet;

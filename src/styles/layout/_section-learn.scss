@@ -1,0 +1,52 @@
+.section-learn {
+  padding: 52px 0 62px;
+  width: 100%;
+  height: auto;
+
+  background-color: $pastel-yellow;
+
+  .title {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: 17px;
+
+    font-family: $font-spectral-meduim;
+    font-size: 30px;
+    letter-spacing: 0.1px;
+    color: $violet;
+    text-align: center;
+  }
+
+  .article-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 67px;
+    margin-left: 15px;
+    margin-right: -62px;
+  }
+
+  .article-holder {
+    width: 28%;
+  }
+
+  .article-details {
+    margin-top: 21px;
+  }
+
+  .article-title {
+    margin-bottom: 33px;
+
+    font-family: $font-spectral-regular;
+    font-size: 17px;
+    color: $violet;
+  }
+
+  .article-description {
+    font-family: $font-spectral-regular;
+    font-size: 13px;
+    color: $violet;
+  }
+}
