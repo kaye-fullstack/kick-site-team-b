@@ -29,6 +29,28 @@ AppName.Modules.ThemeModule = (function () {
          lockScroll();
       }); 
     });
+
+  const elem = $('header');
+  const scrolled = () => {
+  const threshold = $(document).scrollTop() > 50;
+  elem.toggleClass('scrolled', threshold);
+  };
+  $(window).on({ scroll: scrolled });
+  $('body').css({'overflow':'hidden'});
+  $(document).bind('scroll',function () { 
+      window.scrollTo(0,0); 
+  });
+  $(document).unbind('scroll'); 
+  $('body').css({'overflow':'visible'});
+
+  $('.collapse').collapse()
+  };
+
+  const _activeListItem = () => {
+    $('.faq-navigation .list-group-item').click(function() {
+      $(this).addClass("active-js")
+      $(this).siblings().removeClass("active-js")
+    });
   };
   
   /////////////////////
@@ -37,21 +59,9 @@ AppName.Modules.ThemeModule = (function () {
   const init = function () {
     _privateMethod();
     _activeListItem();
-    _lockScroll();
   };
-const elem = $('header');
-const scrolled = () => {
- const threshold = $(document).scrollTop() > 50;
- elem.toggleClass('scrolled', threshold);
- };
-$(window).on({ scroll: scrolled });
+
   return {
     init: init,
   };
 })();
-const _activeListItem = () => {
-  $('.navigation .list-group-item').click(function() {
-    $(this).addClass("active-js")
-    $(this).siblings().removeClass("active-js")
-  });
-};
