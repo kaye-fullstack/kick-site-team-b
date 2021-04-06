@@ -28,12 +28,7 @@
   'layout/section-quotation-slider',
   'layout/section-testimonials',
   'layout/section-ratings',
-  'layout/section-trial-work-list',
-  'layout/section-sleep-habits',
-  'layout/section-accordion',
-  'layout/section-doctor',
-  'layout/section-learn',
-  'layout/section-reviews';
+  'layout/section-faq';
 
 // 5. Components
 @import
@@ -42,9 +37,8 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home',
-  'pages/faq';
-
+  'pages/home';
+ 
 // 7. Themes
 @import
   'themes/default';

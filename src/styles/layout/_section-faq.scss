@@ -1,0 +1,208 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.section-faq {
+  padding-top: 65px;
+
+  .content-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .top-holder {
+    &:first-child {
+      padding-left: 166px;
+      margin-top: -47px;
+  
+      .title {
+        font-family: $font-spectral-regular;
+        font-size: 30px;
+        color: $navy-blue;
+        text-align: center;
+        letter-spacing: -0.9px;
+      }
+
+      .description-faq {
+        margin-bottom: 0px;
+
+        font-family: $font-spectral-regular;
+        font-size: 15px;
+        color: $navy-blue;
+        text-align: center;
+      }
+    }
+
+    &:last-child {
+      padding-top: 30px;
+      padding-left: 17px;
+    }
+  }
+
+  .faq-list {
+    position: relative;
+  }
+
+  .faq-navigation {
+    position: absolute;
+    top: -27px;
+    left: 115px;
+    letter-spacing: -0.4px;
+ 
+    .active-js::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -35px;
+
+      width: 25px;
+      height: 2px;
+
+      background-color: #f25930;
+
+      opacity: 1;
+      transition: 0.2s ease-in-out;
+      transform: translateX(50%) rotate(90deg);
+    }
+
+    .active-js {
+      position: relative;
+
+      color: $light-violet;
+
+      transition: 0.5s ease-in-out;
+
+      pointer-events: none;
+    }
+
+    .list-group-item {
+      padding: 8px 0;
+
+      font-family: $font-spectral-regular;
+      font-size: 15px;
+      color: $light-blue;
+
+      border: 0;
+
+      cursor: pointer;
+    }
+  }
+
+  .faq-content {
+    padding-left: 66px;
+    margin-top: -27px;
+
+    width: 50%;
+  }
+
+  .accordion {
+      
+    .btn-link {
+      position: relative;
+
+      padding: 16px 30px 16px 10px;
+      width: 100%;
+      height: 100%;
+
+      font-family: $font-spectral-meduim;
+      font-size: 30px;
+      color: $navy-blue;
+      text-align: initial;
+      text-decoration: none;
+      white-space: normal;
+
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid $pastel-yellow;
+    }
+
+    .btn-link:hover {
+      background: rgba(255,247,229,0.459918);
+      color: $red-orange;
+    }
+
+    .btn-link:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 25px;
+      height: 3px;
+
+      background-color: $navy-blue;
+    
+      transition: 0.2s ease-in;
+    }
+
+    .btn-link:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      width: 25px;
+      height: 3px;
+
+      background-color: $navy-blue;
+
+      transform: rotate(90deg);
+      transition: 0.2s ease-in;
+    }
+
+    .btn-link:hover:before {
+      background-color: $red-orange;
+    }
+
+    .btn-link:hover:after {
+      background-color: $red-orange;
+    }
+
+    .btn-link[aria-expanded="true"]:after {
+      background-color: $red-orange;
+      transform: initial;
+    }
+  }
+
+  .card {
+    border: none;
+
+    .card-header {
+      padding: 0;
+
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  .bottom-holder {
+
+    .title {
+      font-family: $font-spectral-meduim;
+      font-size: 26px;
+      color: $light-violet;
+      text-align: left;
+    }
+
+    &:first-child {
+      .description {
+        font-family: $font-spectral-regular;
+        font-size: 16px;
+        color: $violet;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-faq {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  }
+}
+
