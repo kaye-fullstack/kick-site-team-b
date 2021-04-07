@@ -10,7 +10,7 @@
     margin-bottom: 70px;
     margin-left: 17px;
 
-    font-family: $font-spectral-meduim;
+    font-family: $font-spectral-medium;
     font-size: 30px;
     letter-spacing: 0.1px;
     color: $violet;
@@ -20,6 +20,7 @@
   .article-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
@@ -48,5 +49,124 @@
     font-family: $font-spectral-regular;
     font-size: 13px;
     color: $violet;
+  }
+}
+
+@include respond-to(lg) {
+  .section-learn {
+    padding: 62px 0;
+
+    .article-wrapper {
+      flex-wrap: nowrap;
+      justify-content: unset;
+      margin: 67px 0 0 0;
+    }
+
+    .title {
+      margin: 0;
+    }
+
+    .article-holder {
+      margin: 0 26px;
+      
+      width: 28%;
+    }
+  }
+}
+
+@include respond-to(md){
+  .section-learn {
+    .title {
+      margin: 0;
+    }
+
+    .article-wrapper {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .article-holder {
+      margin: 0 11px;
+      width: 30%;
+    }
+
+    .article-title {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include respond-to(sm){
+  .section-learn {
+    padding: 40px 0;
+
+    .title {
+      margin: 0;
+    }
+
+    .article-wrapper {
+      flex-direction: column;
+      align-items: unset;
+      margin: 35px 0 0 0;
+    }
+
+    .article-holder {
+      width: 100%;
+    }
+
+    .article-title {
+      margin-bottom: 10px;
+
+      font-size: 18px;
+    }
+
+    .article-description {
+      margin-bottom: 30px;
+
+      font-size: 14px;
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 215px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-learn {
+    padding: 40px 0;
+
+    .title {
+      margin: 0;
+    }
+
+    .article-wrapper {
+      flex-direction: column;
+      align-items: unset;
+      margin: 35px 0 0 0;
+      width: 100%;
+    }
+
+    .article-holder {
+      width: 100%;
+    }
+
+    .article-title {
+      margin-bottom: 10px;
+
+      font-size: 18px;
+    }
+
+    .article-description {
+      margin-bottom: 30px;
+
+      font-size: 14px;
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
