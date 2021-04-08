@@ -36,9 +36,7 @@
   <header class="section-header">
     <nav class="navbar navbar-expand-md">
       <div class="container">
-        <a href="index.html">
-          <img class="header-logo" src="assets/images/header-logo.svg" alt="header-logo" />
-        </a>
+        <a href="index.html"><img class="header-logo" src="assets/images/header-logo.svg" alt="header-logo"></a>
         <button class="navbar-toggler navbar-toggler-right" id="toggler"
         type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,13 +66,12 @@
       </div>
     </nav>
   </header>
-  
   <main class="doctor">
     <div class="section-doctor">
       <div class="container">
         <div class="content-wrapper">
           <div class="doctor-content">
-            <p class="doctor-heading"> YOUR QUESTIONS ANSWERED </p>
+            <p class="heading"> YOUR QUESTIONS ANSWERED </p>
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -95,7 +92,7 @@
               </div>
               <div class="swiper-pagination"> </div>
             </div>
-            <p class="description">
+            <p class="subheading">
               Our performance-focused physicians address all the sleep and presentation questions on your mind.
             </p>
             <div class="btn-holder">
@@ -104,9 +101,9 @@
           </div>
             <div class="doctor-image">
               <div class="image-border">
-                <img class="img-fluid" src='assets/images/Dr-Margaret-Howell.jpg' alt="Kick Medical Team, Dr.Margaret-Howell" />
+                <img class="img-fluid" src='assets/images/Dr-Margaret-Howell.jpg' alt="Kick Medical Team, Dr.Margaret-Howell">
               </div>
-              <p class="name"> Kick Medical Team, Dr. Margaret-Howell </p>
+              <p class="name">Kick Medical Team, Dr. Margaret-Howell</p>
             </div>
           </div>
       </div>
@@ -114,23 +111,36 @@
     <div class="section-faq">
       <div class="container">
         <div class="content-wrapper">
-          <div class="nav list-group navigation" role="tablist">
-            <a class="list-group-item" href="#faq-about-kick" >About Kick</a>
-            <a class="list-group-item" href="#faq-orders">Telehealth</a>
-            <a class="list-group-item" href="#faq-services">Cost, Pricing, Services</a>
-            <a class="list-group-item" href="#faq-sleep">Sleep</a>
-            <a class="list-group-item" href="#faq-performance">Performance Anxiety</a>
+          <div class="nav list-group faq-navigation" role="tablist">
+            <a class="list-group-item" href="#faq-about-kick" > About Kick </a>
+            <a class="list-group-item" href="#faq-orders"> Telehealth </a>
+            <a class="list-group-item" href="#faq-services"> Cost, Pricing, Services </a>
+            <a class="list-group-item" href="#faq-sleep"> Sleep </a>
+            <a class="list-group-item" href="#faq-performance"> Performance Anxiety </a>
           </div>
-          <div class="accordion-wrapper">
-            <div id="faq-about-kick" class="accordion-holder">
-              <h2 class="title">About Kick</h2>
-              <div id="accordionAbout-kick" class="accordion">
-
-                <div class="card">
-                  <div id="headingOne" class="card-header">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      What research is Kick based in?
-                    </button>
+          <div class="faq-accordion-holder">
+            <div class="faq-accordion">
+              <div class="section-holder">
+                <h2 class="title"> About Kick </h2>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingAboutOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAboutOne" aria-expanded="false" aria-controls="collapseAboutOne">
+                          What research is Kick based in?
+                        </button>
+                      </div>
+                      <div id="collapseAboutOne" class="collapse show" aria-labelledby="headingAboutOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p class="description">
+                            Kick was started to support our fearless customer in achieving their goals. Backed by leading researchers and people who care.
+                          </p>
+                          <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam quam possimus rerum laudantium temporibus praesentium voluptatibus! Expedita laboriosam rerum id, repudiandae iste earum. Aliquid exercitationem obcaecati fuga eum asperiores?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionAbout-kick">
                     <div class="card-body">
@@ -697,20 +707,17 @@
     </div>   
     <div class="section-ask-question">
       <div class="container">
-        <h3 class="title">
-          Ask our sleep specialists anything about sleep
-        </h3>
+        <h3 class="title">Ask our sleep specialists anything about sleep</h3>
         <form class="form-question">
           <div class="form-group">
             <div class="image-holder">
-              <img class="input-image" src='assets/images/sleep-hygiene-icon.svg' alt="" />
+              <img class="input-image" src='assets/images/sleep-hygiene-icon.svg' alt="">
             </div>
             <input type="text" placeholder="What are you curious about?" id="about">
             <input type="email" placeholder="Email Address" id="email" required>
-            <p class="form-text">
-              We'll reply to your email. Don't worry, we never spam </p>
+            <p class="form-text">We'll reply to your email. Don't worry, we never spam</p>
             <div class="btn-holder">
-              <button class="btn-pastel-yellow"> Ask Question </button>
+              <button class="btn-pastel-yellow">Ask Question</button>
             </div>
           </div>
         </form>
@@ -721,19 +728,14 @@
         <div class="content-wrapper">
           <div class="content-holder">
             <div class="image-holder">
-              <img class="img-fluid" src='assets/images/sleep-habits.jpg' alt="woman sleeping" />
+              <img class="img-fluid" src='assets/images/sleep-habits.jpg' alt="woman sleeping">
             </div>
           </div>
           <div class="content-holder">
-            <p class="heading"> 
-              Sleep is incredibly personal, and not everyone needs the same sleep  to be healthy.
+            <p class="heading"> Sleep is incredibly personal, and not everyone needs the same sleep  to be healthy.</p>
+            <p class="subheading">Sleep is incredibly personal, and not everyone needs the same sleep  to be healthy. We know that sleep is important, but how do you learn how to get your best night’s rest.
             </p>
-            <p class="subheading">
-              Sleep is incredibly personal, and not everyone needs the same sleep  to be healthy. We know that sleep is important, but how do you learn how to get your best night’s rest.
-            </p>
-            <a class="learn-more" href="/learn-more/">
-              Learn more about Sleep Habits
-            </a>
+            <a class="learn-more" href="/learn-more/">Learn more about Sleep Habits</a>
           </div>
         </div>
       </div>
@@ -744,35 +746,29 @@
         <div class="article-wrapper">
           <div class="article-holder">
             <div class="image-holder">
-              <img class="img-fluid" src='assets/images/sleep-learn-more.png' alt="" />
+              <img class="img-fluid" src='assets/images/sleep-learn-more.png' alt="">
             </div>
             <div class="article-details">
-              <h3 class="article-title"> Sleep article Title </h3>
-              <p class="article-description"> 
-                A llittle descriptor about the article
-              </p>
+              <h3 class="article-title">Sleep article Title</h3>
+              <p class="article-description">A llittle descriptor about the article</p>
             </div>
           </div>
           <div class="article-holder">
             <div class="image-holder">
-              <img class="img-fluid" src='assets/images/sleep-learn-more.png' alt="" />
+              <img class="img-fluid" src='assets/images/sleep-learn-more.png' alt="">
             </div>
             <div class="article-details">
-              <h3 class="article-title"> Sleep article Title </h3>
-              <p class="article-description">
-                A llittle descriptor about the article
-              </p>
+              <h3 class="article-title">Sleep article Title</h3>
+              <p class="article-description">A llittle descriptor about the article</p>
             </div>
           </div>
           <div class="article-holder">
             <div class="image-holder">
-              <img class="img-fluid" src='assets/images/sleep-learn-more.png' alt="" />
+              <img class="img-fluid" src='assets/images/sleep-learn-more.png' alt="">
             </div>
             <div class="article-details">
-              <h3 class="article-title"> Sleep article Title </h3>
-              <p class="article-description">
-                A llittle descriptor about the article
-              </p>
+              <h3 class="article-title">Sleep article Title</h3>
+              <p class="article-description">A llittle descriptor about the article</p>
             </div>
           </div>
         </div>
@@ -782,21 +778,13 @@
 
   <footer class="section-footer">
     <div class="container custom-container">
-      <a href="/" class="footer-link">
-        <img class="footer-logo" src="assets/images/logo-dark.svg" alt="kick-logo" />
-      </a>
+      <a href="/" class="footer-link"><img class="footer-logo" src="assets/images/logo-dark.svg" alt="kick-logo"></a>
       <div class="content-wrapper">
         <div class="content-holder">
-          <p class="description">
-            Kick was started to support our fearless customers in achieving their goals. Backed by leading physicians and people who care.
-          </p>
-          <p class="address">
-            Built With Empathy <br /> San Francisco, CA <br /> (415) 723-6001
-          </p>
+          <p class="description">Kick was started to support our fearless customers in achieving their goals. Backed by leading physicians and people who care.</p>
+          <p class="address">Built With Empathy<br>San Francisco, CA<br>(415) 723-6001</p>
           <div class="image-holder">
-            <a href="/">
-              <img class="footer-icon" src="assets/images/footer-icon.png" alt="footer-icon" />
-            </a>
+            <a href="/"><img class="footer-icon" src="assets/images/footer-icon.png" alt="footer-icon"></a>
           </div>
         </div>
         <div class="content-holder">
@@ -810,30 +798,24 @@
             </div>
             <div class="other-links">
               <ul class="list-unstyled">
-                <li><a href="/" class="footer-item"> Kick Blog </a></li>
-                <li><a href="/" class="footer-item"> Terms of Use </a></li>
-                <li><a href="/" class="footer-item"> Privacy Policy </a></li>
-                <li><a href="/" class="footer-item"> Contact U </a></li>
+                <li><a href="/" class="footer-item">Kick Blog</a></li>
+                <li><a href="/" class="footer-item">Terms of Use</a></li>
+                <li><a href="/" class="footer-item">Privacy Policy</a></li>
+                <li><a href="/" class="footer-item">Contact Us</a></li>
               </ul>
             </div>
           </div>
           <div class="newsletter-holder">
-            <p class="heading">
-              <strong> Subscribe to our newsletter </strong>
-            </p>
-            <p class="subheading">
-              The latest mental perfomance and sleep news, sent directly to you every month
-            </p>
+            <p class="heading"><strong>Subscribe to our newsletter</strong></p>
+            <p class="subheading">The latest mental perfomance and sleep news, sent directly to you every month</p>
             <form id="newsletter-signup">
               <div class="form_group">
                 <input class="field-input" id="email-newsletter-signup" type="email" placeholder="Your email address" required>
-                <img src="assets/images/arrow-right.svg" class="arrow" />
+                <img src="assets/images/arrow-right.svg" class="arrow"/>
                 <button id="btn-email-newsletter-signup" type="submit" class="btn-navy"></button>
               </div>
             </form>
-            <p class="newsletter-confirmation"> 
-              Thanks for signing up. You'll hear from us soon!
-            </p>
+            <p class="newsletter-confirmation">Thanks for signing up. You'll hear from us soon!</p>
           </div>
         </div>
       </div>
