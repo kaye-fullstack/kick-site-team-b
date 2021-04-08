@@ -7,29 +7,21 @@ AppName.Modules.ThemeModule = (function () {
   const _privateMethod = () => {
     // private stuff
     const swiper = new Swiper('.swiper-container', {
-      autoplay: {
-       delay: 2500,
-       disableOnInteraction: false,
-     },
+    //   autoplay: {
+    //    delay: 2500,
+    //    disableOnInteraction: false,
+    //  },
        pagination: {
          el: '.swiper-pagination',
        },
      });
 
-     function lockScroll() {
-      if ($('body').hasClass('lock-scroll')) {
-          $('body').removeClass('lock-scroll');
-      }
-      else {
-          $('body').addClass('lock-scroll');
-      }
-    }  
-    
-    $(document).ready(function() {
-      $('.icon-bar').click(function() {
-         lockScroll();
-      }); 
-    });
+     const _activeListItem = () => {
+      $('.faq-navigation .list-group-item').click(function() {
+        $(this).addClass("active-js")
+        $(this).siblings().removeClass("active-js")
+      });
+    };
   };
 
   
@@ -52,10 +44,3 @@ $(window).on({ scroll: scrolled });
     init: init,
   };
 })();
-
-const _activeListItem = () => {
-  $('.navigation .list-group-item').click(function() {
-    $(this).addClass("active-js")
-    $(this).siblings().removeClass("active-js")
-  });
-};

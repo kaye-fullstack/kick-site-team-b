@@ -99,6 +99,8 @@
     }
 
     .image-holder {
+      left: 135px;
+
       margin: 0;
       width: 64%;
       height: 58%;
@@ -106,6 +108,8 @@
       &::before {
         top: -15px;
         left: -16px;
+
+        width: 94%;
       }
     }
   }
