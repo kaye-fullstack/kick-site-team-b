@@ -1,20 +1,20 @@
 .section-quotation-slider {
-  height: 45.5vh;
+  height: 428px;
 
-  .quotation-img-holder {
+  .img-holder {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 66px;
 
-    .quotation-pink-semicircle {
+    .pink-semicircle {
       width: 58px;
       height: 29px;
     }
   }
 
-  .quotation-text-holder {
-    .quotation-quotes {
+  .text-holder {
+    .quotes {
       margin-bottom: 8px;
 
       font-family: $font-spectral-regular;
@@ -22,7 +22,7 @@
       color: $pastel-pink;
     }
 
-    .quotation-names {
+    .names {
       font-family: $font-spectral-bold;
       font-size: 15px;
       color: $pastel-pink;
@@ -33,19 +33,20 @@
     top: -31px;
     width: 500px;
     height: 275px;
+
     overflow: hidden;
-    
+
     .swiper-slide {
-      text-align: center;
-      font-size: 18px;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      font-size: 18px;
+      text-align: center;
     }
 
     .swiper-pagination {
       bottom: 22px;
-
       color: $pastel-pink
     }
 
@@ -53,18 +54,18 @@
       background-color: $pastel-pink;
     }
   }
-
-  .quotation-link-holder {
+  
+  .link-holder {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -15px;
 
-    .quotation-link-to {
+    .link-to {
       text-decoration: none;
     }
 
-    .quotation-link {
+    .link {
       padding-bottom: 4px;
 
       font-family: $font-spectral-regular;
@@ -83,15 +84,15 @@
       width: 285px;
     }
 
-    .quotation-text-holder {
+    .text-holder {
       position: relative;
       left: 0;
 
-      .quotation-quotes {
+      .quotes {
         font-size: 16px;
       }
 
-      .quotation-names {
+      .names {
         font-size: 13px;
       }
     }

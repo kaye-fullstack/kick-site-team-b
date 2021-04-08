@@ -1,8 +1,8 @@
-.testimonial {
+.reviews {
   transition: all .2s ease-in-out;
 
   .section-banner {
-    height: 57.7vh;
+    height: 542px;
 
     &:before {
       content: "";
@@ -12,7 +12,7 @@
       width: 332px;
       height: 287px;
 
-      background-image: url('../../assets/images/testimonials-banner.png');
+      background-image: url('../assets/images/testimonials-banner.png');
     }
 
     .banner-title-holder {
@@ -52,7 +52,6 @@
 
   .section-quotation-slider {
     padding-top: 98px;
-    height: 45.7vh;
     
     background-color: $tortoise;
   }
@@ -71,7 +70,7 @@
 }
 
 @include respond-to(md) {
-  .testimonial {
+  .reviews {
     .section-banner {
       .btn-holder {
         padding-left: 20px;
@@ -87,7 +86,7 @@
 }
 
 @include respond-to(sm) {
-  .testimonial {
+  .reviews {
     .section-banner {
       &:before {
         width: 250px;
@@ -101,7 +100,7 @@
 }
 
 @include respond-to(xs) {
-  .testimonial {
+  .reviews {
     .section-banner {
       &:before {
         display: none;
