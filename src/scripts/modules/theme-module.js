@@ -15,21 +15,23 @@ AppName.Modules.ThemeModule = (function () {
          el: '.swiper-pagination',
        },
      });
-     function lockScroll() {
-      if ($('body').hasClass('lock-scroll')) {
-          $('body').removeClass('lock-scroll');
-      }
-      else {
-          $('body').addClass('lock-scroll');
-      }
-    }  
-    
-    $(document).ready(function() {
-      $('.icon-bar').click(function() {
-         lockScroll();
-      }); 
-    });
+  };
 
+  const _activeListItem = () => {
+    $('.navigation .list-group-item').click(function() {
+      $(this).addClass("active-js")
+      $(this).siblings().removeClass("active-js")
+    });
+  };
+
+  /////////////////////
+  // Public Methods //
+  ///////////////////
+  const init = function () {
+    _privateMethod();
+    _activeListItem();
+  };
+    
   const elem = $('header');
   const scrolled = () => {
   const threshold = $(document).scrollTop() > 50;
@@ -42,26 +44,7 @@ AppName.Modules.ThemeModule = (function () {
   });
   $(document).unbind('scroll'); 
   $('body').css({'overflow':'visible'});
-
-  $('.collapse').collapse()
-  };
-
-  const _activeListItem = () => {
-    $('.faq-navigation .list-group-item').click(function() {
-      $(this).addClass("active-js")
-      $(this).siblings().removeClass("active-js")
-    });
-  };
-  
-  /////////////////////
-  // Public Methods //
-  ///////////////////
-  const init = function () {
-    _privateMethod();
-    _activeListItem();
-  };
-
-  return {
-    init: init,
-  };
-})();
+    return {
+      init: init,
+    };
+  })();

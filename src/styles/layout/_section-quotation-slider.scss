@@ -13,7 +13,7 @@
     }
   }
 
-  .text-holder {
+  .quotation-text-holder {
     .quotes {
       margin-bottom: 8px;
 
@@ -76,7 +76,7 @@
   }
 }
 
-@include respond-to(xs) {
+@include respond-to(xs){
   .section-quotation-slider {
     .swiper-container {
       left: 0;

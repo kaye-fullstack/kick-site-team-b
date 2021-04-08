@@ -11,7 +11,7 @@
   left: 0;
   z-index: 1;
 
-  background: transparent;
+  background-color: transparent;
 
   transition: all 0.5s ease-out;
 
@@ -58,7 +58,6 @@
   
   .nav-link {
     position: relative;
-
     &:focus {
       color: $red-orange;
     }
@@ -125,7 +124,6 @@
 
 @include respond-to(sm) {
   .section-header {
-
     .header-logo {
       margin-top: 13px;
       margin-left: 5px;
@@ -155,8 +153,7 @@
   }
 }
 
-//575 to 320
-@media screen and (max-width:575px) and (min-width:320px) {
+@include respond-to(xs) {
   .section-header {
 
     .header-logo {
@@ -193,8 +190,10 @@
       bottom: 0;
       left: 0;
 
-      height: 100% !important;
       display: block;
+
+      height: 100% !important;
+ 
       background-color:$white;
     }
 
@@ -204,6 +203,10 @@
       right: 0;
       bottom: 0;
       left: 0;
+      
+      display: block;
+      
+      height: 100% !important;
 
       height: 100% !important;
       display: block;
