@@ -1,13 +1,11 @@
-
 .doctor {
   .section-doctor {
-    padding: 21px 0 98px;
-    margin-top: 81px;
+    padding: 100px 0;
 
-    .doctor-heading {
+    .heading {
       margin-top: 94px;
-      margin-bottom: 5px;
       margin-left: 49px;
+      margin-bottom: 5px;
     }
 
     .doctor-quotes {
@@ -17,7 +15,7 @@
       letter-spacing: -1px;
     }
 
-    .description {
+    .subheading {
       margin-top: 29px;
       margin-left: 30px;
 
@@ -42,23 +40,20 @@
 
     .swiper-container {
       margin-left: 13px;
-      width: 500px;
       height: 237px;
+      width: 500px;
       overflow: hidden;
-
       border: none;
       border-radius: 3px;
     }
 
     .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: none;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      font-size: 18px;
-      text-align: center;
-      
-      background: none;
     }
 
     .swiper-pagination-bullet {
@@ -70,7 +65,6 @@
       bottom: -6px;
     }
   }
-  
   .section-ask-question {
     padding: 70px 0 74px 0;
     width: 100%;
@@ -128,13 +122,13 @@
       margin-left: 0;
 
       text-align: center;
-    }
 
-    .btn-pastel-yellow {
-      width: 182px;
-      height: 46px;
+      .btn-pastel-yellow {
+        width: 182px;
+        height: 46px;
 
-      font-size: 14px;
+        font-size: 14px;
+      }
     }
   }
 }
@@ -165,13 +159,13 @@
         margin-right: 0;
       }
 
-      .doctor-heading {
+      .heading {
         margin-top: 51px;
         margin-left: 44px;
         margin-bottom: 30px;
       }
 
-      .description {
+      .subheading {
         margin-top: 8px;
       }
 
@@ -201,6 +195,17 @@
       .title {
         margin: 0 144px;
       }
+
+      input#about{
+        width: 100%;
+        height: 72px;
+      }
+
+      input#email {
+        margin: 0px auto 19px auto;
+        width: 380px;
+        height: 72px;
+      }
     }
   }
 }
@@ -218,17 +223,15 @@
         }
       }
 
-      .doctor-heading {
+      .heading {
         margin: 0 auto;
       }
 
-      .description {
+      .subheading {
         margin-left: 0;
       }
 
       .swiper-container {
-        z-index: 0;
-        
         margin-left: 0;
         height: 151px;
         width: 100%;
@@ -266,6 +269,28 @@
         margin-top: 16px;
       }
 
+      input#about {
+        padding-left: 37px;
+        margin: 5px 1px 19px -3px;
+        width: 100%;
+        height: 59px;
+
+        &::placeholder {
+          font-size: 18px;
+        }
+      }
+
+      input#email {
+        padding-left: 13px;
+        margin: 5px 1px 19px -3px;
+        width: 100%;
+        height: 59px;
+
+        &::placeholder {
+          font-size: 18px;
+        }
+      }
+
       .input-image {
         left: 2px;
         top: 17px;
@@ -293,17 +318,15 @@
         }
       }
 
-      .doctor-heading {
+      .heading {
         margin: 0 auto;
       }
 
-      .description {
+      .subheading {
         margin-left: 0;
       }
 
       .swiper-container {
-        z-index: 0;
-
         margin-left: 0;
         height: 151px;
         width: 100%;
@@ -347,6 +370,28 @@
 
       .form-group {
         margin-top: 16px;
+      }
+
+      input#about {
+        padding-left: 37px;
+        margin: 5px 1px 19px -3px;
+        width: 100%;
+        height: 59px;
+
+        &::placeholder {
+          font-size: 18px;
+        }
+      }
+
+      input#email {
+        padding-left: 13px;
+        margin: 5px 1px 19px -3px;
+        width: 100%;
+        height: 59px;
+
+        &::placeholder {
+          font-size: 18px;
+        }
       }
 
       .input-image {

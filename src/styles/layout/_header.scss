@@ -12,6 +12,8 @@
   background-color: transparent;
   transition: all 0.5s ease-out;
 
+  transition: all 0.5s ease-out;
+
   &.scrolled {
     background-color: $white;
     transition: all 0.5s ease-out;
@@ -30,15 +32,15 @@
 
   .nav-link:hover {
     position: relative;
-    
     &:before {
       content: "";
       position: absolute;
       top: 8px;
       right: 1px;
+
       width: 6px;
       height: 6px;
-      
+
       border-radius: 100%;
     }
 
@@ -50,7 +52,7 @@
       background-color: transparent;
     }
   }
-
+  
   .nav-link {
     position: relative;
     &:before {
@@ -116,9 +118,11 @@
     .header-logo {
       margin-left: 37px;
     }
+
     .navbar-nav {
       margin-right: 29px;
     }
+
     .nav-link {
       margin-left: 6px;
     }
@@ -126,6 +130,18 @@
 }
 
 @include respond-to(md) {
+  .section-header {
+    .header-logo {
+      margin-left: 0;
+    }
+
+    .navbar-nav {
+      margin-right: -10px;
+    }
+  }
+}
+
+@include respond-to(sm) {
   .section-header {
     .header-logo {
       margin-left: 0;
