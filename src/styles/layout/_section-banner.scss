@@ -1,16 +1,18 @@
 .section-banner {
-  height: 61.7vh;
+  height: 577.7px;
 
   background-position: center -194px;
   background-size: cover;
   background-repeat: no-repeat;
 
-  .banner-title-holder {
-    padding-top: 147px;
+  .title-holder {
+   padding-top: 168px;
     padding-left: 89px;
-    
+
     letter-spacing: -1.7px;
-    .banner-title {
+
+    .title {    
+      font-size: 38.3px;
       font-family: $font-spectral-light;
       color: $violet;
 
@@ -18,14 +20,16 @@
     }
   }
 
-  .banner-description-holder {
+  .description-holder {
+    padding-top: 9px;
     padding-left: 88px;
-    padding-bottom: 49px;
-
-    .banner-description {
+    padding-bottom: 74px;
+    
+    .description {
+      font-size: 17px;
       font-family: $font-spectral-light;
       color: $violet;
-
+      
       line-height: 1.5;
     }
   }
@@ -40,12 +44,12 @@
 @include respond-to(md) {
   .section-banner {
     background-position: center;
-
-    .banner-title-holder {
+    
+    .title-holder {
       padding-left: 20px;
     }
 
-    .banner-description-holder {
+    .description-holder {
       padding-left: 20px;
     }
   }
@@ -55,11 +59,11 @@
   .section-banner {
     background-position: left;
 
-    .banner-title-holder {
+    .title-holder {
       padding-left: 0;
     }
-
-    .banner-description-holder {
+    
+    .description-holder {
       padding-left: 0;
     }
   }
@@ -68,13 +72,13 @@
 @include respond-to(xs) {
   .section-banner {
     background-position: left;
-
-    .banner-title-holder {
+    
+    .title-holder {
       padding-left: 0;
     }
 
-    .banner-description-holder {
+    .description-holder {
       padding-left: 0;
     }
   }
-}
+} 
