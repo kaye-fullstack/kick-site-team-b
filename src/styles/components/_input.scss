@@ -21,3 +21,49 @@
     margin-top: -35px;
   }  
 }
+
+input#about {
+  padding-left: 74px;
+  margin: 5px 1px 19px auto;
+  width: 747px;
+  height: 80px;
+
+  border: 0;
+  outline: 0;
+
+  &::placeholder {
+    font-family: $font-spectral-regular;
+    font-size: 20px;
+    color: $pastel-blue;
+  }
+}
+
+input#email {
+  padding-left: 20px;
+  margin: 2px 187px 10px auto;
+  width: 374px;
+  height: 68px;
+
+  border: 0;
+  outline: 0;
+
+  &::placeholder {
+    font-family: $font-spectral-regular;
+    font-size: 20px;
+    color: $pastel-blue;
+  }
+}
+
+@include respond-to(sm) {
+  input#about {
+    margin: 5px 1px 19px auto;
+    width: 560px;
+  }
+
+  input#email {
+    margin: 2px 72px 10px auto;
+    width: 374px;
+  }
+}
+
+

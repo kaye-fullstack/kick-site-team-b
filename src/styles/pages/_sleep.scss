@@ -1,4 +1,4 @@
-.product {
+.sleep {
 
   .section-banner {
     height: 549px;
@@ -248,18 +248,19 @@
 }
 
 @include respond-to(lg) {
-  .product {
+  .sleep {
     .section-banner {
       height: 603px;
 
       background-position: center;
 
       .banner-title-holder {
-       padding-left: 0;
+        padding-left: 32px;
       }
 
       .btn-holder {
         padding: 0;
+        margin-left: 33px;
       }
     }
 
@@ -295,7 +296,7 @@
 }
 
 @include respond-to(md) {
-  .product {
+  .sleep {
     .section-banner {
       height: 598px;
 
@@ -330,24 +331,35 @@
     .section-sleep-medication {
       padding: 67px 0 75px;
 
+      .product-wrapper {
+        justify-content: unset;
+        margin: 77px -21px 0px -10px;
+      }
+
       .title {
         padding: 0;
       }
 
       .product-holder {
-        margin: 0 10px;
+        margin: 0 8px;
       }
 
-      .img-fluid {
-        width: 204px;
+      .image-holder {
+        &:nth-child(2) {
+          width: 206px;
+        }
       }
 
       .image-text {
-        margin: 24px 27px;
+        width: 100%;
+
+        text-align: center;
       }
 
       .desclaimer {
-        margin-top: 37px;
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
       }
     }
 
@@ -375,7 +387,7 @@
 }
 
 @include respond-to(sm) {
-  .product{
+  .sleep{
     .section-banner {
       height: 420px;
 
@@ -512,7 +524,7 @@
 }
 
 @include respond-to(xs) {
-  .product{
+  .sleep{
     .section-banner {
       height: 420px;
 
