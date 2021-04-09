@@ -10,11 +10,11 @@
   .section-banner {
     background-image: url('../assets/images/home-banner.jpg');
 
-    .banner-title {
+    .title {
       font-size: 38px;
     }
 
-    .banner-description {
+    .description {
       font-size: 16.3px;
     }
 
@@ -34,14 +34,14 @@
 
     background-color: $violet;
 
-    .press-holder {
+    .holder {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center; 
       padding-top: 87px;
 
-      .press-logos {
+      .logos {
         padding-left: 36px;
         padding-right: 34px;
       }
@@ -516,11 +516,11 @@
   }
 
   .section-how-it-works {
-    padding: 71px 0;
+    padding: 100px 0 71px;
     width: 100%;
     height: auto;
 
-    .heading {
+    .title {
       margin: -2px 20px 0 37px;
 
       font-family: $font-spectral-meduim;
@@ -624,6 +624,16 @@
           left: 92px;
           right: 0;
         }
+      }
+    }
+  }
+
+  .section-image-text {
+    .section-alternate {
+      background-color: $pastel-yellow;
+
+      &:last-child {
+        background-color: $lavender;
       }
     }
   }

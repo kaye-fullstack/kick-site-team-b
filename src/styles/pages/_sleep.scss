@@ -6,12 +6,12 @@
     background-image: url('../assets/images/sleep-product-hero.jpg');
     background-position: center -165px;
 
-    .banner-title {
+    .title {
       font-size: 38px;
       color: $white;
     }
 
-    .banner-description {
+    .description {
       font-size: 16.3px;
     }
 
@@ -184,18 +184,18 @@
       width: 438px;
 
       &:first-child:before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-  
-          width: 46px;
-          height: 21px;
-  
-          background-color: $white;
-          border-bottom-left-radius: 90px;
-          border-bottom-right-radius: 90px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 46px;
+        height: 21px;
+
+        background-color: $white;
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 90px;
       }
     }
 
@@ -245,6 +245,41 @@
       }
     }
   }
+
+  .section-faq {
+    padding: 76px 0 78px;
+    width: 100%;
+    height: auto;
+  
+    background-color: $white;
+      
+    .title {
+      font-family: $font-spectral-medium;
+      font-size: 30px;
+      letter-spacing: 0.1px;
+      color: $violet;
+      text-align: center;
+      word-spacing: 1px;
+    }
+  
+    .card-body {
+      padding-right: 226px;
+      padding-left: 16px;
+  
+      column-count: 2;
+    }
+    
+    .accordion-holder {
+      margin: 41px 138px 8px 108px;
+      height: unset;
+
+      overflow: hidden;
+    }
+
+    .description {
+      padding-right: 0;
+    }
+  }
 }
 
 @include respond-to(lg) {
@@ -290,6 +325,12 @@
         &::before {
           width: 99%;
         }
+      }
+    }
+
+    .section-faq {
+      .card-body {
+        padding-right: 61px;
       }
     }
   }
@@ -383,6 +424,18 @@
         }
       }
     }
+
+    .section-faq {
+      padding: 77px 0 72px;
+  
+      .accordion-holder {
+        margin: 41px 6px 43px;
+      }
+
+      .card-body {
+        padding-right: 5px;
+      }
+    }
   }
 }
 
@@ -393,7 +446,7 @@
 
       background-position: center;
 
-      .banner-title {
+      .title {
         font-size: 28px;
       }
 
@@ -520,6 +573,20 @@
         font-size: 14px;
       }
     }
+
+    .section-faq {
+      padding: 60px 0;
+  
+      .accordion-holder {
+        margin: 41px 0 43px;
+      }
+  
+      .card-body {
+        padding: 15px 15px;
+        
+        column-count: 1;
+      }
+    }
   }
 }
 
@@ -530,7 +597,7 @@
 
       background-position: center;
 
-      .banner-title {
+      .title {
         font-size: 28px;
       }
 
@@ -640,6 +707,20 @@
 
       .name {
         font-size: 14px;
+      }
+    }
+
+    .section-faq {
+      padding: 60px 0 29px;
+  
+      .accordion-holder {
+        margin: 41px 0 43px;
+      }
+  
+      .card-body {
+        padding: 15px 15px;
+        
+        column-count: 1;
       }
     }
   }

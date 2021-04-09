@@ -7,21 +7,16 @@ AppName.Modules.ThemeModule = (function () {
   const _privateMethod = () => {
     // private stuff
     const swiper = new Swiper('.swiper-container', {
-    //   autoplay: {
-    //    delay: 2500,
-    //    disableOnInteraction: false,
-    //  },
+      autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
        pagination: {
          el: '.swiper-pagination',
        },
      });
 
-     const _activeListItem = () => {
-      $('.faq-navigation .list-group-item').click(function() {
-        $(this).addClass("active-js")
-        $(this).siblings().removeClass("active-js")
-      });
-    };
+   
   };
   /////////////////////
   // Public Methods //
@@ -46,3 +41,10 @@ $('body').css({'overflow':'visible'});
     init: init,
   };
 })();
+
+const _activeListItem = () => {
+  $('.navigation .list-group-item').click(function() {
+    $(this).addClass("active-js")
+    $(this).siblings().removeClass("active-js")
+  });
+};

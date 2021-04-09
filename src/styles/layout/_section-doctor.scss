@@ -16,7 +16,7 @@
     margin-left: 105px;
   }
 
-  .heading {
+  .doctor-heading {
     margin-top: 13px;
     margin-bottom: 22px;
 
@@ -51,7 +51,7 @@
     }
   }
 
-  .subheading {
+  .description {
     margin-top: 17px;
     margin-left: -5px;
     width: 334px;
@@ -127,11 +127,12 @@
     .content-wrapper {
       flex-wrap: nowrap;
     }
+
     .doctor-content {
       margin-left: 0;
     }
 
-    .heading {
+    .doctor-heading {
       font-size: 14px;
     }
 
@@ -142,7 +143,7 @@
       line-height: 44px;
     }
 
-    .subheading {
+    .description {
       font-size: 15px;
     }
 
@@ -180,7 +181,7 @@
   .section-doctor {
     padding: 35px 15px 35px;
 
-    .subheading {
+    .description {
       margin: 0 auto;
 
       text-align: center;
@@ -284,7 +285,7 @@
       }
     }
 
-    .subheading {
+    .description {
       margin-left: 0;
       width: 100%;
     }

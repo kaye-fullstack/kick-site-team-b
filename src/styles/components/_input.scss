@@ -54,15 +54,64 @@ input#email {
   }
 }
 
-@include respond-to(sm) {
-  input#about {
-    margin: 5px 1px 19px auto;
-    width: 560px;
+@include respond-to(md) { 
+  input#about{
+    width: 100%;
+    height: 72px;
   }
 
   input#email {
-    margin: 2px 72px 10px auto;
-    width: 374px;
+    margin: 0px auto 19px auto;
+    width: 380px;
+    height: 72px;
+  }
+}
+
+@include respond-to(sm) {
+  input#about {
+    padding-left: 37px;
+    margin: 5px 1px 19px -3px;
+    width: 100%;
+    height: 59px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+
+  input#email {
+    padding-left: 13px;
+    margin: 5px 1px 19px -3px;
+    width: 100%;
+    height: 59px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+}
+
+@include respond-to(xs)  {
+  input#about {
+    padding-left: 37px;
+    margin: 5px 1px 19px -3px;
+    width: 100%;
+    height: 59px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+
+  input#email {
+    padding-left: 13px;
+    margin: 5px 1px 19px -3px;
+    width: 100%;
+    height: 59px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
   }
 }
 
