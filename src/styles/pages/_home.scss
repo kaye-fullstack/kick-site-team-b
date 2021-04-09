@@ -516,11 +516,11 @@
   }
 
   .section-how-it-works {
-    padding: 71px 0;
+    padding: 100px 0 71px;
     width: 100%;
     height: auto;
 
-    .heading {
+    .title {
       margin: -2px 20px 0 37px;
 
       font-family: $font-spectral-meduim;
@@ -624,6 +624,16 @@
           left: 92px;
           right: 0;
         }
+      }
+    }
+  }
+
+  .section-image-text {
+    .section-alternate {
+      background-color: $pastel-yellow;
+
+      &:last-child {
+        background-color: $lavender;
       }
     }
   }
