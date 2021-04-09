@@ -97,7 +97,8 @@
 @include respond-to(xs) {
   .section-ratings {
     padding: 35px 0;
-    .heading {
+
+    .title {
       font-size: 23px;
     }
 

@@ -208,7 +208,7 @@
   }
   
   .section-how-it-works {
-    padding: 71px 0;
+    padding: 100px 0 71px;
     width: 100%;
     height: auto;
 
@@ -316,6 +316,16 @@
           left: 92px;
           right: 0;
         }
+      }
+    }
+  }
+
+  .section-image-text {
+    .section-alternate {
+      background-color: $pastel-yellow;
+
+      &:last-child {
+        background-color: $lavender;
       }
     }
   }
