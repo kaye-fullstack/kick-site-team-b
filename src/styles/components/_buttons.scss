@@ -128,7 +128,6 @@
   font-size: 30px;
   color: $navy-blue;
   text-align: initial;
-  text-decoration: none;
   white-space: normal;
 
   border-top: 3px solid transparent;
@@ -182,5 +181,14 @@
 }
 
 .btn-link[aria-expanded="true"] {
+  color: $red-orange;
+  text-decoration: none;
+
+  transform: initial;
+}
+
+.btn-link[aria-expanded="false"] {
+  text-decoration: none;
+
   transform: initial;
 }
