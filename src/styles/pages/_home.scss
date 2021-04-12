@@ -10,22 +10,22 @@
   .section-banner {
     background-image: url('../assets/images/home-banner.jpg');
 
-    .banner-title {
+    .title-holder {
       font-size: 38px;
     }
 
-    .banner-description {
+    .description {
       font-size: 16.3px;
     }
 
     .btn-holder {
       padding-left: 90px;
-      
-      .btn-pastel-yellow {
-        padding: 10px 22px; 
+    }
 
-        font-size: 15px;
-      }
+    .btn-pastel-yellow {
+      padding: 10px 22px; 
+
+      font-size: 15px;
     }
   }
 
@@ -99,21 +99,21 @@
         justify-content: center;
         align-items: center;
         margin-top: -2px;
-        
-        .btn-pastel-yellow {
-          font-size: 16px;
+      }
 
-          &:first-child {
-            padding: 11px 55px;
-            margin-right: 1px;
-          }
-  
-          &:last-child {
-            padding: 11px 26px;
-            margin-left: 0;
-  
-            font-size: 16px;
-          }
+      .btn-pastel-yellow {
+        font-size: 16px;
+
+        &:first-child {
+          padding: 11px 55px;
+          margin-right: 1px;
+        }
+
+        &:last-child {
+          padding: 11px 26px;
+          margin-left: 0;
+
+          font-size: 16px;
         }
       }
     }
@@ -190,37 +190,6 @@
         font-size: 12px;
       }
     }
-
-    .image-holder {
-      margin-top: 2px;
-      margin-left: 74px;
-
-    .rating-column {
-      margin-top: 12px;
-       
-      text-align: center;
-    }    
-    
-    .rating-star {
-      --percent: calc(var(--rating) / 5 * 100%);
-      display: block;
-
-      font-size: var(--star-size);
-      font-family: Times; 
-      line-height: 1;
-      
-      &:before {
-        content: "★★★★★";
-        font-size: 26px;
-        letter-spacing: 0;
-
-        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-  }
 
   .section-quotation-slider {
     background-color: $tortoise;
@@ -722,22 +691,12 @@
     }
 
     .section-how-it-works {
-      .heading {
+      .title {
         font-size: 30px;
       }
 
       .work-list {
         margin: 93px 0 0 0;
-        width: 100%;
-      }
-    }
-
-    .section-ratings {
-      .heading {
-        font-size: 35px;
-      }
-
-      .rating-row {
         width: 100%;
       }
     }
