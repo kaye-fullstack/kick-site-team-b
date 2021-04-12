@@ -10,11 +10,11 @@
   .section-banner {
     background-image: url('../assets/images/home-banner.jpg');
 
-    .title {
+    .banner-title {
       font-size: 38px;
     }
 
-    .description {
+    .banner-description {
       font-size: 16.3px;
     }
 
@@ -523,7 +523,7 @@
     .title {
       margin: -2px 20px 0 37px;
 
-      font-family: $font-spectral-meduim;
+      font-family: $font-spectral-medium;
       font-size: 30px;
       letter-spacing: 0.1px;
       color: $violet;
@@ -817,7 +817,7 @@
     .section-how-it-works {
       padding: 35px 0 30px;
 
-      .heading {
+      .title {
         font-size: 23px;
       }
 
@@ -876,25 +876,6 @@
             transform: rotate(90deg);
           }
         }
-      }
-    }
-
-    .section-ratings {
-      padding: 35px 0;
-
-      .heading {
-        font-size: 23px;
-      }
-
-      .rating-row {
-        display: block;
-        width: 100%;
-      }
-
-      .rating-column {
-        margin: 0 auto 26px;
-
-        width: 243px;
       }
     }
   }
@@ -962,7 +943,7 @@
     .section-how-it-works {
       padding: 35px 0 30px;
 
-      .heading {
+      .title {
         font-size: 23px;
       }
 

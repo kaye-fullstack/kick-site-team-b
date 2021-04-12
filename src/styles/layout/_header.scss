@@ -209,6 +209,10 @@
   .lock-scroll {
     overflow: hidden;
   }
+
+  .lock-scroll {
+    overflow: hidden;
+  }
 }
 
 @include respond-to(xs) {
