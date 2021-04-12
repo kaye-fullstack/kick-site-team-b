@@ -157,6 +157,10 @@
       width: 100%;
     }
   }
+
+  .lock-scroll {
+    overflow: hidden;
+  }
 }
 
 @include respond-to(xs) {
@@ -208,5 +212,9 @@
 
       background-color: $white;
     }
+  }
+
+  .lock-scroll {
+    overflow: hidden;
   }
 }

@@ -10,11 +10,11 @@
   .section-banner {
     background-image: url('../assets/images/home-banner.jpg');
 
-    .title {
+    .banner-title {
       font-size: 38px;
     }
 
-    .description {
+    .banner-description {
       font-size: 16.3px;
     }
 
@@ -523,7 +523,7 @@
     .title {
       margin: -2px 20px 0 37px;
 
-      font-family: $font-spectral-meduim;
+      font-family: $font-spectral-medium;
       font-size: 30px;
       letter-spacing: 0.1px;
       color: $violet;
@@ -648,27 +648,31 @@
     }
 
     .section-expert-care {
-      .expert-text-holder {
-        padding-left: 58px;
+      .text-holder {
+        padding-left: 0;
       }
 
-      .work-list {
-        margin: 93px 0 0 0;
-        width: 100%;
+      .list-holder {
+        .list {
+          padding-left: 0;
+
+          .numbers {
+            left: -38px;
+          }
+        }
       }
 
-      .expert-care-holder {
-        margin-left: 61px;
+      .care-holder {
+        margin-left: 0;
       }
 
-      .expert-image-holder {
-        margin-left: 58px;
-      }
-    }
+      .image-holder {
+        margin-top: 37px;
+        margin-left: 0;
 
-    .section-how-it-works {
-      .work-list {
-        margin: 89px auto;
+        .-image {
+          width: 41vh;
+        }
       }
     }
   }
@@ -689,12 +693,12 @@
     }
 
     .section-expert-care {
-      .expert-text-holder {
+      .text-holder {
         padding-left: 0;
       }
 
-      .expert-list-holder {
-        .expert-list {
+      .list-holder {
+        .list {
           padding-left: 0;
 
           .numbers {
@@ -703,15 +707,15 @@
         }
       }
 
-      .expert-care-holder {
+      .care-holder {
         margin-left: 0;
       }
 
-      .expert-image-holder {
+      .image-holder {
         margin-top: 37px;
         margin-left: 0;
 
-        .expert-image {
+        .-image {
           width: 41vh;
         }
       }
@@ -751,10 +755,10 @@
     .section-press {
       height: 25vh;
 
-      .press-holder {
+      .holder {
         padding-top: 54px;
 
-        .press-logos {
+        .logos {
           padding-right: 15px;
           padding-left: 15px;
         }
@@ -763,19 +767,31 @@
 
     .section-help-products {
       .row {
-        margin-left: -52px;
-        width: 591px;
+        margin-left: 0;
+        width: 478px;
+
+        .image-holder {
+          padding-left: 85px;
+        }
+
+        .text-holder {
+          padding-left: 90px;
+        }
+
+        .button-holder {
+          padding-left: 85px;
+        }
       }
     }
 
     .section-expert-care {
-      .expert-text-holder {
+      .text-holder {
         padding-top: 59px;
         padding-left: 0;
       }
 
-      .expert-list-holder {
-        .expert-list {
+      .list-holder {
+        .list {
           padding-left: 0;
 
           .numbers {
@@ -784,15 +800,15 @@
         }
       }
 
-      .expert-care-holder {
+      .care-holder {
         margin-left: 0;
       }
 
-      .expert-image-holder {
+      .image-holder {
         margin-top: 37px;
         margin-left: 0;
 
-        .expert-image {
+        .image {
           display: none;
         }
       }
@@ -801,7 +817,7 @@
     .section-how-it-works {
       padding: 35px 0 30px;
 
-      .heading {
+      .title {
         font-size: 23px;
       }
 
@@ -862,25 +878,6 @@
         }
       }
     }
-
-    .section-ratings {
-      padding: 35px 0;
-
-      .heading {
-        font-size: 23px;
-      }
-
-      .rating-row {
-        display: block;
-        width: 100%;
-      }
-
-      .rating-column {
-        margin: 0 auto 26px;
-
-        width: 243px;
-      }
-    }
   }
 }
 
@@ -895,12 +892,12 @@
     .section-press {
       height: 22vh;
 
-      .press-holder {
+      .holder {
         flex-wrap: wrap;
         padding-top: 8px;
         margin-left: -16px;
 
-        .press-logos {
+        .logos {
           padding-left: 25px;
           padding-right: 0;
         }
@@ -914,13 +911,13 @@
     }
 
     .section-expert-care {
-      .expert-text-holder {
+      .text-holder {
         padding-top: 59px;
         padding-left: 0;
       }
 
-      .expert-list-holder {
-        .expert-list {
+      .list-holder {
+        .list {
           padding-left: 0;
 
           .numbers {
@@ -929,15 +926,15 @@
         }
       }
 
-      .expert-care-holder {
+      .care-holder {
         margin-left: 0;
       }
 
-      .expert-image-holder {
+      .image-holder {
         margin-top: 37px;
         margin-left: 0;
 
-        .expert-image {
+        .image {
           display: none;
         }
       }
@@ -946,7 +943,7 @@
     .section-how-it-works {
       padding: 35px 0 30px;
 
-      .heading {
+      .title {
         font-size: 23px;
       }
 

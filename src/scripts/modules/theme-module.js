@@ -16,14 +16,30 @@ AppName.Modules.ThemeModule = (function () {
        },
      });
 
-   
+     function lockScroll() {
+      if ($('body').hasClass('lock-scroll')) {
+          $('body').removeClass('lock-scroll');
+      }
+      else {
+          $('body').addClass('lock-scroll');
+      }
+    }  
+    
+    $(document).ready(function() {
+      $('.icon-bar').click(function() {
+         lockScroll();
+      }); 
+    });
   };
+
+  
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
     _privateMethod();
     _activeListItem();
+    _lockScroll();
   };
 const elem = $('header');
 const scrolled = () => {
@@ -31,12 +47,6 @@ const scrolled = () => {
  elem.toggleClass('scrolled', threshold);
  };
 $(window).on({ scroll: scrolled });
-$('body').css({'overflow':'hidden'});
-$(document).bind('scroll',function () { 
-     window.scrollTo(0,0); 
-});
-$(document).unbind('scroll'); 
-$('body').css({'overflow':'visible'});
   return {
     init: init,
   };
@@ -48,3 +58,7 @@ const _activeListItem = () => {
     $(this).siblings().removeClass("active-js")
   });
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> c6e277e (all sections/pages-done)

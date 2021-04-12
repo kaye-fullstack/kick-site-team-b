@@ -1,5 +1,6 @@
 .section-image-text {
   margin-top: 0;
+
   .section-alternate { 
     .alternate-container {
       display: flex;
@@ -7,50 +8,45 @@
       margin: 0 auto;
       width: 1024px;
       max-width: 100%;
-    }
 
-    .alternate-holder {
-      justify-content: flex-end;
-      padding-top: 147px;
-      padding-left: 91px;
-    }
+      .alternate-holder {
+        justify-content: flex-end;
+        padding-top: 147px;
+        padding-left: 91px;
 
-    .heading {
-      font-family: $font-spectral-regular;
-      font-size: 12.4px;
-      color: $violet;
+        .heading {
+          font-family: $font-spectral-regular;
+          font-size: 12.4px;
+          color: $violet;
+          line-height: 30px;
+        }
 
-      line-height: 30px;
-    }
+        .title {
+          margin-bottom: 39px;
+          width: 280px;
+          font-family: $font-spectral-regular;
+          font-size: 27.7px;
+        }
 
-    .title {
-      margin-bottom: 39px;
-      width: 280px;
+        .description {
+          padding-left: 0;
+          margin-bottom: 13px;
+          font-family: $font-spectral-regular;
+          font-size: 17.4px;
+          line-height: 1.58;
+        }
 
-      font-family: $font-spectral-regular;
-      font-size: 27.7px;
-    }
-
-    .description {
-      padding-left: 0;
-      margin-bottom: 13px;
-
-      font-family: $font-spectral-regular;
-      font-size: 17.4px;
-
-      line-height: 1.58;
-    }
-
-    .btn-violet {
-      margin-top: 27px;
-      width: 203px;
-      height: 37px;
-      
-      font-size: 13.4px;
-    }
-
-    .alternate-image-holder {
-      right: unset;
+        .btn-violet {
+          margin-top: 27px;
+          width: 203px;
+          height: 37px;
+          font-size: 13.4px;
+        }
+      }
+    
+      .image-holder {
+        right: unset;
+      }
     }
   }
 }
@@ -58,15 +54,27 @@
 @include respond-to (sm) {
   .section-image-text {
     .section-alternate { 
-      .alternate-holder {
-        padding-top: 81px;
-        padding-left: 0;
-        padding-bottom: 115px;
-      }
+      .alternate-container {
+        .alternate-holder {
+          padding-top: 81px;
+          padding-left: 0;
+          padding-bottom: 115px;
 
+<<<<<<< HEAD
       .images {
         display: none;
       } 
+=======
+          .btn-violet {
+            width: 100%;
+          }
+        }
+
+        .images {
+          display: none;
+        } 
+      }
+>>>>>>> c6e277e (all sections/pages-done)
     }
   }
 }
@@ -74,14 +82,20 @@
 @include respond-to (xs) {
   .section-image-text {
     .section-alternate { 
-      .alternate-holder {
-        padding-top: 81px;
-        padding-left: 0;
-        padding-bottom: 115px;
-      }
+      .alternate-container {
+        .alternate-holder {
+          padding-top: 81px;
+          padding-left: 0;
+          padding-bottom: 115px;
 
-      .alternate-images {
-        display: none;
+          .btn-violet {
+            width: 100%;
+          }
+        }
+
+        .images {
+          display: none;
+        }
       }
     }
   }
