@@ -10,7 +10,7 @@
   .section-banner {
     background-image: url('../assets/images/home-banner.jpg');
 
-    .title-holder{
+    .title {
       font-size: 38px;
     }
 
@@ -24,10 +24,8 @@
       .btn-pastel-yellow {
         padding: 10px 22px; 
 
-    .btn-pastel-yellow {
-      padding: 10px 22px; 
-
-      font-size: 15px;
+        font-size: 15px;
+      }
     }
   }
 
@@ -101,21 +99,21 @@
         justify-content: center;
         align-items: center;
         margin-top: -2px;
-      }
-
-      .btn-pastel-yellow {
-        font-size: 16px;
-
-        &:first-child {
-          padding: 11px 55px;
-          margin-right: 1px;
-        }
-
-        &:last-child {
-          padding: 11px 26px;
-          margin-left: 0;
-
+        
+        .btn-pastel-yellow {
           font-size: 16px;
+
+          &:first-child {
+            padding: 11px 55px;
+            margin-right: 1px;
+          }
+  
+          &:last-child {
+            padding: 11px 26px;
+            margin-left: 0;
+  
+            font-size: 16px;
+          }
         }
       }
     }
@@ -515,13 +513,14 @@
       text-align: center;
     }
   }
-  
+  }
+
   .section-how-it-works {
     padding: 100px 0 71px;
     width: 100%;
     height: auto;
 
-    .title {
+    .heading {
       margin: -2px 20px 0 37px;
 
       font-family: $font-spectral-medium;
@@ -638,9 +637,6 @@
       }
     }
   }
-  }
-    }
-  }
 }
 
 @include respond-to(lg) {
@@ -726,12 +722,22 @@
     }
 
     .section-how-it-works {
-      .title {
+      .heading {
         font-size: 30px;
       }
 
       .work-list {
         margin: 93px 0 0 0;
+        width: 100%;
+      }
+    }
+
+    .section-ratings {
+      .heading {
+        font-size: 35px;
+      }
+
+      .rating-row {
         width: 100%;
       }
     }
@@ -811,7 +817,7 @@
     .section-how-it-works {
       padding: 35px 0 30px;
 
-      .title {
+      .heading {
         font-size: 23px;
       }
 
@@ -870,6 +876,25 @@
             transform: rotate(90deg);
           }
         }
+      }
+    }
+
+    .section-ratings {
+      padding: 35px 0;
+
+      .heading {
+        font-size: 23px;
+      }
+
+      .rating-row {
+        display: block;
+        width: 100%;
+      }
+
+      .rating-column {
+        margin: 0 auto 26px;
+
+        width: 243px;
       }
     }
   }
@@ -937,7 +962,7 @@
     .section-how-it-works {
       padding: 35px 0 30px;
 
-      .title {
+      .heading {
         font-size: 23px;
       }
 

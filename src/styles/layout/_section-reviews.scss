@@ -74,7 +74,7 @@
 
 @include respond-to(xs) {
   .section-reviews {
-    .reviews-text-holder {
+    .text-holder {
       &:nth-child(odd) {
         &:before {
           left: 43%;

@@ -2,16 +2,13 @@
   --star-size: 60px;
   --star-color: #F4F2F9;
   --star-background: #404082;
-
-  padding: 40px 0 79px;
+  padding: 38px 0 85px;
   width: 100%;
   height: auto;
 
-
-  .title {
-    margin: 4px 21px -11px 19px;
-
-    font-family: $font-spectral-meduim;
+  .heading {
+    margin: 4px 20px 18px 37px;
+    font-family: $font-spectral-medium;
     font-size: 30px;
     letter-spacing: 0.1px;
     color: $violet;
@@ -61,7 +58,7 @@
 
 @include respond-to(md) {
   .section-ratings {
-    .title {
+    .heading {
       font-size: 35px;
     }
 
@@ -75,7 +72,7 @@
   .section-ratings {
     padding: 35px 0;
 
-    .title {
+    .heading {
       font-size: 23px;
     }
 
@@ -86,7 +83,6 @@
 
     .rating-column {
       margin: 0 auto 26px;
-
       width: 243px;
     }
   }
@@ -95,8 +91,8 @@
 @include respond-to(xs) {
   .section-ratings {
     padding: 35px 0;
-
-    .title {
+    
+    .heading {
       font-size: 23px;
     }
 
