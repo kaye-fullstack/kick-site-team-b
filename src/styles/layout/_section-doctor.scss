@@ -16,7 +16,7 @@
     margin-left: 105px;
   }
 
-  .heading {
+  .doctor-heading {
     margin-top: 13px;
     margin-bottom: 22px;
 
@@ -51,7 +51,7 @@
     }
   }
 
-  .subheading {
+  .description {
     margin-top: 17px;
     margin-left: -5px;
     width: 334px;
@@ -66,12 +66,12 @@
   .btn-holder {
     margin-left: -5px;
     margin-top: 52px;
+  }
+  
+  .btn-pastel-yellow {
+    padding: 11px 42px 12px;
 
-    .btn-pastel-yellow {
-      padding: 11px 42px 12px;
-
-      font-size: 16px;
-    }
+    font-size: 16px;
   }
 
   .doctor-image {
@@ -109,15 +109,13 @@
 
 @include respond-to(lg) {
   .section-doctor {
-    .btn-holder {
-      .btn-pastel-yellow {
-        padding: 11px 56px 11px;
-      }
+    .btn-pastel-yellow {
+      padding: 11px 56px 11px;
+    }
 
-      .name {
-        margin: 31px auto 0;
-        width: 134px;
-      }
+    .name {
+      margin: 31px auto 0;
+      width: 134px;
     }
   }
 }
@@ -127,11 +125,12 @@
     .content-wrapper {
       flex-wrap: nowrap;
     }
+
     .doctor-content {
       margin-left: 0;
     }
 
-    .heading {
+    .doctor-heading {
       font-size: 14px;
     }
 
@@ -142,7 +141,7 @@
       line-height: 44px;
     }
 
-    .subheading {
+    .description {
       font-size: 15px;
     }
 
@@ -168,10 +167,8 @@
       width: 134px;
     }
 
-    .btn-holder {
-      .btn-pastel-yellow {
-        font-size: 16px;
-      }
+    .btn-pastel-yellow {
+      font-size: 16px;
     }
   }
 }
@@ -180,7 +177,7 @@
   .section-doctor {
     padding: 35px 15px 35px;
 
-    .subheading {
+    .description {
       margin: 0 auto;
 
       text-align: center;
@@ -243,14 +240,12 @@
 
       text-align: center;
     }
- 
-    .btn-holder {
-      .btn-pastel-yellow {
-        padding: 14px 80px;
-        width: 100%;
 
-        font-size: 12px;
-      }
+    .btn-pastel-yellow {
+      padding: 14px 80px;
+      width: 100%;
+
+      font-size: 12px;
     }
   }
 }
@@ -284,7 +279,7 @@
       }
     }
 
-    .subheading {
+    .description {
       margin-left: 0;
       width: 100%;
     }
@@ -322,12 +317,10 @@
       text-align: center;
     }
     
-    .btn-holder {
-      .btn-pastel-yellow {
-        padding: 14px 80px;
+    .btn-pastel-yellow {
+      padding: 14px 80px;
 
-        font-size: 12px;
-      }
+      font-size: 12px;
     }
   }
 }

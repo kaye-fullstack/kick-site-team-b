@@ -1,0 +1,257 @@
+.section-sleep-habits {
+  padding: 52px 0 62px;
+  width: 100%;
+  height: auto;
+
+  background-color: $lavender;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 67px;
+  }
+
+  .content-holder {
+    &:first-child {
+      position: static;
+
+      width: 50%;
+    }
+
+    &:last-child {
+      position: relative;
+
+      padding: 46px 150px 0 54px;
+      width: 50%;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: -21px;
+        left: 55px;
+  
+        width: 73px;
+        height: 35px;
+  
+        background-color: $pastel-blue;
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 90px;
+      }
+    }
+  }
+
+  .image-holder {
+    position: relative;
+    left: 200px;
+    z-index: 0;
+
+    margin: auto;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      z-index: -1;
+
+      width: 52%;
+      height: 100%;
+
+      background-color: $pastel-blue;
+    }
+  }
+
+  .heading {
+    margin-bottom: 30px;
+
+    font-family: $font-spectral-medium;
+    font-size: 20px;
+    color: $pastel-blue;
+  }
+
+  .subheading {
+    margin-bottom: 58px;
+
+    font-family: $font-spectral-medium;
+    font-size: 15px;
+    color: $pastel-blue;
+  }
+
+  .learn-more {
+    font-family: $font-spectral-medium;
+    font-size: 15px;
+    color: $violet;
+    text-decoration: underline;
+  }
+}
+
+@include respond-to(lg) {
+  .section-sleep-habits {
+    .content-holder:last-child {
+      padding: 46px 63px 0 21px;
+
+      &::before {
+        left: 15px;
+      }
+    }
+
+    .image-holder {
+      left: 135px;
+
+      margin: 0;
+      width: 64%;
+      height: 58%;
+
+      &::before {
+        top: -15px;
+        left: -16px;
+
+        width: 94%;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .section-sleep-habits {
+    .content-holder:last-child {
+      padding:  0;
+
+      &::before {
+        top: -45px;
+        left: 0;
+      }
+    }
+
+    .image-holder {
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        top: -17px;
+        left: -17px;
+  
+        width: 83%;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .section-sleep-habits {
+    padding: 35px 0;
+    
+    .content-wrapper {
+      position: static;
+
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .content-holder {
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      &:last-child {
+        padding: 0;
+        margin-top: 76px;
+        width: 100%;
+
+        text-align: center;
+
+        &::before {
+          top: -38px;
+          left: unset;
+        }
+      }
+    }
+
+    .image-holder {
+      position: relative;
+      left: unset;
+      z-index: 0;
+  
+      margin: auto;
+  
+      &:before {
+        top: -16px;
+        left: -16px;
+  
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .subheading {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-sleep-habits {
+    padding: 35px 0;
+    
+    .content-wrapper {
+      position: static;
+      
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .content-holder {
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        text-align: center;
+      }
+
+      &:last-child {
+        padding: 0;
+        margin-top: 72px;
+        width: 100%;
+
+        text-align: center;
+
+        &::before {
+          top: -38px;
+          left: 94px;
+        }
+      }
+    }
+
+    .image-holder {
+      position: relative;
+      left: unset;
+      z-index: 0;
+  
+      margin: auto;
+  
+      &:before {
+        top: -16px;
+        left: -16px;
+  
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .img-fluid {
+      width: 260px;
+    }
+
+    .subheading {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,728 @@
+.sleep {
+
+  .section-banner {
+    height: 549px;
+
+    background-image: url('../assets/images/sleep-product-hero.jpg');
+    background-position: center -165px;
+
+    .title {
+      font-size: 38px;
+      color: $white;
+    }
+
+    .description {
+      font-size: 16.3px;
+    }
+
+    .btn-holder {
+      padding-left: 90px;
+    }
+
+    .btn-pastel-yellow {
+      padding: 10px 24px;
+      margin-top: 104px;
+
+      font-size: 15px;
+    }
+  }
+
+  .section-trials {
+    padding: 67px 0 36px;
+    width: 100%;
+    height: auto;
+
+    .image-holder {
+      margin-top: -6px;
+      margin-right: 53px;
+
+      text-align: right;
+    }
+
+    .details {
+      padding: 21px 216px 10px 29px;
+    }
+
+    .title {
+      font-family: $font-spectral-medium;
+      font-size: 30px;
+      letter-spacing: 0.1px;
+      color: $violet;
+    }
+
+    .description {
+      margin-top: 20px;
+     
+      font-family: $font-spectral-semibold;
+      font-size: 16px;
+      color: $violet;
+      line-height: 23px;
+    }
+  }
+
+  .section-sleep-medication {
+    padding: 67px 0 90px;
+    width: 100%;
+    height: auto;
+
+    .sleep-medication-details {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 473px;
+      
+      text-align: center;
+    }
+
+    .title {
+      padding-top: 35px;
+      padding-left: 2px;
+
+      font-family: $font-spectral-medium;
+      font-size: 30px;
+      letter-spacing: 0.1px;
+      color: $violet;
+    }
+
+    .description {
+      padding-left: 14px;
+      margin-top: 20px;
+
+      font-family: $font-spectral-medium;
+      font-size: 16px;
+      color: $violet;
+    }
+
+    .product-wrapper {
+      position: relative;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 77px 0 -7px 2px;
+    }
+
+    .product-holder {
+      position: relative;
+
+      margin: 0 28px;
+    }
+
+    .img-fluid {
+      width: 223px;
+    }
+
+    .image-text {
+      position: absolute;
+      top: 28px;
+
+      width: 100%;
+
+      font-family: $font-spectral-medium;
+      font-size: 20px;
+      text-align: center;
+      color: $red-orange;
+    }
+
+    .product-details {
+      margin: 12px 0 25px;
+    }
+
+    .product-title {
+      margin: 0;
+
+      font-family: $font-spectral-medium;
+      font-size: 18px;
+      color: $violet;
+    }
+
+    .product-description {
+      font-family: $font-spectral-medium;
+      font-size: 14px;
+      color: $violet;
+    }
+
+    .btn-holder {
+      .btn-violet-outline {
+        padding: 6px 23px 6px 21px;
+
+        font-size: 13px;
+      }
+    }
+
+    .disclaimer {
+      margin-top: 84px;
+      margin-left: -7px;
+
+      font-family: $font-spectral-medium; 
+      font-size: 15px;
+      color: $violet;
+      text-align: center;
+      word-spacing: 0.8px;
+    }
+  }
+
+  .section-expert-quote {
+    padding: 52px 0 75px;
+    width: 100%;
+    height: auto;
+
+    background-color: $light-blue;
+
+    .content-wrapper {
+      position: static;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-holder {
+      position: relative;
+
+      margin-right: -46px;
+      width: 438px;
+
+      &:first-child:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 46px;
+        height: 21px;
+
+        background-color: $white;
+        border-bottom-left-radius: 90px;
+        border-bottom-right-radius: 90px;
+      }
+    }
+
+    .title {
+      position: relative;
+      top: 46px;
+
+      margin-bottom: 67px;
+
+      font-family: $font-basis-grotesque-pro-regular;
+      font-size: 13px;
+      color: $white;
+      letter-spacing: 0.2px;
+    }
+
+    .quote {
+      margin-bottom: 40px;
+
+      font-family: $font-spectral-medium;
+      font-size: 22px;
+      color: $white;
+      word-spacing: 1px;
+    }
+
+    .name {
+      font-family: $font-spectral-regular;
+      font-size: 19px;
+      color: $white;
+    }
+
+    .image-holder {
+      position: relative;
+      left: 125px;
+      z-index: 0;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: -1;
+
+        width: 52%;
+        height: 100%;
+
+        background-color: $white;
+      }
+    }
+  }
+
+  .section-faq {
+    padding: 76px 0 78px;
+    width: 100%;
+    height: auto;
+  
+    background-color: $white;
+      
+    .title {
+      font-family: $font-spectral-medium;
+      font-size: 30px;
+      letter-spacing: 0.1px;
+      color: $violet;
+      text-align: center;
+      word-spacing: 1px;
+    }
+  
+    .card-body {
+      padding-right: 226px;
+      padding-left: 16px;
+  
+      column-count: 2;
+    }
+    
+    .accordion-holder {
+      margin: 41px 138px 8px 108px;
+      height: unset;
+
+      overflow: hidden;
+    }
+
+    .description {
+      padding-right: 0;
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .sleep {
+    .section-banner {
+      height: 603px;
+
+      background-position: center;
+
+      .title-holder {
+        padding-left: 32px;
+      }
+
+      .btn-holder {
+        padding: 0;
+        margin-left: 33px;
+      }
+    }
+
+    .section-trials {
+      .details {
+        padding: 23px 64px 10px 29px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    .section-sleep-medication {
+      padding: 67px 0 24px;
+
+      .disclaimer {
+        margin-top: 52px;
+      }
+    }
+
+    .section-expert-quote {
+      .image-holder {
+        left: -79px;
+        float: right;
+  
+        &::before {
+          width: 99%;
+        }
+      }
+    }
+
+    .section-faq {
+      .card-body {
+        padding-right: 61px;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .sleep {
+    .section-banner {
+      height: 598px;
+
+      background-position: center;
+
+      .title-holder {
+        padding-top: 124px;
+        padding-left: 0;
+      }
+
+      .btn-holder {
+        padding: 0;
+      }
+    }
+
+    .section-trials {
+      padding: 44px 0 36px;
+
+      .image-holder {
+        margin-right: 0;
+      }
+
+      .details {
+        padding: 41px 0 0 0;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
+
+    .section-sleep-medication {
+      padding: 67px 0 75px;
+
+      .product-wrapper {
+        justify-content: unset;
+        margin: 77px -21px 0px -10px;
+      }
+
+      .title {
+        padding: 0;
+      }
+
+      .product-holder {
+        margin: 0 8px;
+      }
+
+      .image-holder {
+        &:nth-child(2) {
+          width: 206px;
+        }
+      }
+
+      .image-text {
+        width: 100%;
+
+        text-align: center;
+      }
+
+      .disclaimer {
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+
+    .section-expert-quote {
+      .content-holder {
+        &:first-child {
+          margin-right: 15px;
+        }
+
+        &:last-child {
+          width: 266px;
+        }
+      }
+
+      .image-holder {
+        position: relative;
+        left: unset;
+
+        &:before {
+          width: 87%;
+        }
+      }
+    }
+
+    .section-faq {
+      padding: 77px 0 72px;
+  
+      .accordion-holder {
+        margin: 41px 6px 43px;
+      }
+
+      .card-body {
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .sleep{
+    .section-banner {
+      height: 420px;
+
+      background-position: center;
+
+      .title {
+        font-size: 28px;
+      }
+
+      .btn-holder {
+        padding-left: 4px;
+      }
+
+      .btn-pastel-yellow {
+        padding: 10px 50px;
+        margin-top: 5px;
+        
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .section-trials {
+      padding: 39px 0 30px;
+
+      .image-holder {
+        margin: 0 auto;
+        width: 36%;
+        height: 36%;
+      }
+
+      .details {
+        padding: 20px 0 0 0;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    .section-sleep-medication {
+      padding: 60px 0;
+
+      .title {
+        padding: 0;
+      }
+
+      .description {
+        padding: 0;
+        font-size: 15px;
+      }
+
+      .product-wrapper {
+        margin: 30px 0 0px 0px;
+      }
+
+      .product-holder {
+        margin-bottom: 30px;
+      }
+
+      .product-details {
+        text-align: center;
+      }
+
+      .image-holder {
+        width: 100%; 
+      }
+
+      .img-fluid {
+        width: 473px;
+        object-fit: cover;
+      }
+
+      .btn-holder {
+        text-align: center;
+      }
+
+      .disclaimer {
+        margin-top: 6px;
+      }
+    }
+
+    .section-expert-quote {
+      padding: 35px 0;
+      
+      .content-wrapper {
+        flex-wrap: wrap;
+      }
+
+      .content-holder {
+        margin: 40px auto 0;
+        width: 100%;
+
+        text-align: center;
+
+        &:first-child::before {
+          left: unset;
+        }
+
+        &:last-child {
+          display: flex;
+          justify-content: center;
+          order: -1;
+        } 
+      }
+
+      .image-holder {
+        left: 0;
+
+        &::before {
+          right: -11px;
+          left: unset;
+
+          width: 94%;
+          height: 98%;
+        }
+      }
+
+      .title {
+        &::before {
+          left: 114px;
+        }
+      }
+
+      .quote {
+        font-size: 20px;
+      }
+
+      .name {
+        font-size: 14px;
+      }
+    }
+
+    .section-faq {
+      padding: 60px 0;
+  
+      .accordion-holder {
+        margin: 41px 0 43px;
+      }
+  
+      .card-body {
+        padding: 15px 15px;
+        
+        column-count: 1;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .sleep{
+    .section-banner {
+      height: 420px;
+
+      background-position: center;
+
+      .title {
+        font-size: 28px;
+      }
+
+      .btn-holder {
+        padding-left: 4px;
+      }
+
+      .btn-pastel-yellow {
+        padding: 10px 50px;
+        margin-top: 5px;
+        
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .section-trials {
+      padding: 20px 0 30px;
+
+      .image-holder {
+        margin: 0 auto;
+        width: 70%;
+        height: 70%;
+      }
+
+      .details {
+        padding: 20px 0 0 0;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+    }
+
+    .section-sleep-medication {
+      padding: 60px 0;
+
+      .title {
+        padding: 0;
+      }
+
+      .description {
+        padding: 0;
+        font-size: 15px;
+      }
+
+      .product-wrapper {
+        margin: 30px 0 0px 0px;
+      }
+
+      .product-holder {
+        margin-bottom: 30px;
+      }
+
+      .product-details {
+        text-align: center;
+      }
+
+      .btn-holder {
+        text-align: center;
+      }
+
+      .disclaimer {
+        margin-top: 6px;
+      }
+    }
+
+    .section-expert-quote {
+      padding: 35px 0;
+      
+      .content-wrapper {
+        flex-wrap: wrap;
+      }
+
+      .content-holder {
+        margin: 40px auto 0;
+        width: 100%;
+
+        text-align: center;
+
+        &:first-child::before {
+          left: unset;
+        }
+
+        &:last-child {
+          display: flex;
+          justify-content: center;
+          order: -1;
+        } 
+      }
+
+      .image-holder {
+        left: 0;
+
+        &::before {
+          right: -11px;
+          left: unset;
+
+          width: 94%;
+          height: 98%;
+        }
+      }
+
+      .quote {
+        font-size: 20px;
+      }
+
+      .name {
+        font-size: 14px;
+      }
+    }
+
+    .section-faq {
+      padding: 60px 0 29px;
+  
+      .accordion-holder {
+        margin: 41px 0 43px;
+      }
+  
+      .card-body {
+        padding: 15px 15px;
+        
+        column-count: 1;
+      }
+    }
+  }
+}
