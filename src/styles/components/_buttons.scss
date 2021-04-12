@@ -61,6 +61,26 @@
 
     transition: all 0.4s ease-in;
   }
+}
+
+.btn-violet-outline {
+  background-color: transparent;
+
+  font-family: $font-spectral-regular;
+  color: $violet;
+
+  border: 1px solid $violet;
+
+  outline: 0;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    background-color: $violet;
+
+    transition: all 0.4s ease-in;
+  }
 
   &:focus {
     color: $white;
@@ -116,7 +136,6 @@
   }
 }
 
-
 .btn-link {
   position: relative;
 
@@ -144,6 +163,7 @@
   position: absolute;
   top: 50%;
   right: 0;
+
   width: 25px;
   height: 3px;
 
@@ -162,9 +182,9 @@
   height: 3px;
 
   background-color: $navy-blue;
- 
-  transform: rotate(90deg);
+
   transition: 0.2s ease-in;
+  transform: rotate(90deg);
 }
 
 .btn-link:hover:before {
@@ -177,6 +197,7 @@
 
 .btn-link[aria-expanded="true"]:after {
   background-color: $red-orange;
+
   transform: initial;
 }
 

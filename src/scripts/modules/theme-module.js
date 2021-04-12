@@ -32,7 +32,6 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
-  
   /////////////////////
   // Public Methods //
   ///////////////////

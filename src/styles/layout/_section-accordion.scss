@@ -1,6 +1,9 @@
-.section-faq {
-  padding: 90px 0;
+//main: ../main.scss
 
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.section-faq {
   .content-wrapper{
     display: flex;
     flex-wrap: nowrap;
@@ -8,9 +11,12 @@
 
     .navigation {
       position: sticky;
+
       display: flex;
       align-content: center;
+
       width: 50%;
+
       letter-spacing: -0.4px;
 
       &::-webkit-scrollbar {
@@ -27,19 +33,23 @@
         height: 2px;
 
         background-color: $red-orange;
-        opacity: 1;
 
-        transform: translateX(-50%) rotate(90deg);
+        opacity: 1;
         transition: 0.2s ease-in-out;
+        transform: translateX(-50%) rotate(90deg);
       }
 
       .active-js {
         position: relative;
 
         color: $violet;
-
         background-color: transparent;
+
         pointer-events: none;
+
+        &:focus {
+          color: $navy-blue;
+        }
       }
 
       .list-group-item {
@@ -52,14 +62,13 @@
         color: $light-blue;
 
         border: 0;
+
         cursor: pointer;
       }
     }
   }
 
   .accordion-wrapper {
-    position: relative;
-
     width: 100%;
   }
 
@@ -71,7 +80,6 @@
       font-family: $font-spectral-medium;
       font-size: 26px;
       color: $light-violet;
-
       letter-spacing: 0.4px;
     }
 
@@ -140,7 +148,7 @@
       .title {
         font-size: 25px;
       }
-      
+
       .description {
         padding-right: 0;
       }
@@ -155,7 +163,8 @@
         position: absolute;
         flex-wrap: nowrap;
         flex-direction: initial;
-        width: 87%;
+
+        width: 90%;
         overflow-y: hidden;
         overflow-x: auto;
 
@@ -168,10 +177,12 @@
         .list-group-item {
           display: flex;
           flex-wrap: nowrap;
+
           padding: 8px 10px;  
           margin-right: 0;
-
+        
           font-size: 18px;
+
           white-space: nowrap;
 
           border-top: 4px solid $pastel-yellow;
@@ -179,19 +190,16 @@
           border-radius: 0;
 
           &:hover {
-            font-family: $font-spectral-semibold;
+            font-weight: 600;
+
             color: $violet;
           }
         }
       }  
     }
-   
-    .accordion-wrapper {
-      margin-top: 73px;
-    }
 
-    .card-body {
-      padding-bottom: 20px;
+    .accordion-holder {
+      margin-top: 73px;
     }
 
     .btn-link::after,
@@ -213,9 +221,9 @@
       &:last-child {
         padding-top: 30px;
       }
-
+      
       .title {
-        font-size: 25px;
+        font-size: 22px;
       }
 
       .description {
@@ -232,6 +240,7 @@
         position: absolute;
         flex-wrap: nowrap;
         flex-direction: initial;
+
         width: 90%;
         overflow-y: hidden;
         overflow-x: auto;
@@ -245,10 +254,12 @@
         .list-group-item {
           display: flex;
           flex-wrap: nowrap;
+
           padding: 8px 10px;  
           margin-right: 0;
-
+        
           font-size: 18px;
+
           white-space: nowrap;
 
           border-top: 4px solid $pastel-yellow;
@@ -257,17 +268,14 @@
 
           &:hover {
             font-family: $font-spectral-semibold;
+
             color: $violet;
           }
         }
       }  
     }
-    
-    .card-body {
-      padding-bottom: 20px;
-    }
 
-    .accordion-wrapper {
+    .accordion-holder {
       margin-top: 73px;
     }
 
