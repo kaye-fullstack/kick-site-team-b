@@ -32,7 +32,8 @@
   'layout/section-sleep-habits',
   'layout/section-accordion',
   'layout/section-doctor',
-  'layout/section-learn';
+  'layout/section-learn',
+  'layout/section-reviews';
 
 // 5. Components
 @import
@@ -43,7 +44,9 @@
 @import
   'pages/home',
   'pages/sleep',
-  'pages/doctor';
+  'pages/doctor',
+  'pages/faq',
+  'pages/reviews';
 
 // 7. Themes
 @import
