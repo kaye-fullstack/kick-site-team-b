@@ -57,20 +57,13 @@
     }
   }
 
-  .accordion-holder {
+  .accordion-wrapper {
     position: relative;
 
     width: 100%;
-    height: 527px;
-
-    overflow: auto;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 
-  .section-holder {
+  .accordion-holder {
     .title {
       margin-bottom: 0;
       margin-left: 10px;
@@ -81,6 +74,7 @@
 
       letter-spacing: 0.4px;
     }
+
     .description {
       padding-right: 83px;
 
@@ -88,6 +82,7 @@
       font-size: 15px;
       color: $violet;
     }
+
     &:nth-child(2) {
       padding-top: 85px;
 
@@ -95,6 +90,7 @@
         padding-bottom: 4px;
       }
     }
+
     &:nth-child(3) {
       padding-top: 75px;
 
@@ -102,13 +98,16 @@
         padding-bottom: 22px;
       }
     }
+
     &:nth-child(4) {
       padding-top: 100px;
     }
+
     &:nth-child(5) {
       padding-top: 100px;
     }
   }
+
   .card {
     border: none;
 
@@ -126,34 +125,11 @@
   }
 }
 
-@include respond-to (lg) {
-  .section-faq {
-    .accordion-holder {
-      overflow: auto;
-      height: 500px;
-    }
-  }
-}
-
-@include respond-to (md) {
-  .section-faq {
-    .accordion-holder {
-      overflow: auto;
-      height: 500px;
-    }
-  }
-}
-
 @include respond-to(sm) {
   .section-faq {
     padding: 67px 0;
 
     .accordion-holder {
-      overflow: auto;
-      height: 500px;
-    }
-
-    .section-holder {
       &:nth-child(2),
       &:nth-child(3),
       &:nth-child(4),
@@ -164,9 +140,11 @@
       .title {
         font-size: 25px;
       }
+      
       .description {
         padding-right: 0;
       }
+
       .btn-link {
         font-size: 20px;
       }
@@ -208,7 +186,7 @@
       }  
     }
    
-    .accordion-holder {
+    .accordion-wrapper {
       margin-top: 73px;
     }
 
@@ -229,11 +207,6 @@
     padding: 50px 0;
 
     .accordion-holder {
-      overflow: auto;
-      height: 500px;
-    }
-
-    .section-holder {
       &:nth-child(2),
       &:nth-child(3),
       &:nth-child(4),
@@ -294,7 +267,7 @@
       padding-bottom: 20px;
     }
 
-    .accordion-holder {
+    .accordion-wrapper {
       margin-top: 73px;
     }
 
