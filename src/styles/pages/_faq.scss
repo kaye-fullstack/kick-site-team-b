@@ -1,0 +1,122 @@
+.faq {
+  .section-faq {
+    .top-holder {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .text-holder {
+        margin-top: 16px;
+        margin-left: 199px;
+    
+        .title {
+          font-family: $font-spectral-regular;
+          font-size: 28px;
+          color: $navy-blue;
+          line-height: 2;
+          text-align: center;
+        }
+
+        .description {
+          margin-bottom: 0;
+
+          font-family: $font-spectral-regular;
+          font-size: 15px;
+          color: $navy-blue;
+          letter-spacing: -0.7px;
+          text-align: center;
+        }
+      }
+    }
+
+    .logo {
+      margin-top: 96px;
+      margin-left: 38px;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .faq {
+    .section-faq {
+      .top-holder {
+        .text-holder {
+          margin-top: 80px;
+          margin-left: 0;
+
+          .title {
+            font-size: 37px;
+          }
+
+          .description {
+            margin-bottom: 59px;
+
+            font-size: 16px;
+          }
+        }
+        
+        .logo {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .faq {
+    .section-faq {
+      .top-holder {
+        .text-holder {
+          margin-top: 80px;
+          margin-left: 0;
+
+          .title {
+            font-size: 37px;
+          }
+
+          .description {
+            margin-bottom: 59px;
+
+            font-size: 16px;
+          }
+        }
+        
+        .logo {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .faq {
+    .section-faq {
+      .top-holder {
+        .text-holder {
+          margin-top: 80px;
+          margin-left: 0;
+
+          .title {
+            font-size: 30px;
+            line-height: 1;
+          }
+
+          .description {
+            margin-bottom: 59px;
+
+            font-size: 16px;
+            line-height: none;
+          }
+        }
+        
+        .logo {
+          display: none;
+        }
+      }
+    }
+  }
+}

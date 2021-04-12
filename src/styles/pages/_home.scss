@@ -10,7 +10,7 @@
   .section-banner {
     background-image: url('../assets/images/home-banner.jpg');
 
-    .title-holder {
+    .title-holder{
       font-size: 38px;
     }
 
@@ -20,7 +20,9 @@
 
     .btn-holder {
       padding-left: 90px;
-    }
+      
+      .btn-pastel-yellow {
+        padding: 10px 22px; 
 
     .btn-pastel-yellow {
       padding: 10px 22px; 
@@ -190,6 +192,37 @@
         font-size: 12px;
       }
     }
+
+    .image-holder {
+      margin-top: 2px;
+      margin-left: 74px;
+
+    .rating-column {
+      margin-top: 12px;
+       
+      text-align: center;
+    }    
+    
+    .rating-star {
+      --percent: calc(var(--rating) / 5 * 100%);
+      display: block;
+
+      font-size: var(--star-size);
+      font-family: Times; 
+      line-height: 1;
+      
+      &:before {
+        content: "★★★★★";
+        font-size: 26px;
+        letter-spacing: 0;
+
+        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 
   .section-quotation-slider {
     background-color: $tortoise;
@@ -482,8 +515,7 @@
       text-align: center;
     }
   }
-  }
-
+  
   .section-how-it-works {
     padding: 100px 0 71px;
     width: 100%;
@@ -604,6 +636,9 @@
       &:last-child {
         background-color: $lavender;
       }
+    }
+  }
+  }
     }
   }
 }

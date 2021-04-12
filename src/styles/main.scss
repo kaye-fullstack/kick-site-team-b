@@ -28,10 +28,7 @@
   'layout/section-quotation-slider',
   'layout/section-testimonials',
   'layout/section-ratings',
-  'layout/section-trial-work-list',
-  'layout/section-sleep-habits',
-  'layout/section-accordion',
-  'layout/section-learn';
+  'layout/section-accordion';
 
 // 5. Components
 @import
@@ -41,9 +38,8 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/sleep',
-  'pages/doctor';
-
+  'pages/faq';
+ 
 // 7. Themes
 @import
   'themes/default';

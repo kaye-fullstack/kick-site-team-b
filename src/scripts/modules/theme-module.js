@@ -32,7 +32,6 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
-  
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -41,6 +40,7 @@ AppName.Modules.ThemeModule = (function () {
     _activeListItem();
     _lockScroll();
   };
+
 const elem = $('header');
 const scrolled = () => {
  const threshold = $(document).scrollTop() > 50;
@@ -58,7 +58,3 @@ const _activeListItem = () => {
     $(this).siblings().removeClass("active-js")
   });
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> c6e277e (all sections/pages-done)
