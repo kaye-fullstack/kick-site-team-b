@@ -15,12 +15,20 @@ AppName.Modules.ThemeModule = (function () {
          el: '.swiper-pagination',
        },
      });
-  };
 
-  const _activeListItem = () => {
-    $('.navigation .list-group-item').click(function() {
-      $(this).addClass("active-js")
-      $(this).siblings().removeClass("active-js")
+     function lockScroll() {
+      if ($('body').hasClass('lock-scroll')) {
+          $('body').removeClass('lock-scroll');
+      }
+      else {
+          $('body').addClass('lock-scroll');
+      }
+    }  
+    
+    $(document).ready(function() {
+      $('.icon-bar').click(function() {
+         lockScroll();
+      }); 
     });
   };
 
@@ -30,21 +38,23 @@ AppName.Modules.ThemeModule = (function () {
   const init = function () {
     _privateMethod();
     _activeListItem();
+    _lockScroll();
   };
-    
-  const elem = $('header');
-  const scrolled = () => {
-  const threshold = $(document).scrollTop() > 50;
-  elem.toggleClass('scrolled', threshold);
+
+const elem = $('header');
+const scrolled = () => {
+ const threshold = $(document).scrollTop() > 50;
+ elem.toggleClass('scrolled', threshold);
+ };
+$(window).on({ scroll: scrolled });
+  return {
+    init: init,
   };
-  $(window).on({ scroll: scrolled });
-  $('body').css({'overflow':'hidden'});
-  $(document).bind('scroll',function () { 
-      window.scrollTo(0,0); 
+})();
+
+const _activeListItem = () => {
+  $('.navigation .list-group-item').click(function() {
+    $(this).addClass("active-js")
+    $(this).siblings().removeClass("active-js")
   });
-  $(document).unbind('scroll'); 
-  $('body').css({'overflow':'visible'});
-    return {
-      init: init,
-    };
-  })();
+};
