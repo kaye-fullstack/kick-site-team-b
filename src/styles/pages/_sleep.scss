@@ -6,34 +6,17 @@
     background-image: url('../assets/images/sleep-product-hero.jpg');
     background-position: center -165px;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     .title {
-=======
-    .banner-title {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
-    .title {
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
       font-size: 38px;
       color: $white;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     .description {
-=======
-    .banner-description {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
-    .description {
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
       font-size: 16.3px;
     }
 
     .btn-holder {
       padding-left: 90px;
-<<<<<<< HEAD
     }
 
     .btn-pastel-yellow {
@@ -41,15 +24,6 @@
       margin-top: 104px;
 
       font-size: 15px;
-=======
-      
-      .btn-pastel-yellow {
-        padding: 10px 24px;
-        margin-top: 104px;
-
-        font-size: 15px;
-      }
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
     }
   }
 
@@ -130,10 +104,7 @@
 
     .product-holder {
       position: relative;
-<<<<<<< HEAD
 
-=======
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
       margin: 0 28px;
     }
 
@@ -179,11 +150,7 @@
       }
     }
 
-<<<<<<< HEAD
     .disclaimer {
-=======
-    .desclaimer {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
       margin-top: 84px;
       margin-left: -7px;
 
@@ -218,10 +185,6 @@
       width: 438px;
 
       &:first-child:before {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
         content: "";
         position: absolute;
         top: 0;
@@ -234,23 +197,6 @@
         background-color: $white;
         border-bottom-left-radius: 90px;
         border-bottom-right-radius: 90px;
-<<<<<<< HEAD
-=======
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-  
-          width: 46px;
-          height: 21px;
-  
-          background-color: $white;
-          border-bottom-left-radius: 90px;
-          border-bottom-right-radius: 90px;
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
       }
     }
 
@@ -300,10 +246,6 @@
       }
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
 
   .section-faq {
     padding: 76px 0 78px;
@@ -339,11 +281,6 @@
       padding-right: 0;
     }
   }
-<<<<<<< HEAD
-=======
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
 }
 
 @include respond-to(lg) {
@@ -353,11 +290,7 @@
 
       background-position: center;
 
-<<<<<<< HEAD
       .title-holder {
-=======
-      .banner-title-holder {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
         padding-left: 32px;
       }
 
@@ -380,11 +313,7 @@
     .section-sleep-medication {
       padding: 67px 0 24px;
 
-<<<<<<< HEAD
       .disclaimer {
-=======
-      .desclaimer {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
         margin-top: 52px;
       }
     }
@@ -399,21 +328,12 @@
         }
       }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
 
     .section-faq {
       .card-body {
         padding-right: 61px;
       }
     }
-<<<<<<< HEAD
-=======
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
   }
 }
 
@@ -424,11 +344,7 @@
 
       background-position: center;
 
-<<<<<<< HEAD
       .title-holder {
-=======
-      .banner-title-holder {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
         padding-top: 124px;
         padding-left: 0;
       }
@@ -482,11 +398,7 @@
         text-align: center;
       }
 
-<<<<<<< HEAD
       .disclaimer {
-=======
-      .desclaimer {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
         margin-top: 40px;
         margin-left: 0;
         width: 100%;
@@ -513,10 +425,6 @@
         }
       }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
 
     .section-faq {
       padding: 77px 0 72px;
@@ -529,11 +437,6 @@
         padding-right: 5px;
       }
     }
-<<<<<<< HEAD
-=======
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
   }
 }
 
@@ -544,21 +447,12 @@
 
       background-position: center;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       .title {
-=======
-      .banner-title {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
-      .title {
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
         font-size: 28px;
       }
 
       .btn-holder {
         padding-left: 4px;
-<<<<<<< HEAD
       }
 
       .btn-pastel-yellow {
@@ -567,16 +461,6 @@
         
         font-size: 16px;
         font-weight: 600;
-=======
-        
-        .btn-pastel-yellow {
-          padding: 10px 50px;
-          margin-top: 5px;
-          
-          font-size: 16px;
-          font-weight: 600;
-        }
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
       }
     }
 
@@ -635,11 +519,7 @@
         text-align: center;
       }
 
-<<<<<<< HEAD
       .disclaimer {
-=======
-      .desclaimer {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
         margin-top: 6px;
       }
     }
@@ -694,10 +574,6 @@
         font-size: 14px;
       }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
 
     .section-faq {
       padding: 60px 0;
@@ -712,11 +588,6 @@
         column-count: 1;
       }
     }
-<<<<<<< HEAD
-=======
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
   }
 }
 
@@ -727,21 +598,12 @@
 
       background-position: center;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       .title {
-=======
-      .banner-title {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
-      .title {
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
         font-size: 28px;
       }
 
       .btn-holder {
         padding-left: 4px;
-<<<<<<< HEAD
       }
 
       .btn-pastel-yellow {
@@ -750,16 +612,6 @@
         
         font-size: 16px;
         font-weight: 600;
-=======
-        
-        .btn-pastel-yellow {
-          padding: 10px 50px;
-          margin-top: 5px;
-          
-          font-size: 16px;
-          font-weight: 600;
-        }
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
       }
     }
 
@@ -809,11 +661,7 @@
         text-align: center;
       }
 
-<<<<<<< HEAD
       .disclaimer {
-=======
-      .desclaimer {
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
         margin-top: 6px;
       }
     }
@@ -862,10 +710,6 @@
         font-size: 14px;
       }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
 
     .section-faq {
       padding: 60px 0 29px;
@@ -880,10 +724,5 @@
         column-count: 1;
       }
     }
-<<<<<<< HEAD
-=======
->>>>>>> 5e11d39 (doctor ama page wip - navigation issue)
-=======
->>>>>>> fc68bf6 (doctors doctor-ama and sleep responsive done)
   }
 }
