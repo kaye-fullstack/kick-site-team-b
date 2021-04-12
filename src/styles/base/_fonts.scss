@@ -16,7 +16,7 @@
 //Spectral font family
 @include font-face($font-spectral-light, $base-url + 'fonts/', 'Spectral-Light', 'Spectral-Light');
 
-@include font-face($font-spectral-medium, $base-url + 'fonts/', 'Spectral-medium', 'Spectral-medium');
+@include font-face($font-spectral-medium, $base-url + 'fonts/', 'Spectral-Medium', 'Spectral-Medium');
 
 @include font-face($font-spectral-regular, $base-url + 'fonts/', 'Spectral-Regular', 'Spectral-Regular');
 

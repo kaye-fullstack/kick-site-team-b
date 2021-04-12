@@ -45,14 +45,16 @@
 
 .btn-violet-outline {
   background-color: transparent;
+
   font-family: $font-spectral-regular;
   color: $violet;
 
   border: 1px solid $violet;
+
   outline: 0;
 
   cursor: pointer;
-  
+
   &:hover {
     color: $white;
     background-color: $violet;
@@ -62,6 +64,7 @@
 
   &:focus {
     color: $white;
+
     background-color: $violet;
     outline: 5px auto $violet;
 
@@ -82,8 +85,8 @@
  
   &:hover {
   color: $black;
-  background-color: transparent;
 
+  background-color: transparent;
   border: 1px solid $violet;
 
   transition: all 0.4s ease-in;
@@ -113,8 +116,10 @@
   }
 }
 
+
 .btn-link {
   position: relative;
+
   padding: 11px 30px 19px 9px;
   width: 100%;
   height: 100%;
@@ -143,6 +148,7 @@
   height: 3px;
 
   background-color: $navy-blue;
+
   transition: 0.2s ease-in;
 }
 
@@ -151,6 +157,7 @@
   position: absolute;
   top: 50%;
   right: 0;
+
   width: 25px;
   height: 3px;
 
@@ -170,7 +177,6 @@
 
 .btn-link[aria-expanded="true"]:after {
   background-color: $red-orange;
-
   transform: initial;
 }
 

@@ -6,13 +6,11 @@
   background-repeat: no-repeat;
 
   .title-holder {
-    padding-top: 168px;
+    padding-top: 147px;
     padding-left: 89px;
 
     letter-spacing: -1.7px;
-
-    .title {    
-      font-size: 38.3px;
+    .title {
       font-family: $font-spectral-light;
       color: $violet;
 
@@ -21,12 +19,10 @@
   }
 
   .description-holder {
-    padding-top: 9px;
     padding-left: 88px;
-    padding-bottom: 74px;
-    
+    padding-bottom: 49px;
+
     .description {
-      font-size: 17px;
       font-family: $font-spectral-light;
       color: $violet;
       
@@ -44,7 +40,6 @@
 @include respond-to(md) {
   .section-banner {
     background-position: center;
-    
     .title-holder {
       padding-left: 20px;
     }
@@ -62,7 +57,6 @@
     .title-holder {
       padding-left: 0;
     }
-    
     .description-holder {
       padding-left: 0;
     }
@@ -72,7 +66,6 @@
 @include respond-to(xs) {
   .section-banner {
     background-position: left;
-    
     .title-holder {
       padding-left: 0;
     }
