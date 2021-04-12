@@ -66,12 +66,12 @@
   .btn-holder {
     margin-left: -5px;
     margin-top: 52px;
+  }
+  
+  .btn-pastel-yellow {
+    padding: 11px 42px 12px;
 
-    .btn-pastel-yellow {
-      padding: 11px 42px 12px;
-
-      font-size: 16px;
-    }
+    font-size: 16px;
   }
 
   .doctor-image {
@@ -109,15 +109,13 @@
 
 @include respond-to(lg) {
   .section-doctor {
-    .btn-holder {
-      .btn-pastel-yellow {
-        padding: 11px 56px 11px;
-      }
+    .btn-pastel-yellow {
+      padding: 11px 56px 11px;
+    }
 
-      .name {
-        margin: 31px auto 0;
-        width: 134px;
-      }
+    .name {
+      margin: 31px auto 0;
+      width: 134px;
     }
   }
 }
@@ -169,10 +167,8 @@
       width: 134px;
     }
 
-    .btn-holder {
-      .btn-pastel-yellow {
-        font-size: 16px;
-      }
+    .btn-pastel-yellow {
+      font-size: 16px;
     }
   }
 }
@@ -244,14 +240,12 @@
 
       text-align: center;
     }
- 
-    .btn-holder {
-      .btn-pastel-yellow {
-        padding: 14px 80px;
-        width: 100%;
 
-        font-size: 12px;
-      }
+    .btn-pastel-yellow {
+      padding: 14px 80px;
+      width: 100%;
+
+      font-size: 12px;
     }
   }
 }
@@ -323,12 +317,10 @@
       text-align: center;
     }
     
-    .btn-holder {
-      .btn-pastel-yellow {
-        padding: 14px 80px;
+    .btn-pastel-yellow {
+      padding: 14px 80px;
 
-        font-size: 12px;
-      }
+      font-size: 12px;
     }
   }
 }

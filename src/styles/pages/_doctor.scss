@@ -128,13 +128,13 @@
       margin-left: 0;
 
       text-align: center;
+    }
 
-      .btn-pastel-yellow {
-        width: 182px;
-        height: 46px;
+    .btn-pastel-yellow {
+      width: 182px;
+      height: 46px;
 
-        font-size: 14px;
-      }
+      font-size: 14px;
     }
   }
 }
@@ -302,6 +302,8 @@
       }
 
       .swiper-container {
+        z-index: 0;
+
         margin-left: 0;
         height: 151px;
         width: 100%;
