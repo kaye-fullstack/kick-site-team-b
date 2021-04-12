@@ -1,20 +1,20 @@
 //main: ../main.scss
-
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-
 .section-header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
 
-  background: transparent;
+  background-color: transparent;
+  transition: all 0.5s ease-out;
 
   &.scrolled {
     background-color: $white;
+    transition: all 0.5s ease-out;
   }
 
   .navbar-nav {
@@ -26,6 +26,29 @@
     font-family: $font-basis-grotesque-pro-bold;
     font-size: 16px;
     color:$navy-blue;
+  }
+
+  .nav-link:hover {
+    position: relative;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 1px;
+      width: 6px;
+      height: 6px;
+      
+      border-radius: 100%;
+    }
+
+    &:hover:before {
+      background-color: $violet;
+    }
+
+    &:focus:before {
+      background-color: transparent;
+    }
   }
 
   .nav-link {
@@ -40,44 +63,12 @@
       position: absolute;
       top: 6px;
       right: -2px;
-
       width: 11px;
       height: 11px;
 
       background-color: transparent;
-      background-image: url('../assets/images/hover-image.svg');
+      background-image: url("../assets/images/hover-image.svg");
       background-repeat: no-repeat;
-    }
-  }
-
-  .nav-item:focus:before {
-    position: absolute;
-    top: 6px;
-    right: -2px;
-
-    width: 11px;
-    height: 11px;
-
-    background-color: transparent;
-  }
-
-  .nav-item {
-    position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 8px;
-      right: 1px;
-
-      width: 6px;
-      height: 6px;
-
-      border-radius: 100%;
-    }
-
-    &:hover:before {
-      background-color: #1E2347;
     }
   }
 
@@ -98,23 +89,48 @@
   }
 }
 
-//767 to 576
+@include respond-to(lg) {
+  .section-header {
+    .header-logo {
+      margin-left: 37px;
+    }
+    .navbar-nav {
+      margin-right: 29px;
+    }
+    .nav-link {
+      margin-left: 6px;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .section-header {
+    .header-logo {
+      margin-left: 0;
+    }
+    .navbar-nav {
+      margin-right: -10px;
+    }
+  }
+}
+
 @include respond-to(sm) {
   .section-header {
-
     .header-logo {
       margin-top: 13px;
       margin-left: 5px;
       width: 80px;
     }
-
     .navbar-toggler {
       margin-left: 90%;
       margin-top: -6%;
-
       .icon-bar {
         margin-top: 5px;
       }
+    }
+
+    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
+      transform: rotate(225deg) translate(-4px, -4px);
     }
 
     .navbar-nav {
@@ -127,23 +143,23 @@
   }
 }
 
-//575 to 320
 @include respond-to(xs) {
   .section-header {
-
     .header-logo {
       margin-top: 13px;
       margin-left: 5px;
       width: 80px;
     }
-
     .navbar-toggler {
       margin-left: 85%;
       margin-top: -12%;
-
       .icon-bar {
         margin-top: 5px;
       }
+    }
+
+    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
+      transform: rotate(225deg) translate(-4px, -4px);
     }
 
     .navbar-nav {
@@ -153,16 +169,15 @@
       margin-left: 15px;
     }
 
-
     .collapse.show {
       position: fixed;
       top: 75px;
       right: 0;
       bottom: 0;
       left: 0;
-
-      height: 100% !important;
       display: block;
+      height: 100% !important;
+
       background-color:$white;
     }
 
@@ -172,9 +187,9 @@
       right: 0;
       bottom: 0;
       left: 0;
-
-      height: 100% !important;
       display: block;
+      height: 100% !important;
+
       background-color: $white;
     }
   }

@@ -26,9 +26,10 @@
   'layout/section-banner',
   'layout/section-image-text',
   'layout/section-quotation-slider',
-  'layout/section-doctor',
   'layout/section-testimonials',
-  'layout/section-ratings';
+  'layout/section-reviews',
+  'layout/section-ratings',
+  'layout/section-doctor';
 
 // 5. Components
 @import
@@ -37,7 +38,8 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/reviews';
 
 // 7. Themes
 @import

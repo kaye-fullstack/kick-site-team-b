@@ -1,57 +1,91 @@
 //main: ../main.scss
-
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 .btn-pastel-yellow {
-  background-color: $pastel-yellow;
-
   font-family: $font-spectral-light;
+  background-color: $pastel-yellow;
 
   border: 0;
   border-color: none;
-
   outline: 0;
+
   cursor: pointer;
 
   &:hover {
-  background-color: transparent;
+    color: $white;
+    background-color: $violet;
+
+    transition: all 0.4s ease-in;
   }
 
   &:focus {
     outline: 5px auto;
+    transition: all 0.4s ease-in;
   }
 }
 
 .btn-black-outline {
   background-color: transparent;
-
   font-family: $font-spectral-light;
 
   border: 1px solid $black;
-
   outline: 0;
+
   cursor: pointer;
 
   &:hover {
-  background-color: $pastel-grey;
+    color: $white;
+    background-color: $violet;
+
+    transition: all 0.4s ease-in;
+  }
+}
+
+.btn-violet-outline {
+  background-color: transparent;
+  font-family: $font-spectral-regular;
+  color: $violet;
+
+  border: 1px solid $violet;
+  outline: 0;
+
+  cursor: pointer;
+  
+  &:hover {
+    color: $white;
+    background-color: $violet;
+
+    transition: all 0.4s ease-in;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $violet;
+    outline: 5px auto $violet;
+
+    transition: all 0.4s ease-in;
   }
 }
 
 .btn-violet {
+  color: $white;
   background-color: $violet;
-
   font-family: $font-spectral-light;
 
   border: 0;
   border-color: none;
-
   outline: 0;
+
   cursor: pointer;
  
   &:hover {
   color: $black;
   background-color: transparent;
+
+  border: 1px solid $violet;
+
+  transition: all 0.4s ease-in;
   }
 }
 
@@ -59,20 +93,95 @@
   position: relative;
   top: -32px;
   right: -211px;
- 
   width: 35px;
   height: 32px;
 
   background-color: $navy-blue;
   background-size: 18px;
+
   border-left: none;
   outline: none;
 
   cursor: pointer;
+
+  &:hover {
+    color: $violet;
+    background-color: transparent;
+    
+    transition: all 0.4s ease-in;
+  }
 }
 
-.btn-navy:hover {
-  background-color: transparent;
+.btn-link {
+  position: relative;
+  padding: 11px 30px 19px 9px;
+  width: 100%;
+  height: 100%;
+
+  font-family: $font-spectral-medium;
+  font-size: 30px;
+  color: $navy-blue;
+  text-align: initial;
+  white-space: normal;
+
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid $pastel-yellow;
 }
 
+.btn-link:hover {
+  background: rgba(255,247,229,0.459918);
+  color: $red-orange;
+}
 
+.btn-link:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 25px;
+  height: 3px;
+
+  background-color: $navy-blue;
+  transition: 0.2s ease-in;
+}
+
+.btn-link:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 25px;
+  height: 3px;
+
+  background-color: $navy-blue;
+ 
+  transform: rotate(90deg);
+  transition: 0.2s ease-in;
+}
+
+.btn-link:hover:before {
+  background-color: $red-orange;
+}
+
+.btn-link:hover:after {
+  background-color: $red-orange;
+}
+
+.btn-link[aria-expanded="true"]:after {
+  background-color: $red-orange;
+
+  transform: initial;
+}
+
+.btn-link[aria-expanded="true"] {
+  color: $red-orange;
+  text-decoration: none;
+
+  transform: initial;
+}
+
+.btn-link[aria-expanded="false"] {
+  text-decoration: none;
+
+  transform: initial;
+}

@@ -1,27 +1,28 @@
 AppName.Modules.ThemeModule = (function () {
   //Dependencies
   var core = AppName.Core;
-
   //////////////////////
   // Private Methods //
   ////////////////////
   const _privateMethod = () => {
     // private stuff
-
     const swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+      autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
+       pagination: {
+         el: '.swiper-pagination',
+       },
+     });
   };
-
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
     _privateMethod();
+    _activeListItem();
   };
-
 const elem = $('header');
 const scrolled = () => {
  const threshold = $(document).scrollTop() > 50;
@@ -34,8 +35,13 @@ $(document).bind('scroll',function () {
 });
 $(document).unbind('scroll'); 
 $('body').css({'overflow':'visible'});
-
   return {
     init: init,
   };
 })();
+const _activeListItem = () => {
+  $('.faq-navigation .list-group-item').click(function() {
+    $(this).addClass("active-js")
+    $(this).siblings().removeClass("active-js")
+  });
+};
