@@ -4,10 +4,12 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .section-faq {
+  
   .content-wrapper{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin: 80px 0px;
 
     .navigation {
       position: sticky;
@@ -69,6 +71,8 @@
   }
 
   .accordion-wrapper {
+    position: relative;
+
     width: 100%;
   }
 
@@ -148,7 +152,7 @@
       .title {
         font-size: 25px;
       }
-
+      
       .description {
         padding-right: 0;
       }
@@ -197,8 +201,8 @@
         }
       }  
     }
-
-    .accordion-holder {
+   
+    .accordion-wrapper {
       margin-top: 73px;
     }
 
@@ -275,7 +279,7 @@
       }  
     }
 
-    .accordion-holder {
+    .accordion-wrapper {
       margin-top: 73px;
     }
 

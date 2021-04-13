@@ -6,7 +6,6 @@
   font-family: $font-spectral-light;
   background-color: $pastel-yellow;
 
-  background-color: $pastel-yellow;
   border: 0;
   border-color: none;
   outline: 0;
@@ -15,21 +14,22 @@
 
   &:hover {
     color: $white;
+
     background-color: $violet;
 
-    transition: all 0.4s ease-in;
+    transition: 0.2s ease-in;
   }
 
   &:focus {
-    outline: 5px auto;
-    transition: all 0.4s ease-in;
+    outline: 1px;
+    transition: 0.2s ease-in;
   }
 }
 
 .btn-black-outline {
-  background-color: transparent;
   font-family: $font-spectral-light;
 
+  background-color: transparent;
   border: 1px solid $black;
   outline: 0;
 
@@ -37,18 +37,18 @@
 
   &:hover {
     color: $white;
+
     background-color: $violet;
 
-    transition: all 0.4s ease-in;
+    transition: 0.2s ease-in;
   }
 }
 
 .btn-violet-outline {
-  background-color: transparent;
-
   font-family: $font-spectral-regular;
   color: $violet;
 
+  background-color: transparent;
   border: 1px solid $violet;
 
   outline: 0;
@@ -57,9 +57,10 @@
 
   &:hover {
     color: $white;
+
     background-color: $violet;
 
-    transition: all 0.4s ease-in;
+    transition: 0.2s ease-in;
   }
 }
 
@@ -86,30 +87,30 @@
     color: $white;
 
     background-color: $violet;
-    outline: 5px auto $violet;
+    outline: 1px auto $violet;
 
-    transition: all 0.4s ease-in;
+    transition: 0.2s ease-in;
   }
 }
 
 .btn-violet {
-  color: $white;
-  background-color: $violet;
   font-family: $font-spectral-light;
+  color: $white;
 
-  border: 0;
+  background-color: $violet;
   border-color: none;
+  border: 0;
   outline: 0;
 
   cursor: pointer;
  
   &:hover {
-  color: $black;
+    color: $black;
 
-  background-color: transparent;
-  border: 1px solid $violet;
+    background-color: transparent;
+    border: 1px solid $violet;
 
-  transition: all 0.4s ease-in;
+    transition: 0.2s ease-in;
   }
 }
 
@@ -122,7 +123,6 @@
 
   background-color: $navy-blue;
   background-size: 18px;
-
   border-left: none;
   outline: none;
 
@@ -132,7 +132,7 @@
     color: $violet;
     background-color: transparent;
     
-    transition: all 0.4s ease-in;
+    transition: 0.2s ease-in;
   }
 }
 
@@ -163,7 +163,6 @@
   position: absolute;
   top: 50%;
   right: 0;
-
   width: 25px;
   height: 3px;
 
@@ -182,9 +181,9 @@
   height: 3px;
 
   background-color: $navy-blue;
-
-  transition: 0.2s ease-in;
+ 
   transform: rotate(90deg);
+  transition: 0.2s ease-in;
 }
 
 .btn-link:hover:before {
@@ -197,7 +196,6 @@
 
 .btn-link[aria-expanded="true"]:after {
   background-color: $red-orange;
-
   transform: initial;
 }
 

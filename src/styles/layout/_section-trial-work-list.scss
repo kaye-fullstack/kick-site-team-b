@@ -1,21 +1,23 @@
 .section-trial-work-list {
-  padding: 77px 0 130px;
+  padding: 77px 0 140px;
   width: 100%;
   height: auto;
 
   background-color: $lavender;
     
   .title {
+    padding-top: 5px;
+
     font-family: $font-spectral-medium;
     font-size: 30px;
-    letter-spacing: 0.1px;
+    letter-spacing: -1;
     color: $violet;
     text-align: center;
     word-spacing: 1px;
   }
 
   .trial-work-content {
-    margin: 0 261px;
+    margin: 0 230px 0 261px;
   }
 
   .trial-work-details {
@@ -25,8 +27,8 @@
   }
 
   .number {
-    margin-top: 46px;
-    margin-left: -11px;
+    margin-top: 35px;
+    margin-left: -10px;
     width: 30px;
     height: 30px;
 
@@ -39,11 +41,11 @@
   }
 
   .trial-work-description {
-    margin: 60px 0 -18px 33px;
+    margin: 60px 0 -15px 33px;
   }
 
   .heading {
-    margin: 0;
+    margin-bottom: 2px;
 
     font-family: $font-spectral-medium;
     font-size: 17px; 
@@ -53,8 +55,9 @@
 
   .description {
     font-family: $font-spectral-medium;
-    font-size: 16px; 
+    font-size: 14px; 
     color: $violet;
+    letter-spacing: 0.3px;
   }
 }
 
@@ -78,6 +81,8 @@
 
 @include respond-to(sm) {
   .section-trial-work-list {
+    padding: 60px 0;
+    
     .trial-work-content {
       padding: 0 10px;
       margin: 0;
@@ -95,9 +100,15 @@
 
 @include respond-to(xs) {
   .section-trial-work-list {
+    padding: 60px 0;
+
     .trial-work-content {
       padding: 0 10px;
       margin: 0;
+    }
+
+    .trial-work-description {
+      margin: 45px 0 -15px 20px;
     }
 
     .trial-work-details {
