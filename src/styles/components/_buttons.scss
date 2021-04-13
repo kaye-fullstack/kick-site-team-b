@@ -151,47 +151,45 @@
 
   border-top: 3px solid transparent;
   border-bottom: 3px solid $pastel-yellow;
-}
 
-.btn-link:hover {
-  background: rgba(255,247,229,0.459918);
-  color: $red-orange;
-}
+  &:hover {
+    background: rgba(255,247,229,0.459918);
+    color: $red-orange;
+  }
 
-.btn-link:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 25px;
-  height: 3px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+  
+    width: 25px;
+    height: 3px;
+  
+    background-color: $navy-blue;
+  
+    transition: 0.2s ease-in;
+  }
 
-  background-color: $navy-blue;
-
-  transition: 0.2s ease-in;
-}
-
-.btn-link:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-
-  width: 25px;
-  height: 3px;
-
-  background-color: $navy-blue;
- 
-  transform: rotate(90deg);
-  transition: 0.2s ease-in;
-}
-
-.btn-link:hover:before {
-  background-color: $red-orange;
-}
-
-.btn-link:hover:after {
-  background-color: $red-orange;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+  
+    width: 25px;
+    height: 3px;
+  
+    background-color: $navy-blue;
+   
+    transform: rotate(90deg);
+    transition: 0.2s ease-in;
+  }
+  
+  &:hover:before,
+  &:hover:after {
+    background-color: $red-orange;
+  }
 }
 
 .btn-link[aria-expanded="true"]:after {
@@ -201,12 +199,6 @@
 
 .btn-link[aria-expanded="true"] {
   color: $red-orange;
-  text-decoration: none;
-
-  transform: initial;
-}
-
-.btn-link[aria-expanded="false"] {
   text-decoration: none;
 
   transform: initial;
