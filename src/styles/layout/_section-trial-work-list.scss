@@ -6,6 +6,8 @@
   background-color: $lavender;
     
   .title {
+    padding-top: 5px;
+
     font-family: $font-spectral-medium;
     font-size: 30px;
     letter-spacing: -1;
@@ -53,7 +55,7 @@
 
   .description {
     font-family: $font-spectral-medium;
-    font-size: 16px; 
+    font-size: 14px; 
     color: $violet;
     letter-spacing: 0.3px;
   }
@@ -79,6 +81,8 @@
 
 @include respond-to(sm) {
   .section-trial-work-list {
+    padding: 60px 0;
+    
     .trial-work-content {
       padding: 0 10px;
       margin: 0;
@@ -96,9 +100,15 @@
 
 @include respond-to(xs) {
   .section-trial-work-list {
+    padding: 60px 0;
+
     .trial-work-content {
       padding: 0 10px;
       margin: 0;
+    }
+
+    .trial-work-description {
+      margin: 45px 0 -15px 20px;
     }
 
     .trial-work-details {
