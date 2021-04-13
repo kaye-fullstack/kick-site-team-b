@@ -11,21 +11,25 @@
     background-image: url('../assets/images/home-banner.jpg');
 
     .title {
+      padding-top: 142px;
+      width: 245px;
+
       font-size: 38px;
     }
 
     .description {
+      padding-top: 0;
+      padding-bottom: 48px;
+      width: 325px;
+
       font-size: 16.3px;
     }
 
-    .btn-holder {
-      padding-left: 90px;
-      
-      .btn-pastel-yellow {
-        padding: 10px 22px; 
+    .btn-pastel-yellow {
+      padding: 10px 22px; 
+      margin-bottom: 150px;
 
-        font-size: 15px;
-      }
+      font-size: 15px;
     }
   }
 
@@ -34,14 +38,14 @@
 
     background-color: $violet;
 
-    .holder {
+    .logo-holder {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center; 
       padding-top: 87px;
 
-      .logos {
+      .logo {
         padding-left: 36px;
         padding-right: 34px;
       }
@@ -70,28 +74,24 @@
       margin-left: 228px;
       width: 655px;
 
-      .image-holder {
+      .image {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 44px;
-        
-        .images {
-          padding-right: 34px;
-          padding-left: 34px;
-        }
+        padding-right: 34px;
+        padding-left: 34px;
       }
-
-      .text-holder {
+      
+      .subtitle {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 14px;
+        margin-bottom: 13px;
 
-        .subtitle {
-          font-family: $font-spectral-light;
-          font-size: 19.8px;
-        }
+        font-family: $font-spectral-light;
+        font-size: 19.8px;
       }
 
       .button-holder {
@@ -122,103 +122,77 @@
   .section-expert-care {
     background-color: $lavender;
 
-    .text-holder {
-      padding-top: 126px;
-      padding-left: 161px;
+    .custom-container {
+      width: 960px;
+    }
 
-      .heading {
-        margin-bottom: 23px;
+    .heading {
+      padding-top: 127px;
+      padding-left: 72px;
+      margin-bottom: 23px;
+      
+      font-family: $font-spectral-light;
+      font-size: 12.9px;
+    }
 
-        font-family: $font-spectral-light;
-        font-size: 12.5px;
-      }
+    .title {
+      padding-left: 72px;
 
-      .title {
-        font-family: $font-spectral-light;
-        font-size: 27.5px;
-      }
+      font-family: $font-spectral-light;
+      font-size: 27.5px;
     }
 
     .list-holder {
       margin-top: 16px;
 
       list-style-type: none;
-
-      .list {
-        position: relative;
-        padding-right: 14px;
-        padding-left: 151px;
-        margin-bottom: 16px;
-        max-width: 100%;
-
-        font-family: $font-spectral-light;
-        font-size: 17.8px;
-        color: $violet;
-
-        line-height: 1.41;
-
-        .numbers {
-          position: absolute;
-          top: 2px;
-          left: 122px;
-          display: inline-block;
-          margin-right: 12px;
-          width: 20px;
-          height: 20px;
-
-          font-family: $font-basis-grotesque-pro-regular;
-          font-weight: bold;
-          font-size: 12px;
-          color: $white;
-          text-align: center;
-
-          background-color: $pastel-blue;
-          border-radius: 100%;
-          
-          line-height: 16px;
-        }
-      }
     }
 
-    .care-holder {
-      margin-top: 28px;
-      margin-left: 163px;
+    .list {
+      position: relative;
+      padding-left: 63px;
+      margin-bottom: 13px;
+      width: 392px;
 
-      .btn-black-outline {
-        padding: 7px 27px;
+      font-family: $font-spectral-light;
+      font-size: 17.8px;
+      color: $violet;
 
-        font-size: 12px;
-      }
+      line-height: 1.47;
     }
 
-    .image-holder {
-      margin-top: 2px;
-      margin-left: 74px;
+    .numbers {
+      position: absolute;
+      top: 3px;
+      left: 33px;
+      display: inline-block;
+      margin-right: 12px;
+      width: 19px;
+      height: 18px;
 
-    .rating-column {
-      margin-top: 12px;
-       
+      font-family: $font-basis-grotesque-pro-regular;
+      font-weight: bold;
+      font-size: 12px;
+      color: $white;
       text-align: center;
-    }    
-    
-    .rating-star {
-      --percent: calc(var(--rating) / 5 * 100%);
-      display: block;
 
-      font-size: var(--star-size);
-      font-family: Times; 
-      line-height: 1;
+      background-color: $pastel-blue;
+      border-radius: 100%;
       
-      &:before {
-        content: "★★★★★";
-        font-size: 26px;
-        letter-spacing: 0;
+      line-height: 16px;
+    }
 
-        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    .btn-black-outline {
+      padding: 7px 27px;
+      margin-top: 14px;
+      margin-left: 72px;
+      margin-bottom: 96px;
+
+      font-size: 12px;
+    }
+
+    .image {
+      margin-left: 74px;
     }
   }
 
@@ -448,72 +422,7 @@
     }
   }
 
-  .section-ratings {
-    --star-size: 60px;
-    --star-color: #f4f2f9;
-    --star-background: #404082;
-
-    padding: 38px 0 85px;
-    width: 100%;
-    height: auto;
-
-
-    .heading {
-      margin: 4px 20px 18px 37px;
-
-      font-family: $font-spectral-medium;
-      font-size: 30px;
-      letter-spacing: 0.1px;
-      color: $violet;
-      text-align: center;
-    }
-
-    .rating-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 0 auto;
-      width: 752px;
-    }
-
-    .rating-column {
-      margin-top: 12px;
-       
-      text-align: center;
-    }    
-    
-    .rating-star {
-      --percent: calc(var(--rating) / 5 * 100%);
-      display: block;
-
-      font-size: var(--star-size);
-      font-family: Times; 
-      line-height: 1;
-      
-      &:before {
-        content: "★★★★★";
-        font-size: 26px;
-        letter-spacing: 0;
-
-        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-
-    .rating-text {
-      padding: 0 42px;
-      margin-top: 9px;
-
-      font-family: $font-spectral-regular;
-      font-size: 14px;
-      color: $violet;
-      text-align: center;
-    }
-  }
-  }
+  
 
   .section-how-it-works {
     padding: 100px 0 71px;

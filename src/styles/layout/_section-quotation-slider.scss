@@ -1,79 +1,66 @@
 .section-quotation-slider {
-  height: 428px;
-
-  .img-holder {
+  .pink-semicircle {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 66px;
-
-    .pink-semicircle {
-      width: 58px;
-      height: 29px;
-    }
+    padding-top: 68px;
+    margin-left: 526px;
+    width: 58px;
   }
 
-  .text-holder {
-    .quotes {
-      margin-bottom: 8px;
+  .quote {
+    margin-bottom: 8px;
 
-      font-family: $font-spectral-regular;
-      font-size: 29px;
-      color: $pastel-pink;
-    }
-
-    .names {
-      font-family: $font-spectral-bold;
-      font-size: 15px;
-      color: $pastel-pink;
-    }
+    font-family: $font-spectral-regular;
+    font-size: 29px;
+    color: $pastel-pink;
   }
 
-  .swiper-container {
-    top: -31px;
-    width: 500px;
-    height: 275px;
-
-    overflow: hidden;
-
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      font-size: 18px;
-      text-align: center;
-    }
-
-    .swiper-pagination {
-      bottom: 22px;
-      color: $pastel-pink
-    }
-
-    .swiper-pagination-bullet {
-      background-color: $pastel-pink;
-    }
+  .name {
+    font-family: $font-spectral-bold;
+    font-size: 15px;
+    color: $pastel-pink;
   }
   
-  .link-holder {
+  .swiper-container {
+    top: 23px;
+    padding-bottom: 57px;
+    width: 500px;
+
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    bottom: 22px;
+    color: $pastel-pink
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $pastel-pink;
+  }
+  
+  .link-to {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -15px;
+    padding-bottom: 28px;
+    text-decoration: none;
+  }
 
-    .link-to {
-      text-decoration: none;
-    }
+  .link {
+    padding-top: 53px;
+    padding-bottom: 4px;
 
-    .link {
-      padding-bottom: 4px;
+    font-family: $font-spectral-regular;
+    font-size: 16px;
+    color: $pastel-pink;
 
-      font-family: $font-spectral-regular;
-      font-size: 16px;
-      color: $pastel-pink;
-
-      border-bottom: 1px solid;
-    }
+    border-bottom: 1px solid;
   }
 }
 
@@ -84,17 +71,12 @@
       width: 285px;
     }
 
-    .text-holder {
-      position: relative;
-      left: 0;
+    .quote {
+      font-size: 16px;
+    }
 
-      .quotes {
-        font-size: 16px;
-      }
-
-      .names {
-        font-size: 13px;
-      }
+    .name {
+      font-size: 13px;
     }
   }
 }

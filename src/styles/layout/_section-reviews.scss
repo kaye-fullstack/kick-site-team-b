@@ -1,6 +1,10 @@
 .section-reviews {
   padding-top: 60px;
 
+  .custom-container {
+    width: 665px;
+  }
+
   .text-holder {
     padding-top: 8px;
     padding-bottom: 75px;
@@ -19,7 +23,7 @@
       &::before {
         background-image: url('../assets/images/quotation-pink-reversed.png');
       }
-      .quotes {
+      .quote {
         margin-top: 52px;
         margin-bottom: 8px;
 
@@ -29,7 +33,7 @@
         text-align: center;
       }
 
-      .names {
+      .name {
         font-family: $font-spectral-regular;
         font-size: 15.6px;
         color: $pastel-pink;
@@ -52,7 +56,7 @@
         background-image: url('../assets/images/quotation-violet-semi-circle.png');
       }
 
-      .quotes {
+      .quote {
         margin-top: 52px;
         margin-bottom: 8px;
 
@@ -62,7 +66,7 @@
         text-align: center;
       }
 
-      .names {
+      .name {
         font-family: $font-spectral-regular;
         font-size: 15.6px;
         color: $violet;
@@ -74,6 +78,10 @@
 
 @include respond-to(xs) {
   .section-reviews {
+    .custom-container {
+      width: 320px;
+    }
+  
     .text-holder {
       &:nth-child(odd) {
         &:before {

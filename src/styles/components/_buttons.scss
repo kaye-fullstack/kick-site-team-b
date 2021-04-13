@@ -17,12 +17,12 @@
     color: $white;
     background-color: $violet;
 
-    transition: all 0.4s ease-in;
+    transition: all 0.2s ease-in;
   }
 
   &:focus {
     outline: 5px auto;
-    transition: all 0.4s ease-in;
+    transition: all 0.2s ease-in;
   }
 }
 
@@ -39,7 +39,7 @@
     color: $white;
     background-color: $violet;
 
-    transition: all 0.4s ease-in;
+    transition: all 0.2s ease-in;
   }
 }
 
@@ -86,7 +86,7 @@
 
   border: 1px solid $violet;
 
-  transition: all 0.4s ease-in;
+  transition: all 0.2s ease-in;
   }
 }
 

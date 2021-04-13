@@ -1,50 +1,44 @@
 .reviews {
-  transition: all .2s ease-in-out;
-
   .section-banner {
-    height: 542px;
-
     &:before {
       content: "";
       position: absolute;
-      top: 12%;
-      left: 56.4%;
+      top: 12.3%;
+      left: 56.44%;
       width: 332px;
       height: 287px;
 
       background-image: url('../assets/images/testimonials-banner.png');
     }
 
-    .title-holder {
+    .title {
       padding-top: 170px;
       padding-bottom: 7px;
 
-      .title {
-        font-size: 38px;
-      }
+      font-size: 38px;
     }
 
-    .description-holder {
-      padding-bottom: 74px;
-        
-      .description {
-        font-size: 17px;
-      }
+    .description {
+      width: 330px;
+      
+      font-size: 17px;
     }
 
-    .btn-holder {
-      padding-left: 114px;
+    .button-holder {
+      display: flex;
+      padding-top: 73px;
+      padding-bottom: 97px;
       
       .btn-pastel-yellow {
         font-size: 15px;
 
         &:first-child {
-          padding: 10px 22px;
-          margin-right: 38px;
+          padding: 11px 31px;
+          margin-right: 24px;
         }
 
         &:last-child {
-          padding: 10px 22px;
+          padding: 11px 29px;
         }
       }
     }
@@ -52,6 +46,7 @@
 
   .section-quotation-slider {
     padding-top: 98px;
+    padding-bottom: 108px;
     
     background-color: $tortoise;
   }
@@ -72,7 +67,7 @@
 @include respond-to(md) {
   .reviews {
     .section-banner {
-      .btn-holder {
+      .button-holder {
         padding-left: 20px;
       }
 
@@ -88,12 +83,14 @@
 @include respond-to(sm) {
   .reviews {
     .section-banner {
-      &:before {
-        width: 250px;
+      .description {
+        width: 275px;
+
+        font-size: 20px;
       }
 
-      .btn-holder {
-        padding-left: 20px;
+      &:before {
+        width: 250px;
       }
     }
   }
@@ -102,22 +99,29 @@
 @include respond-to(xs) {
   .reviews {
     .section-banner {
+      .description {
+        padding-bottom: 18px;
+        width: 285px;  
+      }
+      
       &:before {
         display: none;
       }
 
-      .description-holder {
-        padding-bottom: 18px;
-      }
 
-      .btn-holder {
+      .button-holder {
+        display: block;
+        
         .btn-pastel-yellow {
-          margin-bottom: 14px;
+          &:first-child {
+            margin-bottom: 10px;
+            width: 96%;
+          }
+  
+          &:last-child {
+            width: 96%;
+          }
         }
-      }
-
-      .btn-holder {
-        padding-left: 20px;
       }
     }
   }
