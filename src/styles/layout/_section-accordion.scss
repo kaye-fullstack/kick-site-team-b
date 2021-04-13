@@ -4,10 +4,12 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .section-faq {
+  
   .content-wrapper{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin: 80px 0px;
 
     .navigation {
       position: sticky;
