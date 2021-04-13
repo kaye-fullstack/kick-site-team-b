@@ -230,18 +230,16 @@
       <div class="container">
         <h3 class="title"> Frequently Asked Questions </h3>
         <div class="content-wrapper">
-          <div class="accordion-holder">
-            <div class="section-holder">
-              <div class="accordion">
+          <div class="accordion-wrapper">
+            <div class="accordion-holder">
+              <div id="accordionAbout-kick" class="accordion">
                 <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        What research is Kick based in?
-                      </button>
-                    </h2>
+                  <div id="headingOne" class="card-header">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      What research is Kick based in?
+                    </button>
                   </div>
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionAbout-kick">
                     <div class="card-body">
                       <p class="description">
                         Kick was started to support our fearless customer in achieving their goals. Backed by leading researchers and people who care.
@@ -259,14 +257,12 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Who is Kick right for?
-                      </button>
-                    </h2>
+                  <div id="collapseTwo" class="card-header">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How does Kick work?
+                    </button>
                   </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                  <div id="collapseTwo" class="collapse" aria-labelledby="collapseTwo" data-parent="#accordionAbout-kick">
                     <div class="card-body">
                       <p class="description">
                         Kick was started to support our fearless customer in achieving their goals. Backed by leading researchers and people who care.
@@ -284,14 +280,12 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Do you talk with a real doctor?
-                      </button>
-                    </h2>
+                  <div id="headingThree" class="card-header">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Who is Kick right for?
+                    </button>
                   </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionAbout-kick">
                     <div class="card-body">
                       <p class="description">
                         Kick was started to support our fearless customer in achieving their goals. Backed by leading researchers and people who care.
@@ -309,14 +303,12 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingFour">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        How expensive is Kick?
-                      </button>
-                    </h2>
+                  <div id="headingFour" class="card-header">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Do you talk with a real doctor?
+                    </button>
                   </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionAbout-kick">
                     <div class="card-body">
                       <p class="description">
                         Kick was started to support our fearless customer in achieving their goals. Backed by leading researchers and people who care.
@@ -334,14 +326,35 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="headingFive">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        How expensive is Kick?
-                      </button>
-                    </h2>
+                  <div id="headingFive" class="card-header">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      How expensive is Kick?
+                    </button>
                   </div>
-                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionAbout-kick">
+                    <div class="card-body">
+                      <p class="description">
+                        Kick was started to support our fearless customer in achieving their goals. Backed by leading researchers and people who care.
+                      </p>
+                      <p class="description">
+                        Lorem Ipsum dolor sit amet: consectetur adipiscmg elit. gravida ex eu est molestie, id consectetur libero fringilla_ Mauris at ex solllcltudin: fermentum metus a, molestie augue. Maecenas vitae metus gravida ex porta sollicitudm nec eget quam. Qulsque ut lorem turpls. Vestibulum suscipit tristlque metus molestie consequat.
+                      </p>
+                      <p class="description">
+                        Lorem Ipsum dolor sit amet, consectetur adipiscmg elit Vestibulum gravida ex eu est molestle, ld consectetur libero fringilla. Mauris at ex solllcltudm: fermentum metus a: molestie augue.
+                      </p>
+                      <p class="description">
+                        Maecenas vitae metus gravida ex porta sollicitudin nec eget quam. Quisque ut lorem turpis. Vestibulum susclplt tnstique metus molestle consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div id="headingSix" class="card-header">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      How do I get started with Kick?
+                    </button>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionAbout-kick">
                     <div class="card-body">
                       <p class="description">
                         Kick was started to support our fearless customer in achieving their goals. Backed by leading researchers and people who care.
