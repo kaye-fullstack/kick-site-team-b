@@ -27,9 +27,29 @@
   }
 
   .nav-link {
+    position: relative;
+
     font-family: $font-basis-grotesque-pro-bold;
     font-size: 16px;
     color:$navy-blue;
+    
+    &:focus {
+      color: $red-orange;
+    }
+
+    &:focus:before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: -2px;
+
+      width: 11px;
+      height: 11px;
+
+      background-color: transparent;
+      background-image: url("../assets/images/hover-image.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .nav-link:hover {
@@ -56,27 +76,6 @@
     }
   }
   
-  .nav-link {
-    position: relative;
-    &:focus {
-      color: $red-orange;
-    }
-
-    &:focus:before {
-      content: "";
-      position: absolute;
-      top: 6px;
-      right: -2px;
-
-      width: 11px;
-      height: 11px;
-
-      background-color: transparent;
-      background-image: url("../assets/images/hover-image.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
   .header-logo {
     margin-top: 15px;
     margin-left: 90px;
@@ -96,6 +95,7 @@
 
 @include respond-to(lg) {
   .section-header {
+
     .header-logo {
       margin-left: 37px;
     }
@@ -112,6 +112,7 @@
 
 @include respond-to(md) {
   .section-header {
+
     .header-logo {
       margin-left: 0;
     }
@@ -124,6 +125,7 @@
 
 @include respond-to(sm) {
   .section-header {
+    
     .header-logo {
       margin-top: 13px;
       margin-left: 5px;
@@ -210,10 +212,9 @@
       margin-left: 15px;
     }
 
-
     .collapse.show {
       position: fixed;
-      top: 75px;
+      top: 70px;
       right: 0;
       bottom: 0;
       left: 0;

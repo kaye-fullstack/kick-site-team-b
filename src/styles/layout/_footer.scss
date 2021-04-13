@@ -12,10 +12,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+
     margin: 0 90px 0 90px;
   }
 
   .content-holder {
+
     &:first-child {
       position: relative;
       bottom: 9px;
@@ -145,6 +147,7 @@
     }
 
     .content-holder {
+
       &:first-child {
         margin-right: 29%;
 
@@ -213,11 +216,13 @@
 
 @include respond-to(md) {
   .section-footer {
+
     .content-wrapper {
       margin: 0;
     }
 
     .content-holder {
+
       &:first-child {
         margin-right: 20%;
 
@@ -238,6 +243,11 @@
     .footer-link {
       margin-left: 0;
     }
+
+    .btn-navy {
+      top: 10px;
+      right: 29px;
+    }
   }
 }
 
@@ -251,6 +261,7 @@
     }
 
     .content-holder {
+
       &:first-child {
         margin-right: 0;
 
@@ -300,8 +311,8 @@
     }
 
     .btn-navy {
-      top: 9px;
-      right: 30px;
+      top: 10px;
+      right: 29px;
     }
   }
 }
@@ -316,6 +327,7 @@
     }
 
     .content-holder {
+
       &:first-child {
         margin-right: 0;
 
@@ -365,8 +377,8 @@
     }
 
     .btn-navy {
-      top: 8px;
-      right: 30px;
+      top: 9px;
+      right: 29px;
     }
   }
 }
