@@ -17,13 +17,14 @@
         .heading {
           font-family: $font-spectral-regular;
           font-size: 12.4px;
-          color: $violet;
           line-height: 30px;
+          color: $violet;
         }
 
         .title {
           margin-bottom: 39px;
           width: 280px;
+
           font-family: $font-spectral-regular;
           font-size: 27.7px;
         }
@@ -31,6 +32,7 @@
         .description {
           padding-left: 0;
           margin-bottom: 13px;
+
           font-family: $font-spectral-regular;
           font-size: 17.4px;
           line-height: 1.58;
@@ -40,6 +42,7 @@
           margin-top: 27px;
           width: 203px;
           height: 37px;
+
           font-size: 13.4px;
         }
       }
@@ -57,8 +60,8 @@
       .alternate-container {
         .alternate-holder {
           padding-top: 81px;
-          padding-left: 0;
           padding-bottom: 115px;
+          padding-left: 0;
 
           .btn-violet {
             width: 100%;

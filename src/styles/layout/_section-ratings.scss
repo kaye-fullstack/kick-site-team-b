@@ -34,14 +34,16 @@
   .rating-star {
     --percent: calc(var(--rating) / 5 * 100%);
     display: block;
-    font-size: var(--star-size);
+
     font-family: Times; 
+    font-size: var(--star-size);
     line-height: 1;
 
     &:before {
       content: "★★★★★";
       font-size: 26px;
       letter-spacing: 0;
+
       background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
       -webkit-background-clip: text;
       background-clip: text;
@@ -52,6 +54,7 @@
   .rating-text {
     padding: 0 42px;
     margin-top: 9px;
+
     font-family: $font-spectral-regular;
     font-size: 14px;
     color: $violet;
@@ -86,7 +89,6 @@
 
     .rating-column {
       margin: 0 auto 26px;
-
       width: 243px;
     }
   }

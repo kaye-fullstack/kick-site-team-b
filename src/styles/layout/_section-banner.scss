@@ -10,11 +10,11 @@
     padding-left: 89px;
 
     letter-spacing: -1.7px;
+
     .title {
       font-family: $font-spectral-light;
-      color: $violet;
-
       line-height: 1.2;
+      color: $violet;
     }
   }
 
@@ -23,10 +23,9 @@
     padding-bottom: 49px;
 
     .description {
-      font-family: $font-spectral-light;
-      color: $violet;
-      
+      font-family: $font-spectral-light;  
       line-height: 1.5;
+      color: $violet;
     }
   }
 }
@@ -40,6 +39,7 @@
 @include respond-to(md) {
   .section-banner {
     background-position: center;
+
     .title-holder {
       padding-left: 20px;
     }
@@ -66,6 +66,7 @@
 @include respond-to(xs) {
   .section-banner {
     background-position: left;
+    
     .title-holder {
       padding-left: 0;
     }

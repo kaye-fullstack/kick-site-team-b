@@ -1,10 +1,4 @@
-//main: ../main.scss
-
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
 .section-faq {
-  
   .content-wrapper{
     display: flex;
     flex-wrap: nowrap;
@@ -16,7 +10,6 @@
 
       display: flex;
       align-content: center;
-
       width: 50%;
 
       letter-spacing: -0.4px;
@@ -83,8 +76,8 @@
 
       font-family: $font-spectral-medium;
       font-size: 26px;
-      color: $light-violet;
       letter-spacing: 0.4px;
+      color: $light-violet;
     }
 
     .description {
@@ -125,6 +118,7 @@
 
     .card-header {
       padding: 0;
+
       background-color: transparent;
       border: 0;
     }
@@ -132,6 +126,7 @@
     .card-body {
       padding-bottom: 70px;
       padding-left: 9px;
+
       border-bottom: 3px solid $pastel-yellow;
     }
   }
@@ -163,11 +158,12 @@
     }
 
     .content-wrapper {
+      margin: 25px 0px;
+
       .navigation {
         position: absolute;
         flex-wrap: nowrap;
         flex-direction: initial;
-
         width: 90%;
         overflow-y: hidden;
         overflow-x: auto;
@@ -181,12 +177,10 @@
         .list-group-item {
           display: flex;
           flex-wrap: nowrap;
-
           padding: 8px 10px;  
           margin-right: 0;
         
           font-size: 18px;
-
           white-space: nowrap;
 
           border-top: 4px solid $pastel-yellow;
@@ -240,11 +234,12 @@
     }
 
     .content-wrapper {
+      margin: 25px 0px;
+
       .navigation {
         position: absolute;
         flex-wrap: nowrap;
         flex-direction: initial;
-
         width: 90%;
         overflow-y: hidden;
         overflow-x: auto;
@@ -258,12 +253,10 @@
         .list-group-item {
           display: flex;
           flex-wrap: nowrap;
-
           padding: 8px 10px;  
           margin-right: 0;
         
           font-size: 18px;
-
           white-space: nowrap;
 
           border-top: 4px solid $pastel-yellow;
@@ -272,7 +265,6 @@
 
           &:hover {
             font-family: $font-spectral-semibold;
-
             color: $violet;
           }
         }

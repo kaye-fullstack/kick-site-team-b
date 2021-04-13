@@ -1,5 +1,4 @@
 .sleep {
-
   .section-banner {
     height: 548px;
 
@@ -55,8 +54,8 @@
 
       font-family: $font-spectral-medium;
       font-size: 14px;
-      color: $violet;
       line-height: 23px;
+      color: $violet;
       word-spacing: 5px;
     }
   }
@@ -89,16 +88,16 @@
 
       font-family: $font-spectral-medium;
       font-size: 15px;
-      color: $violet;
       letter-spacing: -1px;
+      color: $violet;
     }
 
     .product-wrapper {
       position: relative;
 
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
+      flex-direction: row;
       justify-content: center;
       margin: 78px 0 -10px 2px;
     }
@@ -121,8 +120,8 @@
 
       font-family: $font-spectral-medium;
       font-size: 18px;
-      text-align: center;
       color: $red-orange;
+      text-align: center;
     }
 
     .product-details {
@@ -142,8 +141,8 @@
 
       font-family: $font-spectral-medium;
       font-size: 14px;
-      color: $violet;
       letter-spacing: -1px;
+      color: $violet;
     }
 
     .btn-violet-outline {
@@ -176,8 +175,8 @@
 
       display: flex;
       flex-direction: row;
-      align-items: center;
       justify-content: center;
+      align-items: center;
     }
 
     .content-holder {
@@ -210,8 +209,8 @@
 
       font-family: $font-basis-grotesque-pro-regular;
       font-size: 13px;
-      color: $white;
       letter-spacing: 0.2px;
+      color: $white;
     }
 
     .quote {
@@ -219,8 +218,8 @@
 
       font-family: $font-spectral-medium;
       font-size: 20px;
-      color: $white;    
       line-height: 29px;
+      color: $white;    
       word-spacing: 1px;
     }
 
@@ -261,22 +260,20 @@
       font-family: $font-spectral-medium;
       font-size: 29px;
       letter-spacing: -0.9px;
-      color: $violet;
       text-align: center;
+      color: $violet;
       word-spacing: 3px;
     }
   
     .card-body {
       padding-right: 226px;
       padding-left: 16px;
-  
       column-count: 2;
     }
     
     .accordion-wrapper {
       margin: 0 138px 0 108px;
       height: unset;
-
       overflow: hidden;
     }
 
@@ -519,6 +516,7 @@
 
       .img-fluid {
         width: 473px;
+
         object-fit: cover;
       }
 
@@ -591,7 +589,6 @@
   
       .card-body {
         padding: 15px 15px;
-        
         column-count: 1;
       }
     }
@@ -735,7 +732,6 @@
   
       .card-body {
         padding: 15px 15px;
-        
         column-count: 1;
       }
     }
