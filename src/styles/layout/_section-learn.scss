@@ -19,11 +19,10 @@
 
   .article-wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-
+    align-items: center;
     margin-top: 67px;
     margin-left: 15px;
     margin-right: -62px;
@@ -68,7 +67,6 @@
 
     .article-holder {
       margin: 0 26px;
-      
       width: 28%;
     }
   }

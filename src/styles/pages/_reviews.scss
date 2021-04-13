@@ -9,6 +9,7 @@
       position: absolute;
       top: 12%;
       left: 56.4%;
+
       width: 332px;
       height: 287px;
 
@@ -111,13 +112,11 @@
       }
 
       .btn-holder {
+        padding-left: 20px;
+
         .btn-pastel-yellow {
           margin-bottom: 14px;
         }
-      }
-
-      .btn-holder {
-        padding-left: 20px;
       }
     }
   }

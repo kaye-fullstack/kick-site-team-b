@@ -5,8 +5,6 @@
 // -----------------------------------------------------------------------------
 
 .home {
-  transition: all .2s ease-in-out;
-
   .section-banner {
     background-image: url('../assets/images/home-banner.jpg');
 
@@ -42,8 +40,8 @@
       padding-top: 87px;
 
       .logos {
-        padding-left: 36px;
         padding-right: 34px;
+        padding-left: 36px;
       }
     }
   }
@@ -252,8 +250,8 @@
         right: 0;
         
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         margin: 0 auto;
         width: 17px;
         height: 17px;
@@ -278,9 +276,9 @@
         height: 16px;
     
         border-bottom: 2px solid $pastel-blue;
-     }
+      }
      
-    &:first-child {
+      &:first-child {
         left: 7px;
     
         width: 20%;
@@ -291,7 +289,7 @@
         }
       }
       
-     &:nth-child(2) {
+      &:nth-child(2) {
        width: 21%;
 
         &:after {
@@ -582,8 +580,8 @@
         margin-left: -16px;
 
         .logos {
-          padding-left: 25px;
           padding-right: 0;
+          padding-left: 25px;
         }
       }
     }
