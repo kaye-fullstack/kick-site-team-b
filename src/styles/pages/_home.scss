@@ -200,13 +200,14 @@
     background-color: $tortoise;
   }
 
-  .section-image-text {
-      background-color: $pastel-yellow;
+  .section-alternate { 
+        background-color: $pastel-yellow;
 
-    &:last-child {
-      background-color: $lavender;
+      &:last-child {
+        background-color: $lavender;
+      }
     }
-  }
+  
 
   .section-how-it-works {
     padding: 71px 0;

@@ -29,7 +29,11 @@
   'layout/section-testimonials',
   'layout/section-reviews',
   'layout/section-ratings',
-  'layout/section-doctor';
+  'layout/section-doctor',
+  'layout/section-sleep-habits',
+  'layout/section-learn',
+  'layout/section-trial-work-list',
+  'layout/section-accordion';
 
 // 5. Components
 @import
@@ -39,7 +43,10 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/reviews';
+  'pages/reviews',
+  'pages/sleep',
+  'pages/doctor',
+  'pages/faq';
 
 // 7. Themes
 @import
